@@ -1,0 +1,50 @@
+CREATE TABLE IF NOT EXISTS `video`
+(
+  `id`              bigint(20) auto_increment  NOT NULL COMMENT 'id',
+  `title`           varchar(100)               NOT NULL DEFAULT '' COMMENT '视频标题',
+  `publisher`       varchar(64)                NOT NULL DEFAULT '' COMMENT '视频发布者',
+  `publisher_link`  varchar(1024)              NOT NULL DEFAULT '' COMMENT '视频发布者主页链接',
+  `video_link`      varchar(1024)              NOT NULL DEFAULT '' COMMENT '视频链接',
+  `date`            varchar(20)                NOT NULL DEFAULT '' COMMENT '视频发布日期',
+  `views`           int                        NOT NULL DEFAULT 0  COMMENT '视频观看次数',
+  PRIMARY KEY (`id`),
+  KEY `publisher`(`publisher`)
+) ENGINE = InnoDB
+  DEFAULT CHARSET = utf8 COMMENT ='Youtube视频表';
+
+
+CREATE TABLE IF NOT EXISTS `comment`
+(
+  `id`           bigint(20) auto_increment  NOT NULL COMMENT 'id',
+  `vid`          bigint(20)                 NOT NULL COMMENT '视频id',
+  `user`         varchar(64)                NOT NULL COMMENT '评论者',
+  `user_link`    varchar(1024)              NOT NULL COMMENT '评论者主页链接',
+  `content`      varchar(2048)              NOT NULL COMMENT '评论内容',
+  PRIMARY KEY (`id`),
+  KEY `vid` (`vid`)
+) ENGINE = InnoDB
+  DEFAULT CHARSET = utf8 COMMENT ='视频评论表';
+
+
+CREATE TABLE IF NOT EXISTS `user`
+(
+  `id`           bigint(20) auto_increment  NOT NULL            COMMENT 'id',
+  `type`         tinyint                    NOT NULL            COMMENT '0-普通用户 1-视频发布者',
+  `username`     varchar(64)                NOT NULL            COMMENT '用户名',
+  `homepage`     varchar(1024)              NOT NULL            COMMENT '主页链接',
+  `subscribers`  varchar(10)                NOT NULL            COMMENT '订阅人数-因为很多人的话就不显示具体数目了所以不用int类型',
+  `views`        int                        NOT NULL DEFAULT 0  COMMENT '累计观看次数',
+  `join_time`    varchar(30)                NOT NULL            COMMENT '注册日期',
+  `description`  varchar(4096)              NOT NULL DEFAULT '' COMMENT '描述',
+  `details`      varchar(1024)              NOT NULL DEFAULT '' COMMENT '其余细节信息如location',
+  `links`        varchar(4096)              NOT NULL DEFAULT '' COMMENT '外链-可能多个',
+
+  PRIMARY KEY (`id`),
+  KEY `type`(`type`)
+) ENGINE = InnoDB
+  DEFAULT CHARSET = utf8 COMMENT ='youtube用户表';
+
+
+alter table video convert to character set utf8mb4;
+alter table comment convert to character set utf8mb4;
+alter table user convert to character set utf8mb4;

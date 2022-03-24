@@ -1,0 +1,504 @@
+VideoID	PublishedAt	ChannelId	CategoryID	Title	Description	ChannelTitle	LiveBroadcastContent	Duration	Dimension	Definition	Caption	LicensedContent	ViewCount	LikeCount	DislikeCount	FavoriteCount	CommentCount	PrivacyStatus	License	Embeddable	PublicStatsViewable	TopicIds	RelevantTopicIds
+pKCRz-hta_A	2022-03-18T12:14:25Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wow😱🔥 #shorts		KYLIE-LUNA	none	PT23S	2d	hd	false	false	46409	1169		0	33	public	youtube	true	true		
+30Ab74OT2U4	2022-03-18T12:09:13Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Squishyyy💋💋💋 or Bouncy😘😘😘???		KYLIE-LUNA	none	PT6S	2d	hd	false	false	142518	8127		0	142	public	youtube	true	true		
+Z4A-6IR_NOk	2022-03-18T12:07:00Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	I'm Heartbreaker💔😜 #shorts		KYLIE-LUNA	none	PT10S	2d	hd	false	false	3707	366		0	14	public	youtube	true	true		
+PYoyEGaoPcI	2022-03-18T12:07:34Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Outfit Revealed😱🔥 #shorts		KYLIE-LUNA	none	PT11S	2d	hd	false	false	48452	1910		0	39	public	youtube	true	true		
+YkXz6EsPwKU	2022-03-18T12:08:02Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Ohh No... 😱😜 #shorts		KYLIE-LUNA	none	PT6S	2d	hd	false	false	233608	8024		0	107	public	youtube	true	true		
+Hx3Jhzf-1Nk	2022-03-18T05:21:07Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wait for it...!!😘❤️💋		KYLIE-LUNA	none	PT10S	2d	hd	false	false	5422	483		0	13	public	youtube	true	true		
+jMSHMmMDJBE	2022-03-18T05:22:38Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it big🔥🔥		KYLIE-LUNA	none	PT6S	2d	hd	false	false	6807	463		0	14	public	youtube	true	true		
+eSvIOXueP5U	2022-03-18T05:21:57Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	😎🔥🔥 #shorts		KYLIE-LUNA	none	PT10S	2d	hd	false	false	80661	2725		0	37	public	youtube	true	true		
+O0MEP-f5aEI	2022-03-18T05:23:02Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Hello...!!💋🔥		KYLIE-LUNA	none	PT7S	2d	hd	false	false	56224	1605		0	38	public	youtube	true	true		
+KZV8ABKqDUE	2022-03-18T05:21:41Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	OMG...😱🔥💋❤️		KYLIE-LUNA	none	PT6S	2d	hd	false	false	109904	2819		0	27	public	youtube	true	true		
+6Sz0ojXwu9s	2022-03-18T03:17:02Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Big....Big....Big....!!!🔥❤️		KYLIE-LUNA	none	PT10S	2d	hd	false	false	63931	1794		0	40	public	youtube	true	true		
+5EsD0kZ7MFk	2022-03-18T03:12:54Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	This is Work of Art🤭💋		KYLIE-LUNA	none	PT16S	2d	hd	false	false	79117	2125		0	41	public	youtube	true	true		
+xpVcpbyfbJ0	2022-03-18T02:16:09Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Look at my Boobs🤪💖		KYLIE-LUNA	none	PT9S	2d	hd	false	false	5222	603		0	30	public	youtube	true	true		
+TMzoIxV3d8U	2022-03-18T01:03:33Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Don't buy a diamond ring #shorts		KYLIE-LUNA	none	PT7S	2d	hd	false	false	82338	3050		0	37	public	youtube	true	true		
+uZXYpYeo0qA	2022-03-12T19:32:13Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	😎😎😘 #shorts #plussize		KYLIE-LUNA	none	PT7S	2d	hd	false	false	91878	2757		0	85	public	youtube	true	true		
+rNgmoNSJSyU	2022-03-12T19:31:37Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Don’t Mind'		KYLIE-LUNA	none	PT10S	2d	hd	false	false	133714	4366		0	87	public	youtube	true	true		
+3vV5ozfqHvo	2022-03-12T19:32:13Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Hello Dear...❤️💖		KYLIE-LUNA	none	PT9S	2d	hd	false	false	131168	3531		0	122	public	youtube	true	true		
+2TfjmKlZkTw	2022-03-12T19:31:57Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Excuse me please		KYLIE-LUNA	none	PT7S	2d	hd	false	false	150280	4731		0	118	public	youtube	true	true		
+1jDiIL6oVog	2022-03-12T09:32:18Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	🐴🐴🐴 #shorts		KYLIE-LUNA	none	PT9S	2d	hd	false	false	100265	2784		0	81	public	youtube	true	true		
+wmN7hISZ8qY	2022-03-11T11:58:06Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Prank With Girlfriend's #shorts		KYLIE-LUNA	none	PT9S	2d	hd	false	false	180232	1989		0	54	public	youtube	true	true		
+cJwhz28ECwI	2022-03-11T11:58:52Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	🥰💋🔥 #shorts		KYLIE-LUNA	none	PT13S	2d	hd	false	false	99710	2592		0	76	public	youtube	true	true		
+KxaY7McknVQ	2022-03-11T11:58:41Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	🤭🤭🤭 #shorts		KYLIE-LUNA	none	PT8S	2d	hd	false	false	136775	3728		0	96	public	youtube	true	true		
+C4fogtT0_is	2022-03-10T17:41:40Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Snapper Pranks With Wife💥😂 #shorts #comedy #prank		KYLIE-LUNA	none	PT11S	2d	hd	false	false	90394	1569		0	33	public	youtube	true	true		
+isy4pbV9HeU	2022-03-10T02:41:10Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Green Dressed Plus Size Pressure🔥😘 #shorts #Humor #curvy		KYLIE-LUNA	none	PT10S	2d	hd	false	false	97677	3837		0	148	public	youtube	true	true		
+-YTDuztMkYY	2022-03-09T00:41:09Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Funk Brasilia 💃💘		KYLIE-LUNA	none	PT9S	2d	hd	false	false	5961	274		0	31	public	youtube	true	true		
+frbargfDhO0	2022-03-08T18:27:42Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	#shorts		KYLIE-LUNA	none	PT16S	2d	hd	false	false	143802	5607		0	117	public	youtube	true	true		
+NeSEnrSPmt4	2022-03-08T12:10:47Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	#shorts		KYLIE-LUNA	none	PT15S	2d	hd	false	false	93332	1660		0	57	public	youtube	true	true		
+3T0qv6U7Jts	2022-03-08T12:06:25Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Is This Normal?		KYLIE-LUNA	none	PT9S	2d	hd	false	false	104890	2769		0	67	public	youtube	true	true		
+zL5hegOgVgw	2022-03-07T18:43:25Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	This is my Favourite💋😁		KYLIE-LUNA	none	PT16S	2d	hd	false	false	134491	3690		0	69	public	youtube	true	true		
+4qKfRakWWxA	2022-03-07T18:43:49Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Jajajajaja😁🤪		KYLIE-LUNA	none	PT9S	2d	hd	false	false	322522	11259		0	262	public	youtube	true	true		
+vG1BzzuWkLc	2022-03-07T18:44:25Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Plus Size Beauty 🔥💥💖		KYLIE-LUNA	none	PT12S	2d	hd	false	false	75780	3851		0	148	public	youtube	true	true		
+V28Fg0iFiGI	2022-03-07T18:41:13Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wait for it🤪🤪🤪		KYLIE-LUNA	none	PT6S	2d	hd	false	false	1482423	46770		0	780	public	youtube	true	true		
+Mp3r2J6E-n8	2022-03-07T18:40:36Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Phao Phao Phao Phao...😁		KYLIE-LUNA	none	PT16S	2d	hd	false	false	148992	2811		0	68	public	youtube	true	true		
+9Mw1JHcngoA	2022-03-07T18:40:46Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Yeap! 💋😁		KYLIE-LUNA	none	PT16S	2d	hd	false	false	112794	2508		0	72	public	youtube	true	true		
+dXI6J0N4V-4	2022-03-07T02:27:58Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	HmmmmmmmM!		KYLIE-LUNA	none	PT9S	2d	hd	false	false	85211	2831		0	79	public	youtube	true	true		
+gNbmw6bwkRQ	2022-03-06T12:11:03Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	WOW!! 😱😱		KYLIE-LUNA	none	PT6S	2d	hd	false	false	112777	2734		0	85	public	youtube	true	true		
+yEjRbDWChL4	2022-03-05T11:30:44Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Orange or Red?		KYLIE-LUNA	none	PT12S	2d	hd	false	false	407331	15961		0	633	public	youtube	true	true		
+DStfpDoPz-Y	2022-03-05T11:30:33Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Plus Size PRESS 🔥🔥		KYLIE-LUNA	none	PT8S	2d	hd	false	false	71263	2709		0	64	public	youtube	true	true		
+F2320VOc8Eo	2022-03-05T11:30:57Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	55inch #white444 #plussize		KYLIE-LUNA	none	PT14S	2d	hd	false	false	234130	9161		0	352	public	youtube	true	true		
+GlY4CnTljf0	2022-03-05T11:30:31Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	🤭🤫🤭		KYLIE-LUNA	none	PT11S	2d	hd	false	false	72339	2810		0	40	public	youtube	true	true		
+LqxShGbGxoE	2022-03-05T08:48:47Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Why Did She Get Mad!!		KYLIE-LUNA	none	PT7S	2d	hd	false	false	163968	1580		0	43	public	youtube	true	true		
+m8jRIidv-5I	2022-03-04T12:13:34Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Space Amazona💥🔥🔥		KYLIE-LUNA	none	PT12S	2d	hd	false	false	9979	884		0	47	public	youtube	true	true		
+dUF3vanKx58	2022-03-04T11:52:09Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	55 INCHES! 💥🔥💋		KYLIE-LUNA	none	PT6S	2d	hd	false	false	109240	4399		0	159	public	youtube	true	true		
+ZYB5vtfAVyI	2022-03-04T00:28:32Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Fantasy Fashion!		KYLIE-LUNA	none	PT23S	2d	hd	false	false	81743	3570		0	81	public	youtube	true	true		
+pk_Yb4enVIc	2022-03-02T18:05:23Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Hey.....!!😘😘		KYLIE-LUNA	none	PT6S	2d	hd	false	false	1767369	54475		0	909	public	youtube	true	true		
+gqK0fxtjDGI	2022-03-02T17:56:20Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Black Beauty 💞🔥		KYLIE-LUNA	none	PT9S	2d	hd	false	false	129659	3970		0	63	public	youtube	true	true		
+xDrnlB7e7xw	2022-03-02T17:56:43Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	😳💞🔥 #shorts		KYLIE-LUNA	none	PT11S	2d	hd	false	false	162283	4955		0	81	public	youtube	true	true		
+AKNKrMkPg4Y	2022-03-02T17:56:04Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Papo Papo 💞 Papu Papu 🔥 Tiktok New Trend 🔥 #shorts		KYLIE-LUNA	none	PT12S	2d	hd	false	false	79334	3081		0	48	public	youtube	true	true		
+PiA4wIyUMic	2022-03-02T09:44:21Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	🥰💞🔥 #shorts		KYLIE-LUNA	none	PT11S	2d	hd	false	false	181705	6179		0	119	public	youtube	true	true		
+NJbz0kfBLYs	2022-02-28T18:51:29Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	The Heartbreaker🌹		KYLIE-LUNA	none	PT7S	2d	hd	false	false	174664	5922		0	126	public	youtube	true	true		
+VLH-cy6V2AA	2022-02-28T11:50:31Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	SMILE🙂		KYLIE-LUNA	none	PT11S	2d	hd	false	false	211314	6200		0	137	public	youtube	true	true		
+pxId4Bvhy4E	2022-02-27T11:35:31Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Are You Ready Again? 👀🔥😳		KYLIE-LUNA	none	PT9S	2d	hd	false	false	185676	3244		0		public	youtube	true	true		
+BGf9zHb0qtw	2022-02-27T11:32:50Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	This is ☀Day Evening🥰 #shorts		KYLIE-LUNA	none	PT9S	2d	hd	false	false	151812	3634		0	55	public	youtube	true	true		
+8exA8rKywNc	2022-02-27T11:33:53Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Do You Like Blue?		KYLIE-LUNA	none	PT6S	2d	hd	false	false	116719	4169		0	139	public	youtube	true	true		
+pznHj9f2rvk	2022-02-27T11:33:38Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	PERFECTO?		KYLIE-LUNA	none	PT11S	2d	hd	false	false	177824	3043		0	82	public	youtube	true	true		
+af_LXeld6pc	2022-02-27T11:33:28Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	I Really Need!🥰🥰		KYLIE-LUNA	none	PT10S	2d	hd	false	false	273716	3401		0	97	public	youtube	true	true		
+gPJ95ckpawI	2022-02-26T18:15:36Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	She Is Gorgeous😍🔥 #shorts		KYLIE-LUNA	none	PT12S	2d	hd	false	false	6973	588		0	37	public	youtube	true	true		
+IJ7fKV7x8ak	2022-02-26T18:15:59Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	New Trend 🔥🔥		KYLIE-LUNA	none	PT8S	2d	hd	false	false	162026	4474		0	79	public	youtube	true	true		
+gxXsnHLhBcs	2022-02-26T18:08:03Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	SQUISHY SPIDEY 💋❤️🔥		KYLIE-LUNA	none	PT7S	2d	hd	false	false	5176	365		0	25	public	youtube	true	true		
+WUomOMiGAtc	2022-02-26T11:19:37Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	I am So Coordinated!		KYLIE-LUNA	none	PT12S	2d	hd	false	false	35009	1416		0	59	public	youtube	true	true		
+W8He_IfRsRU	2022-02-26T11:18:49Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Heyyyyyyy💋👀 #shorts		KYLIE-LUNA	none	PT9S	2d	hd	false	false	183975	3927		0	53	public	youtube	true	true		
+rnourHgg43Y	2022-02-26T11:17:00Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	New Character 😁💖 #shorts		KYLIE-LUNA	none	PT8S	2d	hd	false	false	314662	8472		0	112	public	youtube	true	true		
+OrUISlo5Nzw	2022-02-26T00:33:03Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	NFTs		KYLIE-LUNA	none	PT7S	2d	hd	false	false	131266	4244		0	59	public	youtube	true	true		
+A5fhAw_AT_o	2022-02-26T00:32:52Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Romper Season #55inch #shorts		KYLIE-LUNA	none	PT15S	2d	hd	false	false	1112360	24074		0	762	public	youtube	true	true		
+WZ1Qll00rGQ	2022-02-25T14:44:02Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	😳🔥🔥 #shorts		KYLIE-LUNA	none	PT10S	2d	hd	false	false	7339	496		0	37	public	youtube	true	true		
+QTdjP-jbe9I	2022-02-24T11:14:18Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	🔥🔥🔥 #Shorts		KYLIE-LUNA	none	PT9S	2d	hd	false	false	165779	4512		0	128	public	youtube	true	true		
+7mu2PPzRGCA	2022-02-24T00:36:47Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Lovely..... 😳🤭🤭		KYLIE-LUNA	none	PT9S	2d	hd	false	false	146565	4094		0	78	public	youtube	true	true		
+SgWCC-7NCls	2022-02-24T00:36:59Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Nope...🤭🤭		KYLIE-LUNA	none	PT16S	2d	hd	false	false	215447	3449		0	149	public	youtube	true	true		
+8sliEMnj7WQ	2022-02-23T11:44:05Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Surprise! 🤍		KYLIE-LUNA	none	PT8S	2d	hd	false	false	1784870	27372		0	345	public	youtube	true	true		
+Uikr4kaOwGI	2022-02-23T11:42:50Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	BARBIE DOLL 💃💃		KYLIE-LUNA	none	PT9S	2d	hd	false	false	118063	2975		0	70	public	youtube	true	true		
+aJRFLWXmEcM	2022-02-23T11:39:26Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Upps 😳🤭		KYLIE-LUNA	none	PT9S	2d	hd	false	false	331837	6874		0	102	public	youtube	true	true		
+T5M78ejQOGI	2022-02-23T00:37:05Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	23 February 2022		KYLIE-LUNA	none	PT6S	2d	hd	false	false	158108	4642		0	55	public	youtube	true	true		
+2w_TOfBEtlw	2022-02-22T17:35:49Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Tuma Tussi😳😳 #shorts		KYLIE-LUNA	none	PT7S	2d	hd	false	false	142389	3659		0	49	public	youtube	true	true		
+Q_JVmCkKNvE	2022-02-22T09:17:56Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	It’s To BIG😳🔥 #shorts		KYLIE-LUNA	none	PT10S	2d	hd	false	false	256345	5537		0	88	public	youtube	true	true		
+LgYfKrQIVuQ	2022-02-21T17:26:51Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	😳🔥😳 #shorts		KYLIE-LUNA	none	PT9S	2d	hd	false	false	6889560	135093		0	1699	public	youtube	true	true		
+51H5JJtuMiY	2022-02-21T17:26:20Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Zero Two Trend #shorts		KYLIE-LUNA	none	PT12S	2d	hd	false	false	152031	4966		0	67	public	youtube	true	true		
+ueacTo-gfUk	2022-02-21T17:25:45Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Guess Who?😳🥴		KYLIE-LUNA	none	PT10S	2d	hd	false	false	187602	3071		0	47	public	youtube	true	true		
+b27CtO-_9i4	2022-02-21T17:24:45Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Worth Wait? 😳🔥		KYLIE-LUNA	none	PT10S	2d	hd	false	false	4201	326		0	21	public	youtube	true	true		
+dDqBis5oudw	2022-02-21T17:25:19Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Monday Motivation #55inch #Shorts		KYLIE-LUNA	none	PT12S	2d	hd	false	false	205614	7645		0	200	public	youtube	true	true		
+Iw0cBdXsWfM	2022-02-21T17:24:14Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Look Good, Feel Good🔥🔥		KYLIE-LUNA	none	PT11S	2d	hd	false	false	5195	356		0	18	public	youtube	true	true		
+WUM06uOT0gU	2022-02-19T11:40:00Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	😳😳😳 #shorts		KYLIE-LUNA	none	PT14S	2d	hd	false	false	167864	2733		0	93	public	youtube	true	true		
+o86XVSc-5ao	2022-02-19T11:24:07Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	I wanna Fly with Carpet!		KYLIE-LUNA	none	PT13S	2d	hd	false	false	215078	7224		0	124	public	youtube	true	true		
+WMO4q6nZ9A4	2022-02-19T11:23:29Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	What you see?		KYLIE-LUNA	none	PT9S	2d	hd	false	false	166653	5533		0	118	public	youtube	true	true		
+y-E42M42KdI	2022-02-19T11:21:57Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Do You Want Me To FaceTime You?		KYLIE-LUNA	none	PT10S	2d	hd	false	false	244310	7949		0	131	public	youtube	true	true		
+DP2CakqmjyE	2022-02-17T11:05:41Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Be Nice! Haha😂😂		KYLIE-LUNA	none	PT8S	2d	hd	false	false	233205	6581		0	384	public	youtube	true	true		
+QNcvFLbgWl4	2022-02-17T09:11:32Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	OMG😲 So Cute ❤️🔥		KYLIE-LUNA	none	PT8S	2d	hd	false	false	260060	1525		0	70	public	youtube	true	true		
+kRUtP66h4M4	2022-02-17T09:10:49Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	HUH!!!😎🔥 #cosplay #egirl #shorts		KYLIE-LUNA	none	PT14S	2d	hd	false	false	218585	4147		0	77	public	youtube	true	true		
+jF6Nl1a4QBg	2022-02-17T09:09:53Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Crazy Moves🥰🥰 #shorts		KYLIE-LUNA	none	PT11S	2d	hd	false	false	180843	7226		0	111	public	youtube	true	true		
+XoTa9ydXtSo	2022-02-16T18:27:58Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Ok!? #shorts		KYLIE-LUNA	none	PT16S	2d	hd	false	false	518256	12360		0	258	public	youtube	true	true		
+I-Jq6gZrua8	2022-02-16T18:26:20Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Cold Cold Heart❤️ #shorts #plussize		KYLIE-LUNA	none	PT13S	2d	hd	false	false	1462493	46929		0	1280	public	youtube	true	true		
+5w_kcYj8UH4	2022-02-16T18:25:51Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Excuse me sir!!...❤️🔥 #shorts		KYLIE-LUNA	none	PT6S	2d	hd	false	false	550471	19484		0	320	public	youtube	true	true		
+2JLNwuj2N8I	2022-02-16T18:24:35Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Innocent or nah!? #shorts		KYLIE-LUNA	none	PT9S	2d	hd	false	false	390705	14506		0	352	public	youtube	true	true		
+j8REfXo9Res	2022-02-16T18:16:16Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	be my baby tho #fyp #thick #thicktok #shorts		KYLIE-LUNA	none	PT7S	2d	hd	false	false	522476	14199		0	312	public	youtube	true	true		
+F8dCmW_5sd8	2022-02-11T20:05:55Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	BIG``♥♦		KYLIE-LUNA	none	PT10S	2d	hd	false	false	11330	1014		0	74	public	youtube	true	true		
+MGqSVRi-UwQ	2022-02-08T20:40:34Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Plus Size Pride🔥 | Beautiful Curvy | Amazing Virtual Reality Games | VR | Gadgets 👀	ᴘʀᴏᴅᴜᴄᴛ ʟɪɴᴋ: https://amzn.to/3JdI1jD\n\n-𝘼𝙡𝙡 𝙞𝙣 𝙤𝙣𝙚 𝙑𝙞𝙧𝙩𝙪𝙖𝙡 𝙍𝙚𝙖𝙡𝙞𝙩𝙮 𝙎𝙚𝙩 🔥\n-𝙎𝙣𝙖𝙥𝙙𝙧𝙖𝙜𝙤𝙣 𝙎𝙪𝙥𝙚𝙧 𝙛𝙖𝙨𝙩 𝙋𝙧𝙤𝙘𝙚𝙨𝙨𝙤𝙧 🔥\n-𝙒𝙞𝙧𝙚𝙡𝙚𝙨𝙨 🔥\n-256 𝙂𝘽 𝙎𝙩𝙤𝙧𝙖𝙜𝙚 🔥\n-𝙀𝙖𝙨𝙮 𝙩𝙤 𝙪𝙨𝙚 🔥\n-𝘼𝙢𝙖𝙯𝙤𝙣 𝘾𝙝𝙤𝙞𝙘𝙚 🔥\n-𝘽𝙚𝙨𝙩 𝙑𝙍 𝙀𝙫𝙚𝙧 🔥\n\n\n-SUPER 3D EXPERIENCE 🔥🔥\n\n\nVr\nVirtual Reality \nVr 3D Games\nVirtual Reality Games\nVR Gadgets \n3D Virtual Reality	KYLIE-LUNA	none	PT3M34S	2d	hd	false	false	22184	504		0	42	public	youtube	true	true		
+VzyhM8GpJUQ	2022-02-08T19:47:24Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	MAC Challenge Accepted #shorts		KYLIE-LUNA	none	PT10S	2d	hd	false	false	191535	5369		0	130	public	youtube	true	true		
+8fW2bjtmMYY	2022-02-08T05:01:51Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	You're Done😐		KYLIE-LUNA	none	PT9S	2d	hd	false	false	7880430	150351		0	2898	public	youtube	true	true		
+xUJbKleXQe0	2022-02-08T05:01:17Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Yeah!!😇😇		KYLIE-LUNA	none	PT10S	2d	hd	false	false	5392789	133095		0	2236	public	youtube	true	true		
+qt8zOHGuC0A	2022-02-08T05:00:36Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	SOFT & SQUISHY 🥰😘		KYLIE-LUNA	none	PT8S	2d	hd	false	false	202776	3826		0	123	public	youtube	true	true		
+9SyaKDT82ME	2022-02-08T04:59:58Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Blue Berry🍒🍇 #shorts		KYLIE-LUNA	none	PT8S	2d	hd	false	false	294239	7871		0	108	public	youtube	true	true		
+kOMBXSPaIyU	2022-02-05T19:28:06Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	New Trend🔥🔥🔥 #shorts		KYLIE-LUNA	none	PT16S	2d	hd	false	false	147467	4552		0	109	public	youtube	true	true		
+hunV0D6mAqo	2022-02-05T19:27:16Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Amazing Outfit💖🔥, Thought?  #elfitup #curvy #shorts		KYLIE-LUNA	none	PT12S	2d	hd	false	false	1446486	36781		0	1133	public	youtube	true	true		
+BZah7TKEgV4	2022-02-05T19:24:33Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	When You Know You Look Good!		KYLIE-LUNA	none	PT9S	2d	hd	false	false	5752	451		0	27	public	youtube	true	true		
+8MLhkbAvkPI	2022-02-05T19:25:22Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wait & Watch!🔥😍 #shorts #surprise		KYLIE-LUNA	none	PT9S	2d	hd	false	false	831876	18839		0	237	public	youtube	true	true		
+Bh5_rgM9j1U	2022-02-05T19:22:49Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Uncommon Bikini🔥🔥 by 50s #shorts		KYLIE-LUNA	none	PT8S	2d	hd	false	false	211685	4947		0	73	public	youtube	true	true		
+MURHc4Na73g	2022-02-05T19:23:26Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Do you Like My Sunglasses? #shorts #wearitbig		KYLIE-LUNA	none	PT10S	2d	hd	false	false	179720	5125		0	114	public	youtube	true	true		
+3tM3Ikst-AA	2022-02-05T19:21:28Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	I'm Ready Bebe😁🔥 #shorts		KYLIE-LUNA	none	PT9S	2d	hd	false	false	775535	17755		0	518	public	youtube	true	true		
+SBJPfG-w5D0	2022-02-01T10:19:32Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Hi		KYLIE-LUNA	none	PT8S	2d	hd	false	false	196132	4530		0	194	public	youtube	true	true		
+3nHqsnF34WQ	2022-01-29T11:34:36Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	DC #shorts		KYLIE-LUNA	none	PT19S	2d	hd	false	false	115942	2366		0	87	public	youtube	true	true		
+yqdKe_rqmWQ	2022-01-29T11:31:30Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	:) #fyp #elfitup #thick #wearitbig		KYLIE-LUNA	none	PT10S	2d	hd	false	false	17605	1212		0	74	public	youtube	true	true		
+OV8ncI-uKfU	2022-01-29T11:27:55Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	😳😳 #Shorts		KYLIE-LUNA	none	PT9S	2d	hd	false	false	3814660	51265		0	789	public	youtube	true	true		
+QJf81gpUvOU	2022-01-26T19:08:03Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Hola!!! #shorts		KYLIE-LUNA	none	PT12S	2d	hd	false	false	1390338	40860		0	579	public	youtube	true	true		
+5KbqeexgjD0	2022-01-26T19:07:54Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Deep forest green #plussize #viral #elfitup		KYLIE-LUNA	none	PT10S	2d	hd	false	false	211218	7386		0	236	public	youtube	true	true		
+cQv69WTm7ao	2022-01-26T11:02:49Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Hi!..😘🔥 #shorts		KYLIE-LUNA	none	PT6S	2d	hd	false	false	261473	11581		0	193	public	youtube	true	true		
+KNlyEul9xnU	2022-01-26T11:01:34Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	50s Bikini on Home #shorts #viral		KYLIE-LUNA	none	PT8S	2d	hd	false	false	271736	10565		0	165	public	youtube	true	true		
+Z1oE7KWc_PQ	2022-01-26T11:00:09Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Uniform #shorts		KYLIE-LUNA	none	PT8S	2d	hd	false	false	165928	4192		0	63	public	youtube	true	true		
+3q92CaGn9uE	2022-01-26T10:59:06Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	TikTok New Trend #Shorts #Humor #fyp_fyp_fyp_fyp_fypppppp		KYLIE-LUNA	none	PT11S	2d	hd	false	false	305447	12081		0	189	public	youtube	true	true		
+LD_Kjh7ZhMU	2022-01-26T04:43:03Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Are you ready?👀👁️		KYLIE-LUNA	none	PT9S	2d	hd	false	false	3692616	136204		0	1329	public	youtube	true	true		
+tZvc0RwGiJU	2022-01-26T04:44:15Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Plus Size Bikini🔥🔥 #Shorts #plussize #humor		KYLIE-LUNA	none	PT13S	2d	hd	false	false	260412	10362		0	138	public	youtube	true	true		
+i4ilGc3gz7Y	2022-01-26T04:44:03Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Plus Size Pride🔥🔥 #Shorts #plussize #humor		KYLIE-LUNA	none	PT19S	2d	hd	false	false	128068	10154		0	330	public	youtube	true	true		
+8sxHMK2lz40	2022-01-26T04:43:24Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Plus Size Pride🔥🔥 #Shorts #plussize #humor		KYLIE-LUNA	none	PT7S	2d	hd	false	false	146768	6601		0	134	public	youtube	true	true		
+aCTntK3-adI	2022-01-26T04:41:57Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Hey Kitti 🐱🐈		KYLIE-LUNA	none	PT11S	2d	hd	false	false	4003	314		0	15	public	youtube	true	true		
+cpyRk2cloRo	2022-01-25T09:21:38Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Old Is Gold!🔥🔥		KYLIE-LUNA	none	PT10S	2d	hd	false	false	193719	5979		0	122	public	youtube	true	true		
+GdvgkqJCSdI	2022-01-25T09:20:16Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	I want you baby😍😘 #shorts		KYLIE-LUNA	none	PT10S	2d	hd	false	false	14380853	307511		0	4172	public	youtube	true	true		
+59cg8KwCywc	2022-01-25T09:22:01Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Plus Size Valentines! 💖🔥 #shorts #plussize		KYLIE-LUNA	none	PT9S	2d	hd	false	false	501339	14928		0	353	public	youtube	true	true		
+lUqgOMrakGM	2022-01-25T09:19:17Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Out Fit Change Challenge TikTok #shorts		KYLIE-LUNA	none	PT6S	2d	hd	false	false	252879	4711		0	46	public	youtube	true	true		
+lWN-n3wGzy0	2022-01-25T09:19:35Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	50s Beauty Bikini #shorts		KYLIE-LUNA	none	PT10S	2d	hd	false	false	167233	6498		0	77	public	youtube	true	true		
+UAnU0uQ9md8	2022-01-24T13:30:03Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Nope #Squishy #satisfying #shorts		KYLIE-LUNA	none	PT16S	2d	hd	false	false	223476	6564		0	135	public	youtube	true	true		
+7EyRvD-tYV0	2022-01-24T13:28:47Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Yup😘		KYLIE-LUNA	none	PT16S	2d	hd	false	false	153262	2490		0	75	public	youtube	true	true		
+Ei292K-cB3Q	2022-01-24T13:25:44Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Big Big Big, Wear It Big #shorts		KYLIE-LUNA	none	PT10S	2d	hd	false	false	175341	3400		0	38	public	youtube	true	true		
+EMdikX-Uznw	2022-01-24T13:27:14Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Nice Talent 🤩 #shorts		KYLIE-LUNA	none	PT11S	2d	hd	false	false	161259	3189		0	30	public	youtube	true	true		
+O7t5Yw0duLU	2022-01-23T20:06:29Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Bing Bong😲🔥 #Plussize #Shorts		KYLIE-LUNA	none	PT7S	2d	hd	false	false	85105	3273		0	68	public	youtube	true	true		
+Ho3LBkXzpz4	2022-01-23T18:40:06Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	From The Back TikTok Challenge #shorts		KYLIE-LUNA	none	PT10S	2d	hd	false	false	136297	4273		0	38	public	youtube	true	true		
+IusXRRnNhRI	2022-01-23T18:39:46Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Plus Size Lovers #shorts #nobra #plussize		KYLIE-LUNA	none	PT9S	2d	hd	false	false	119597	4034		0	48	public	youtube	true	true		
+gUAWT9iVCs8	2022-01-23T18:37:24Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Big Bank Challenge TikTok💖🔥 #shorts		KYLIE-LUNA	none	PT21S	2d	hd	false	false	117885	4764		0	42	public	youtube	true	true		
+12M4XbilI9U	2022-01-23T18:35:16Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Ponteci Ponteci! 😎🔥  #shorts		KYLIE-LUNA	none	PT12S	2d	hd	false	false	117388	3493		0	34	public	youtube	true	true		
+9B7SP6cvfcE	2022-01-23T10:53:45Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	From The Back #shorts		KYLIE-LUNA	none	PT25S	2d	hd	false	false	86893	2600		0	47	public	youtube	true	true		
+8KHZP59obgU	2022-01-23T09:48:05Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it Big Challenge 😍🔥 #shorts		KYLIE-LUNA	none	PT10S	2d	hd	false	false	3525	262		0	22	public	youtube	true	true		
+f9vgRn9d0XY	2022-01-22T18:26:21Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Hey Hey Hey!!🤩 #Shorts #Plussize		KYLIE-LUNA	none	PT6S	2d	hd	false	false	5956802	87157		0	2213	public	youtube	true	true		
+4UNAwAzRiOQ	2022-01-22T18:25:33Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Plus Size Dressing😍😍 #shorts #plussize		KYLIE-LUNA	none	PT15S	2d	hd	false	false	119804	2108		0	37	public	youtube	true	true		
+defJj8kp-84	2022-01-22T18:24:24Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	😅😅 #funnycouple #Shorts		KYLIE-LUNA	none	PT14S	2d	hd	false	false	115829	779		0	17	public	youtube	true	true		
+qkLz0pIXcC4	2022-01-22T18:19:00Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Help me please,  Need Friends😘😘		KYLIE-LUNA	none	PT10S	2d	hd	false	false	6664	485		0	23	public	youtube	true	true		
+Qk1Dz-sfgcM	2022-01-22T18:16:14Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Yes, I'm fat, So what?!		KYLIE-LUNA	none	PT11S	2d	hd	false	false	206604	5511		0	95	public	youtube	true	true		
+FdpQDls4VWk	2022-01-22T07:17:38Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	🥰🥰 #shorts		KYLIE-LUNA	none	PT10S	2d	hd	false	false	722150	22825		0	419	public	youtube	true	true		
+FDpFrFpBlMs	2022-01-22T07:11:06Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	#shorts		KYLIE-LUNA	none	PT10S	2d	hd	false	false	118723	3486		0	47	public	youtube	true	true		
+cA4Kmiy2V08	2022-01-22T07:10:32Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	🔥🔥🔥 #shorts		KYLIE-LUNA	none	PT10S	2d	hd	false	false	101314	3684		0	73	public	youtube	true	true		
+ee9XQ5W7uR4	2022-01-22T06:32:17Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	This Is Unbelievable😱😲 #PlusSize #Shorts #Big		KYLIE-LUNA	none	PT16S	2d	hd	false	false	166054	2703		0	92	public	youtube	true	true		
+74Eq-9yqscQ	2022-01-22T06:33:33Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Plus Size Babe Girl🥰🔥 #Shorts #plussize		KYLIE-LUNA	none	PT11S	2d	hd	false	false	83485	3040		0	58	public	youtube	true	true		
+j5doH2R1D_8	2022-01-21T20:02:04Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Drop it, Cozz I Don’t Care🤪 #shorts #humor		KYLIE-LUNA	none	PT9S	2d	hd	false	false	148482	4046		0	67	public	youtube	true	true		
+zkogQ01Dpos	2022-01-21T18:49:31Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Arabic Girls Dancing On Street😯🔥 #shorts		KYLIE-LUNA	none	PT9S	2d	hd	false	false	339102	6735		0	84	public	youtube	true	true		
+jPG5IwA1t24	2022-01-21T18:39:59Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	New Trend #viral #shorts		KYLIE-LUNA	none	PT12S	2d	hd	false	false	149464	4500		0	54	public	youtube	true	true		
+fiTQesn5Pwc	2022-01-21T18:40:25Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	This is Awesome #HumorMaxicano #shorts		KYLIE-LUNA	none	PT9S	2d	hd	false	false	108371	3555		0	38	public	youtube	true	true		
+vyY8W4y6ksU	2022-01-21T09:41:08Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Plus Size Pride🔥 #Shorts #plussize #humor		KYLIE-LUNA	none	PT6S	2d	hd	false	false	113325	4302		0	89	public	youtube	true	true		
+MEVH1NlXvsM	2022-01-21T09:40:19Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Big Big Big Wear It Big Challenge #shorts #plussize #nobra		KYLIE-LUNA	none	PT10S	2d	hd	false	false	4374	334		0	18	public	youtube	true	true		
+86GLH7b1w14	2022-01-21T09:40:46Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Plus Size Nursing Uniform ❤️ #shorts		KYLIE-LUNA	none	PT8S	2d	hd	false	false	4483	261		0	15	public	youtube	true	true		
+CKS5KK-2HHs	2022-01-21T05:39:51Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Si le das a la flechita y copias el link, sale unas Estrellitas 🌟		KYLIE-LUNA	none	PT12S	2d	hd	false	false	78759	2232		0	23	public	youtube	true	true		
+pE8eW1e0dFw	2022-01-21T05:22:03Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wait For Worth😘😘😘		KYLIE-LUNA	none	PT10S	2d	hd	false	false	1862156	28010		0	398	public	youtube	true	true		
+h7HrECEGMhA	2022-01-21T05:21:46Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	She is damn cute #plussize #shorts #big		KYLIE-LUNA	none	PT12S	2d	hd	false	false	145504	5345		0	63	public	youtube	true	true		
+k9L8xix6Dr8	2022-01-20T12:14:27Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Police On The Home 🔥⚠		KYLIE-LUNA	none	PT7S	2d	hd	false	false	97922	1778		0	31	public	youtube	true	true		
+uAwRkx9DnSc	2022-01-20T12:12:54Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Don’t Talk🤫 Just Watch😶 #shorts		KYLIE-LUNA	none	PT10S	2d	hd	false	false	97762	3398		0	76	public	youtube	true	true		
+fc7sGlIQegY	2022-01-20T12:12:30Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Hii!🙂 #shorts		KYLIE-LUNA	none	PT6S	2d	hd	false	false	4418186	93561		0	910	public	youtube	true	true		
+40NwajS9F4Q	2022-01-20T07:46:20Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	OMG😱 This is to Hot🔥		KYLIE-LUNA	none	PT8S	2d	hd	false	false	13520	774		0	30	public	youtube	true	true		
+qqdiCgm3Tss	2022-01-20T04:46:01Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Plus Size Beauty🥰🔥 #viral #shorts #diamondsinthesky		KYLIE-LUNA	none	PT13S	2d	hd	false	false	150472	10374		0	294	public	youtube	true	true		
+AZ88QGs_Obk	2022-01-20T04:14:01Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Hello, Gorgeous Basbousa ❤️		KYLIE-LUNA	none	PT16S	2d	hd	false	false	118878	5073		0	73	public	youtube	true	true		
+p_jAdR9fcds	2022-01-19T17:15:02Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Me pusieron esas cintas por un dolor en mi espalda 😩		KYLIE-LUNA	none	PT14S	2d	hd	false	false	72200	1853		0	24	public	youtube	true	true		
+EDh8uabVXhc	2022-01-18T20:01:55Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Plus Size Smart Girl Kylie Luna Beex #shorts #plussize		KYLIE-LUNA	none	PT9S	2d	hd	false	false	119179	4766		0	84	public	youtube	true	true		
+VDLDQoRKt7U	2022-01-17T19:34:16Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Plus Size Pressure💖🔥 #Shorts #plussize #humor		KYLIE-LUNA	none	PT6S	2d	hd	false	false	212430	8573		0	223	public	youtube	true	true		
+6ufcRt6I--Q	2022-01-17T19:31:28Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Plus Size Beauty🔥 #Shorts #plussize #humor		KYLIE-LUNA	none	PT15S	2d	hd	false	false	135354	8102		0	195	public	youtube	true	true		
+GuFYp2n7IS0	2022-01-17T19:30:03Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Plus Size Proud🔥 #Shorts #plussize #humor		KYLIE-LUNA	none	PT10S	2d	hd	false	false	5127326	104363		0	2414	public	youtube	true	true		
+-Myo7Xh2VIg	2022-01-17T19:23:14Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	PlusSize Beauty🔥🔥 #shorts		KYLIE-LUNA	none	PT16S	2d	hd	false	false	131751	5274		0	66	public	youtube	true	true		
+jxJkVgbSuXU	2022-01-17T03:37:54Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	17 January 2022		KYLIE-LUNA	none	PT15S	2d	hd	false	false	94847	3156		0	34	public	youtube	true	true		
+mkx2m83mA4Q	2022-01-17T03:37:52Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	17 January 2022		KYLIE-LUNA	none	PT14S	2d	hd	false	false	54031	2041		0	25	public	youtube	true	true		
+3U50pjIbtS4	2022-01-17T03:36:51Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	17 January 2022		KYLIE-LUNA	none	PT16S	2d	hd	false	false	130512	3558		0	36	public	youtube	true	true		
+f0mzpZ-YLfw	2022-01-17T03:37:32Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	17 January 2022		KYLIE-LUNA	none	PT16S	2d	hd	false	false	7673	432		0	27	public	youtube	true	true		
+pY-mIBNwhDo	2022-01-17T03:37:04Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	17 January 2022		KYLIE-LUNA	none	PT22S	2d	hd	false	false	4508	162		0	14	public	youtube	true	true		
+lAMVjWqs_CI	2022-01-17T03:36:44Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	17 January 2022		KYLIE-LUNA	none	PT10S	2d	hd	false	false	45073	1407		0	18	public	youtube	true	true		
+kVCZRtWBapU	2022-01-17T03:35:13Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	17 January 2022		KYLIE-LUNA	none	PT10S	2d	hd	false	false	4316	190		0	6	public	youtube	true	true		
+5D16oW2iJKY	2022-01-17T03:36:18Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	17 January 2022		KYLIE-LUNA	none	PT10S	2d	hd	false	false	119153	2209		0	18	public	youtube	true	true		
+5x0jrda4xgk	2022-01-17T03:35:27Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	17 January 2022		KYLIE-LUNA	none	PT10S	2d	hd	false	false	2505	157		0	7	public	youtube	true	true		
+DpzwFrBBZBU	2022-01-17T03:35:47Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	17 January 2022		KYLIE-LUNA	none	PT11S	2d	hd	false	false	154144	3056		0	34	public	youtube	true	true		
+nAyHQ92rXjM	2022-01-17T03:18:06Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	17 January 2022		KYLIE-LUNA	none	PT8S	2d	hd	false	false	124577	2610		0	30	public	youtube	true	true		
+B_Er9uubX_Q	2022-01-17T02:56:43Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Confidence #plussize #shorts  #viral #lemama		KYLIE-LUNA	none	PT11S	2d	hd	false	false	241860	8957		0	268	public	youtube	true	true		
+LHKrBy6a0f8	2022-01-17T02:58:08Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Plus Size Pride #shorts  #viral #fego		KYLIE-LUNA	none	PT7S	2d	hd	false	false	2370491	42360		0	868	public	youtube	true	true		
+wuVRxxgJ9Tw	2022-01-16T21:24:34Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	17 January 2022		KYLIE-LUNA	none	PT10S	2d	hd	false	false	67303	1790		0	27	public	youtube	true	true		
+YaJrFiiNeXI	2022-01-16T21:17:44Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	La 69 #shorts		KYLIE-LUNA	none	PT16S	2d	hd	false	false	82170	2883		0	25	public	youtube	true	true		
+kxjmt_w39xw	2022-01-16T21:12:30Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	kimberly.loaiza #shorts		KYLIE-LUNA	none	PT8S	2d	hd	false	false	34231	959		0	13	public	youtube	true	true		
+Gb7r8zjcu7U	2022-01-16T21:12:14Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	kimberly.loaiza #shorts		KYLIE-LUNA	none	PT13S	2d	hd	false	false	47783	469		0	9	public	youtube	true	true		
+awszFCHw6Ok	2022-01-15T20:27:50Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Hey Guys...!!		KYLIE-LUNA	none	PT10S	2d	hd	false	false	409677	13872		0	332	public	youtube	true	true		
+7G5tfefLADA	2022-01-15T20:28:15Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Following This Trend! 😁		KYLIE-LUNA	none	PT7S	2d	hd	false	false	219968	11017		0	232	public	youtube	true	true		
+BCIkdjycYA8	2022-01-15T20:27:39Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Big Big Big... Wear it Big 😍😜		KYLIE-LUNA	none	PT10S	2d	hd	false	false	174031	8050		0	194	public	youtube	true	true		
+zm-A8D49lyI	2022-01-14T11:09:49Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Tiktok New Trend #trending #shorts #tiktok		KYLIE-LUNA	none	PT14S	2d	hd	false	false	53767	1330		0	23	public	youtube	true	true		
+nMzi5N5R5E8	2022-01-14T11:05:25Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	No Bra Challenge💕 | Wear it Big🔥 | Big Bank🤩 | BooM BooM💥 | Bounce Challenge🤷\u200d♀️ #Shorts #fyp		KYLIE-LUNA	none	PT9S	2d	hd	false	false	55822	2200		0	40	public	youtube	true	true		
+-5Wx4V3t3OA	2022-01-14T11:04:17Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Soft & Squishyyy😘😘💋		KYLIE-LUNA	none	PT8S	2d	hd	false	false	118114	3880		0	67	public	youtube	true	true		
+gqp_Idu1r9g	2022-01-14T10:40:00Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Tiktok New Trend #trending #shorts #tiktok		KYLIE-LUNA	none	PT8S	2d	hd	false	false	80426	2962		0	83	public	youtube	true	true		
+3RCPkCCF0tA	2022-01-14T10:29:52Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	SOFT & SQUISHY 💋😘		KYLIE-LUNA	none	PT13S	2d	hd	false	false	124497	3488		0	49	public	youtube	true	true		
+1gw3DhJPnDk	2022-01-13T18:44:15Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	A Surprise For You!		KYLIE-LUNA	none	PT10S	2d	hd	false	false	95413	2652		0	46	public	youtube	true	true		
+GnLkwAPFnIU	2022-01-13T09:31:17Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	La verdad #Shorts		KYLIE-LUNA	none	PT8S	2d	hd	false	false	83226	2532		0	30	public	youtube	true	true		
+mIJfgZN1yos	2022-01-13T09:28:48Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	La verdad #Shorts		KYLIE-LUNA	none	PT10S	2d	hd	false	false	48458	1295		0	17	public	youtube	true	true		
+lIBo2JJiqNY	2022-01-13T09:30:28Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	La verdad #Shorts		KYLIE-LUNA	none	PT9S	2d	hd	false	false	101416	2249		0	24	public	youtube	true	true		
+xJxpxFqzMoE	2022-01-13T09:29:27Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	La verdad #Shorts		KYLIE-LUNA	none	PT10S	2d	hd	false	false	54570	1142		0	13	public	youtube	true	true		
+N_TYZEE_y3c	2022-01-13T09:29:51Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	La verdad #Shorts		KYLIE-LUNA	none	PT10S	2d	hd	false	false	60436	2215		0	47	public	youtube	true	true		
+ktY04-Mbjwc	2022-01-13T09:30:37Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	La verdad #Shorts		KYLIE-LUNA	none	PT10S	2d	hd	false	false	3393	285		0	12	public	youtube	true	true		
+VZxLZr4QSPw	2022-01-13T09:28:19Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	La verdad #Shorts		KYLIE-LUNA	none	PT10S	2d	hd	false	false	41779	1209		0	12	public	youtube	true	true		
+ZI2ohT3U9HI	2022-01-13T09:02:10Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	I’m not the drama #fyp #drama #dramatiktok #amithevillian #imnot #fypシ		KYLIE-LUNA	none	PT9S	2d	hd	false	false	59314	1452		0	19	public	youtube	true	true		
+tVfKY1sO3c8	2022-01-13T09:00:27Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Humor Mexicano #shorts		KYLIE-LUNA	none	PT8S	2d	hd	false	false	60967	2042		0	27	public	youtube	true	true		
+p5unFwMx0iw	2022-01-13T07:19:52Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Million View TikTok🔥🔥		KYLIE-LUNA	none	PT16S	2d	hd	false	false	42837	608		0	10	public	youtube	true	true		
+UsDgChIK-qs	2022-01-13T06:59:37Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Plus Size Pride🔥 #Shorts #plussize #humor		KYLIE-LUNA	none	PT10S	2d	hd	false	false	12720839	163792		0	3388	public	youtube	true	true		
+9VoIn7S7yyE	2022-01-13T06:58:29Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	This is So Funny😂😂 #FunnyCouple		KYLIE-LUNA	none	PT9S	2d	hd	false	false	37266	426		0	6	public	youtube	true	true		
+6e-9q4_iSTI	2022-01-13T06:58:01Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Uniform Challenge 2022🔥🔥		KYLIE-LUNA	none	PT8S	2d	hd	false	false	45045	768		0	7	public	youtube	true	true		
+h8lX_dvaELU	2022-01-13T06:59:01Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Plus Size & Proud #shorts #plussize		KYLIE-LUNA	none	PT11S	2d	hd	false	false	3573105	54459		0	1491	public	youtube	true	true		
+jrKdRw0avQg	2022-01-13T06:57:03Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Soft & Squishy Mom💋😘 #ftw		KYLIE-LUNA	none	PT8S	2d	hd	false	false	85247	2578		0	60	public	youtube	true	true		
+gfbnPW91_1c	2022-01-12T18:52:46Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	No Bra Trend #Shorts #trending #tiktok		KYLIE-LUNA	none	PT9S	2d	hd	false	false	58722	2200		0	56	public	youtube	true	true		
+25E_brJenOI	2022-01-12T10:14:45Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	que lastima! Vaimonroe 🥱 #xyzbca		KYLIE-LUNA	none	PT8S	2d	hd	false	false	36820	766		0	13	public	youtube	true	true		
+tGkmqCRLiic	2022-01-12T10:07:06Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it Big Challenge! #trending #NoBra #Shorts		KYLIE-LUNA	none	PT10S	2d	hd	false	false	26065	1342		0	34	public	youtube	true	true		
+DYXfuUnvL2c	2022-01-12T10:07:23Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it Big Challenge!! #trending #NoBra #Shorts		KYLIE-LUNA	none	PT10S	2d	hd	false	false	4133	435		0	21	public	youtube	true	true		
+uAZu0_5qHBg	2022-01-12T10:00:22Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	TikTok No Bra Challenge #trending #shorts #fypシ		KYLIE-LUNA	none	PT9S	2d	hd	false	false	50701	1895		0	38	public	youtube	true	true		
+XD999KU7bK4	2022-01-12T09:54:27Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Oh My God! This is So Hot🔥🔥  #trending #nobra #thicktok #boostofhope		KYLIE-LUNA	none	PT8S	2d	hd	false	false	34628	1267		0	19	public	youtube	true	true		
+G7EQkj8b4S8	2022-01-12T09:53:09Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	you might know @thedaniaveryy already 😘 #wearitbig #thick #bisexual🌈 #thicktok		KYLIE-LUNA	none	PT10S	2d	hd	false	false	49236	1294		0	39	public	youtube	true	true		
+ZQxZig6Oqa4	2022-01-12T09:49:57Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	what am I looking at? #shorts #trending #thick		KYLIE-LUNA	none	PT10S	2d	hd	false	false	46120	1721		0	30	public	youtube	true	true		
+lQ59LHC9wV4	2022-01-12T09:51:36Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	loving this sunlight #nobra  #thicktok #gamergoals #wearitbig #shorts		KYLIE-LUNA	none	PT9S	2d	hd	false	false	33266	1588		0	22	public	youtube	true	true		
+dGP7gkC44L0	2022-01-12T09:45:06Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	I promise I give good hugs 😌 #fyp #thick #thicktok #putmefirst		KYLIE-LUNA	none	PT9S	2d	hd	false	false	47928	2652		0	66	public	youtube	true	true		
+tT8p1BiF_Uc	2022-01-12T09:41:15Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	I have really big plants!! #fyp #thick #wearitbig #shorts		KYLIE-LUNA	none	PT10S	2d	hd	false	false	152957	6504		0	407	public	youtube	true	true		
+faINa-sZ1yM	2021-12-28T19:34:53Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	SOFT & SQUISHY 😘💋		KYLIE-LUNA	none	PT9S	2d	hd	false	false	996053	19181		0	484	public	youtube	true	true		
+Lz3GEW9rdco	2021-12-28T19:34:23Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	WEAR IT BIG!!!!  #curvy #nobra		KYLIE-LUNA	none	PT6S	2d	hd	false	false	71700	2414		0	68	public	youtube	true	true		
+pdDycRrGq1Y	2021-12-28T18:54:28Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Need Someone! #Wearitbig #dany #HotShorts #nobra		KYLIE-LUNA	none	PT10S	2d	hd	false	false	32091	1151		0	46	public	youtube	true	true		
+CPp3ZcP5IjU	2021-12-27T19:01:20Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	And why aren’t you in uniform?  #shorts		KYLIE-LUNA	none	PT8S	2d	hd	false	false	44645	786		0	14	public	youtube	true	true		
+wRohsX2eV5c	2021-12-27T19:02:00Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Knock Knock Challenge (Excuse me) #shorts #wearitbig		KYLIE-LUNA	none	PT12S	2d	hd	false	false	75001	2731		0	58	public	youtube	true	true		
+PCbM90wHm1k	2021-12-27T18:00:17Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Hii!! #Kylie #Wearitbig #Curvy #Plussize #Nobra		KYLIE-LUNA	none	PT8S	2d	hd	false	false	42849	1205		0	34	public	youtube	true	true		
+g-IbBXLu_IE	2021-12-27T07:11:12Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	find the rainbow #Luna #Kylie  #MyPlayoffPicks #wearitbig #thicktok #shorts #nobra		KYLIE-LUNA	none	PT10S	2d	hd	false	false	28524	1437		0	50	public	youtube	true	true		
+p_9aKWsz-P4	2021-12-27T07:04:53Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Corsets Training		KYLIE-LUNA	none	PT20S	2d	hd	false	false	72378	1608		0	33	public	youtube	true	true		
+fGmWAoBq-U4	2021-12-26T19:11:25Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Malutrevejo on Red Bikini 💃		KYLIE-LUNA	none	PT14S	2d	hd	false	false	60269	1851		0	25	public	youtube	true	true		
+UqQmfMAY3ho	2021-12-26T19:08:39Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Simple Dimple Challenge🔥🎄 #babygirl #santagirl #thicktok #foryoufest #shorts		KYLIE-LUNA	none	PT9S	2d	hd	false	false	36765	1154		0	13	public	youtube	true	true		
+SbcmonQYJtc	2021-12-25T19:30:50Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Hands up and Bounce #shorts #Nobra		KYLIE-LUNA	none	PT12S	2d	hd	false	false	39549	910		0	24	public	youtube	true	true		
+gjLMi7JtONU	2021-12-25T19:30:28Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Hands up and Bounce #shorts #Nobra		KYLIE-LUNA	none	PT12S	2d	hd	false	false	51735	1620		0	30	public	youtube	true	true		
+sViJymA8ZrY	2021-12-25T19:32:15Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Santa Is Here☃️🎄 #MarryChristmas #Santa #Shorts		KYLIE-LUNA	none	PT9S	2d	hd	false	false	51086	609		0	16	public	youtube	true	true		
+t1o2niwzWbs	2021-12-25T19:31:59Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Cute Santa Girl🥰☃️ #MarryChristmas #Santa #Shorts		KYLIE-LUNA	none	PT9S	2d	hd	false	false	39599	500		0	12	public	youtube	true	true		
+2owZNaivwV0	2021-12-25T19:01:37Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Drunk Malutrevejo		KYLIE-LUNA	none	PT9S	2d	hd	false	false	34718	838		0	19	public	youtube	true	true		
+qW0KkoVBor4	2021-12-24T18:32:04Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Ring Light Trend 122 #infinity #shorts		KYLIE-LUNA	none	PT8S	2d	hd	false	false	32402	913		0	15	public	youtube	true	true		
+rXWSrgkSQ9Q	2021-12-23T09:47:46Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	BoOM BoOM💥🔥		KYLIE-LUNA	none	PT13S	2d	hd	false	false	42335	1142		0	24	public	youtube	true	true		
+--8dwXPsFDo	2021-12-23T09:28:53Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Sexy No Bra Shorts		KYLIE-LUNA	none	PT11S	2d	hd	false	false	53350	1876		0	26	public	youtube	true	true		
+nHrMBOyVnBc	2021-12-21T19:40:41Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	SOFT & SQUISHY 🤤		KYLIE-LUNA	none	PT8S	2d	hd	false	false	46974	1442		0	34	public	creativeCommon	true	true		
+md5ragpUB8o	2021-12-21T09:55:32Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it Big Luna		KYLIE-LUNA	none	PT10S	2d	hd	false	false	35261	1641		0	48	public	youtube	true	true		
+v7arIf2n7Fw	2021-12-21T09:48:38Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Hi... I'm in No Bra🐰❤️🔥		KYLIE-LUNA	none	PT16S	2d	hd	false	false	42495	1428		0	32	public	youtube	true	true		
+zTx6mWoJMFc	2021-12-21T09:22:08Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it Big Challenge #shorts #2501		KYLIE-LUNA	none	PT10S	2d	hd	false	false	9248	488		0	13	public	youtube	true	true		
+8hZDpXpCK40	2021-12-21T09:21:45Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Bugs Bunny🔥🔥 #Shorts #fyp #bugsbunny		KYLIE-LUNA	none	PT11S	2d	hd	false	false	36169	500		0	10	public	youtube	true	true		
+rH6vnex4V1Y	2021-12-21T09:20:30Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	🐻🐰		KYLIE-LUNA	none	PT7S	2d	hd	false	false	47140	1038		0	11	public	youtube	true	true		
+jieK5lujRv0	2021-12-21T09:19:44Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Plus Size Chubby No Bra #shorts #nobra		KYLIE-LUNA	none	PT7S	2d	hd	false	false	53069	1192		0	12	public	youtube	true	true		
+kbkPArey-MA	2021-12-17T18:48:57Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	18 December 2021		KYLIE-LUNA	none	PT12S	2d	hd	false	false	45251	468		0	17	public	youtube	true	true		
+Ns_SlduBWDY	2021-12-16T09:50:43Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Motherf*kr Star🌟		KYLIE-LUNA	none	PT6S	2d	hd	false	false	61345	2025		0	40	public	youtube	true	true		
+tYIgkoOucKI	2021-12-16T09:18:12Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Uniform Challenge TikTok		KYLIE-LUNA	none	PT8S	2d	hd	false	false	45945	944		0	22	public	youtube	true	true		
+K7Dsp-UEEuw	2021-12-14T19:00:25Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Chubby Holiday #shorts		KYLIE-LUNA	none	PT10S	2d	hd	false	false	33342	1886		0	77	public	youtube	true	true		
+br2t1Q0qeSo	2021-12-14T19:00:47Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Just Kidding 🤣		KYLIE-LUNA	none	PT11S	2d	hd	false	false	44720	591		0	19	public	youtube	true	true		
+S1BHaBgzSz0	2021-12-14T18:59:58Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	1st Time Bikini😃		KYLIE-LUNA	none	PT10S	2d	hd	false	false	9204	658		0	52	public	youtube	true	true		
+qCAYeE8sTog	2021-12-11T19:48:26Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	#shorts		KYLIE-LUNA	none	PT9S	2d	hd	false	false	12074	1047		0	46	public	youtube	true	true		
+ZsdAAKm4IWE	2021-12-11T19:48:21Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Hey bebe, I love your...!		KYLIE-LUNA	none	PT6S	2d	hd	false	false	28800	1258		0	29	public	youtube	true	true		
+jm_C13pPK9A	2021-12-09T19:33:25Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Hi! Knock Knock!!		KYLIE-LUNA	none	PT11S	2d	hd	false	false	1420039	22100		0	718	public	youtube	true	true		
+mLnPrqnG4AM	2021-12-09T14:00:46Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Big Lady Kylie-Luna Red Dress		KYLIE-LUNA	none	PT8S	2d	hd	false	false	1205402	33402		0	803	public	youtube	true	true		
+BFHNzjuOMXU	2021-12-09T14:00:30Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear It Big #shorts 162 Kylie-Luna		KYLIE-LUNA	none	PT10S	2d	hd	false	false	6656	506		0	57	public	youtube	true	true		
+KybZOZRxlW4	2021-12-09T14:01:04Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	My New Shorts		KYLIE-LUNA	none	PT6S	2d	hd	false	false	1060840	28125		0	570	public	youtube	true	true		
+kHSMk2JC_NY	2021-12-08T18:06:35Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Carpet 🤣		KYLIE-LUNA	none	PT10S	2d	hd	false	false	38176	312		0	14	public	youtube	true	true		
+vgTlishN0eM	2021-12-08T09:48:22Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Plus Size Tiktok #shorts		KYLIE-LUNA	none	PT8S	2d	hd	false	false	33545	1627		0	51	public	youtube	true	true		
+OWpTMwPY1Yk	2021-12-07T18:51:53Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wizkid Joro Balancing Dance🔥		KYLIE-LUNA	none	PT8S	2d	hd	false	false	39176	538		0	13	public	youtube	true	true		
+dc6TYXbILg4	2021-12-07T18:49:23Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Shake yourBody like a Belly Dancer...		KYLIE-LUNA	none	PT11S	2d	hd	false	false	48160	934		0	11	public	youtube	true	true		
+5RWGbZUzWOk	2021-12-07T13:44:50Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Squishy Girl🤤❤️		KYLIE-LUNA	none	PT7S	2d	hd	false	false	31927	1066		0	20	public	youtube	true	true		
+wMSh8pFVt3s	2021-12-07T12:52:39Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Hey Mom, Drop Your Weapon! 🔥 +37		KYLIE-LUNA	none	PT10S	2d	hd	false	false	21261	659		0	18	public	youtube	true	true		
+_-NJspLRPbM	2021-12-07T12:51:01Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	hi!!! #fyp #KraftMacMeSkip #MacysGiftTok #thick #thicktok #shorts		KYLIE-LUNA	none	PT11S	2d	hd	false	false	24292	907		0	31	public	youtube	true	true		
+21j5YWQ4fpo	2021-12-07T12:27:55Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	it was magical tbh @thedaniaveryy #thick #fyp #SimsSelves #KraftMacMeSkip #bisexual		KYLIE-LUNA	none	PT7S	2d	hd	false	false	17757	948		0	22	public	youtube	true	true		
+prduW3YbyuE	2021-12-07T12:23:33Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Когда твоя училка Скарлетт Йоханссон @mimisskate		KYLIE-LUNA	none	PT12S	2d	hd	false	false	25029	397		0	5	public	youtube	true	true		
+2rcbqdr885g	2021-12-06T13:52:21Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Big BiG Big...  Wear It Big 160		KYLIE-LUNA	none	PT10S	2d	hd	false	false	26469	406		0	11	public	youtube	true	true		
+ATYWGJXuRpQ	2021-12-06T08:10:44Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Hey Ladies....		KYLIE-LUNA	none	PT12S	2d	hd	false	false	25426	337		0	8	public	youtube	true	true		
+zyds-WcFGtA	2021-12-06T08:09:51Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Malutrevejo Back TATTOO		KYLIE-LUNA	none	PT16S	2d	hd	false	false	18869	513		0	12	public	youtube	true	true		
+gltA3rA5-KQ	2021-12-06T08:09:25Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear It Big Challenge 🔥🔥 #Kylie #Luna #plussize #nobra		KYLIE-LUNA	none	PT10S	2d	hd	false	false	18165	821		0	64	public	youtube	true	true		
+wQrkhmtaefY	2021-12-06T08:08:15Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Malutrevejo Throw Her Phone #shorts		KYLIE-LUNA	none	PT16S	2d	hd	false	false	25083	576		0	10	public	youtube	true	true		
+VLIPmmQUSGU	2021-12-06T08:06:58Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Boxer Girls Dancing #shorts		KYLIE-LUNA	none	PT12S	2d	hd	false	false	23420	432		0	6	public	youtube	true	true		
+3iloiITq_os	2021-12-06T08:05:25Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	SIMPLE DIMPLE #50s #shorts #nobra		KYLIE-LUNA	none	PT8S	2d	hd	false	false	19434	500		0	11	public	youtube	true	true		
+_6GJHsE9mtQ	2021-12-06T08:01:56Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Ring Light Challenge🔥🔥 #16 #shorts #reels #viral #ringlight		KYLIE-LUNA	none	PT9S	2d	hd	false	false	30373	643		0	8	public	youtube	true	true		
+jo0ltyDL-oU	2021-12-06T07:55:16Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Ring Light Challenge🔥🔥 #21 #shorts #reels #viral #ringlight		KYLIE-LUNA	none	PT9S	2d	hd	false	false	24094	388		0	3	public	youtube	true	true		
+ZT3PaPxMkuw	2021-12-06T07:53:48Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Ring Light Challenge🔥🔥 #20 #Shorts #Reels #Viral #Ringlight		KYLIE-LUNA	none	PT9S	2d	hd	false	false	19018	273		0	5	public	youtube	true	true		
+kgP1tS1Lzd8	2021-12-06T07:47:00Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Ring Light Challenge🔥🔥 #18 #Shorts #Viral #Ringlight		KYLIE-LUNA	none	PT9S	2d	hd	false	false	23989	436		0	6	public	youtube	true	true		
+kWL18CFhnco	2021-12-06T07:45:42Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Ring Light Challenge🔥🔥 #14 #Shorts #Viral #Ringlight		KYLIE-LUNA	none	PT9S	2d	hd	false	false	14780	347		0	5	public	youtube	true	true		
+sbxJM6aglmk	2021-12-06T07:45:11Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Ring Light Challenge🔥🔥 #13 #Shorts #Viral #Ringlight		KYLIE-LUNA	none	PT9S	2d	hd	false	false	17858	251		0	5	public	youtube	true	true		
+sSviC_QaMJ8	2021-12-06T07:44:54Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Ring Light Challenge😈🔥 #12 #Shorts #Viral #Ringlight		KYLIE-LUNA	none	PT9S	2d	hd	false	false	16893	246		0	7	public	youtube	true	true		
+sOU_FTw0ZLA	2021-12-06T07:44:01Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Ring Light Challenge🔥🔥 #10 #Shorts #Viral #Ringlight		KYLIE-LUNA	none	PT9S	2d	hd	false	false	18202	173		0	9	public	youtube	true	true		
+OJpftY1sAKQ	2021-12-06T07:43:25Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Ring Light Challenge🔥🔥 #9 #Shorts #Viral #Ringlight		KYLIE-LUNA	none	PT9S	2d	hd	false	false	10116	190		0	7	public	youtube	true	true		
+X8pgZFDJOQ8	2021-12-06T07:42:25Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Ring Light Challenge🔥🔥 #7 #Shorts #Viral #RingLight		KYLIE-LUNA	none	PT10S	2d	hd	false	false	13600	359		0	9	public	youtube	true	true		
+8CAgSuXkK4Y	2021-12-06T07:41:34Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Ring Light Challenge🔥🔥 Ipad #6 #Shorts #Viral #RingLight		KYLIE-LUNA	none	PT10S	2d	hd	false	false	10257	278		0	5	public	youtube	true	true		
+yyjt-ORHmds	2021-12-06T07:40:53Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Ring Light Challenge🔥😎 TikTok #5 #Shorts #Viral #RingLight		KYLIE-LUNA	none	PT7S	2d	hd	false	false	15382	164		0	4	public	youtube	true	true		
+vWVSK18Dq_8	2021-12-06T07:38:42Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Ring Light Challenge🔥 TikTok #3 #Shorts #Viral #RingLight		KYLIE-LUNA	none	PT9S	2d	hd	false	false	11860	279		0	6	public	youtube	true	true		
+NuW_eUiwlmI	2021-12-06T07:37:46Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Ring Light Challenge🔥 TikTok #2 #Shorts #Viral #RingLight		KYLIE-LUNA	none	PT9S	2d	hd	false	false	9294	197		0	3	public	youtube	true	true		
+qPgAJQOkxwI	2021-12-06T07:39:09Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Ring Light Challenge🔥🔥 TikTok #4 #Shorts #Viral #RingLight		KYLIE-LUNA	none	PT9S	2d	hd	false	false	10026	139		0	3	public	youtube	true	true		
+y_Bgtc-kcaE	2021-12-06T07:37:13Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Ring Light Challenge🔥 TikTok #1 #Shorts #Viral #RingLight		KYLIE-LUNA	none	PT9S	2d	hd	false	false	10315	245		0	8	public	youtube	true	true		
+xnKWu5dtA7w	2021-11-28T15:54:43Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	I'm Seeing BTS in Two Hours		KYLIE-LUNA	none	PT9S	2d	hd	false	false	23187	567		0	23	public	youtube	true	true		
+-9vG0yzrSpA	2021-11-27T08:00:31Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Uniform Challenge New* #shorts	My Secret Photos👉\n https://shrinke.me/SPnTNl6	KYLIE-LUNA	none	PT8S	2d	hd	false	false	30727	1235		0	28	public	youtube	true	true		
+2xolAAcXOGY	2021-11-26T09:47:11Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Friends, Viral This Trends!🥰		KYLIE-LUNA	none	PT8S	2d	hd	false	false	29896	958		0	34	public	youtube	true	true		
+PmyjXpNT_3c	2021-11-25T21:13:50Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	UNIFORM Challenge 🔥🔥		KYLIE-LUNA	none	PT8S	2d	hd	false	false	23645	855		0	23	public	youtube	true	true		
+tbKtgoEBlww	2021-11-25T10:27:28Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Threat or Promise!?		KYLIE-LUNA	none	PT7S	2d	hd	false	false	1147486	21257		0	450	public	youtube	true	true		
+yg1HLr7TDVI	2021-11-24T21:10:03Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	BIKINI DOLL🔥🔥		KYLIE-LUNA	none	PT16S	2d	hd	false	false	30521	1113		0	49	public	youtube	true	true		
+z-NsR3atggY	2021-11-24T14:30:41Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	My Pants Are So BiG😅		KYLIE-LUNA	none	PT12S	2d	hd	false	false	27129	731		0	12	public	youtube	true	true		
+CxiDOtaDvn0	2021-11-24T14:31:05Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	From the Back😍🔥		KYLIE-LUNA	none	PT10S	2d	hd	false	false	27096	798		0	24	public	youtube	true	true		
+0zj8utnikZ0	2021-11-23T19:02:25Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	WEAR IT BIG!!!		KYLIE-LUNA	none	PT10S	2d	hd	false	false	30554	1133		0	37	public	youtube	true	true		
+gW0FPksE0gM	2021-11-23T19:01:45Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	DROP IT! CHALLENGE 🔥🔥		KYLIE-LUNA	none	PT16S	2d	hd	false	false	28875	1310		0	37	public	youtube	true	true		
+IY5I2GHIWfI	2021-11-23T19:00:48Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	BOOM BOOM BIG GIRL ° GAMBARE		KYLIE-LUNA	none	PT11S	2d	hd	false	false	14981	531		0	21	public	youtube	true	true		
+S3A17Bqi7xE	2021-11-23T19:02:21Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	CAT LICK! CHALLENGE 🔥💃		KYLIE-LUNA	none	PT10S	2d	hd	false	false	11265	597		0	31	public	youtube	true	true		
+z2QcH1EeX7E	2021-11-23T19:00:12Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	CAT LICK CHALLENGE 🔥🔥		KYLIE-LUNA	none	PT10S	2d	hd	false	false	4089	250		0	16	public	youtube	true	true		
+CFkVYi5wEKM	2021-11-23T18:57:58Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Gambare - Gambare No🤤 Bra, Big Girl😍 Anime, Mks Vision		KYLIE-LUNA	none	PT11S	2d	hd	false	false	3136	163		0	8	public	youtube	true	true		
+3yREKEyddyw	2021-11-23T18:55:59Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	No Bra Plus Size #Shorts Video❤️		KYLIE-LUNA	none	PT9S	2d	hd	false	false	20187	672		0	11	public	youtube	true	true		
+Y9ErKdoQjsk	2021-11-23T06:50:54Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	No bra Challenge #shorts		KYLIE-LUNA	none	PT16S	2d	hd	false	false	21451	482		0	18	public	youtube	true	true		
+wKCIU8XpKdM	2021-11-23T06:50:22Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Plus Size or Over Size?		KYLIE-LUNA	none	PT13S	2d	hd	false	false	21444	597		0	46	public	youtube	true	true		
+1fqxgpOva8g	2021-11-23T06:39:11Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Satisfying Squishy Baby Girl Kylie-Luna		KYLIE-LUNA	none	PT13S	2d	hd	false	false	357817	17026		0	401	public	youtube	true	true		
+bat2m-GVfR0	2021-11-23T06:38:23Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Big Bounce Challenge 🔥		KYLIE-LUNA	none	PT11S	2d	hd	false	false	11544	337		0	12	public	youtube	true	true		
+NNQn7OcOgGU	2021-11-22T20:31:31Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Lovely Moves Slow Motion 😅😅		KYLIE-LUNA	none	PT20S	2d	hd	false	false	27918	298		0	15	public	youtube	true	true		
+h78aziJgGvg	2021-11-22T04:53:50Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	MIRROR 🔥		KYLIE-LUNA	none	PT8S	2d	hd	false	false	14210	575		0	14	public	youtube	true	true		
+-dT6J02kA0I	2021-11-21T19:44:34Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Couple Muscle Dance💪💃		KYLIE-LUNA	none	PT12S	2d	hd	false	false	11079	150		0	13	public	youtube	true	true		
+YUnCZHtq12o	2021-11-21T10:48:47Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	DOME LIPA🔥		KYLIE-LUNA	none	PT16S	2d	hd	false	false	17206	163		0	8	public	youtube	true	true		
+LPtsGYzu-hY	2021-11-21T10:47:43Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Amanda Diaz		KYLIE-LUNA	none	PT11S	2d	hd	false	false	10624	354		0	7	public	youtube	true	true		
+lOfy6PxLK68	2021-11-21T10:37:20Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Luna Phao		KYLIE-LUNA	none	PT14S	2d	hd	false	false	4354	316		0	18	public	youtube	true	true		
+a80bOPsxhVI	2021-11-21T10:38:17Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	CUTE DANY🔥		KYLIE-LUNA	none	PT8S	2d	hd	false	false	10135	453		0	30	public	youtube	true	true		
+w4yJ1Vu2g6k	2021-11-21T10:38:33Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	I'm Luna #shorts		KYLIE-LUNA	none	PT6S	2d	hd	false	false	33917	1019		0	33	public	youtube	true	true		
+5uRvVeiITUQ	2021-11-21T10:36:36Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	WEAR IT BIG!!  Luna		KYLIE-LUNA	none	PT10S	2d	hd	false	false	16196	788		0	53	public	youtube	true	true		
+xNZ3Ss02lbs	2021-11-20T19:42:15Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Que Quede Claro🐻		KYLIE-LUNA	none	PT13S	2d	hd	false	false	23247	577		0	13	public	youtube	true	true		
+0m4Va9RcM7A	2021-11-20T19:40:22Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Don't forget the fact that i started going to raves back in the 90s		KYLIE-LUNA	none	PT13S	2d	hd	false	false	18908	676		0	12	public	youtube	true	true		
+V0t-gU1RUjs	2021-11-19T09:57:46Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Funny Talking Cactus 🌵🌵 Crazy Cactus Toy Repeat Voice 😲🌵	𝗖𝗹𝗶𝗰𝗸 𝗵𝗲𝗿𝗲 𝘁𝗼 𝗕𝘂𝘆 𝘁𝗵𝗲𝘀𝗲 :\n 🤟👉https://amzn.to/3olHLGp	KYLIE-LUNA	none	PT35S	2d	hd	false	false	9264	176		0	11	public	youtube	true	true		
+hkhwiQRekWw	2021-11-19T06:51:25Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	BooM BooM🔥🔥 #Shorts #101		KYLIE-LUNA	none	PT12S	2d	hd	false	false	36491	1274		0	37	public	youtube	true	true		
+CVXEoQktme8	2021-11-19T06:32:19Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Valeriyabearwolf Pool Bikini Dancing 🔥🔥		KYLIE-LUNA	none	PT10S	2d	hd	false	false	30671	532		0	18	public	youtube	true	true		
+qXJ2bBLjLMo	2021-11-19T06:31:37Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	No bra Curvey Girl Dany River Best #shorts		KYLIE-LUNA	none	PT10S	2d	hd	false	false	23453	641		0	28	public	youtube	true	true		
+OEV6ZWT9k_w	2021-11-17T03:07:14Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	BF — GF 🤣🤣🤣		KYLIE-LUNA	none	PT11S	2d	hd	false	false	12609	169		0	8	public	youtube	true	true		
+1eJIbKdA-l0	2021-11-17T03:07:23Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Outfit Change 🔥🔥		KYLIE-LUNA	none	PT7S	2d	hd	false	false	24578	845		0	36	public	youtube	true	true		
+XE6V26oHBm0	2021-11-16T10:28:25Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	🔥🔥🔥🔥		KYLIE-LUNA	none	PT12S	2d	hd	false	false	16038	563		0	18	public	youtube	true	true		
+wVL-76Bn1qc	2021-11-16T10:29:03Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wiki Wiki Tra Tra Domelipa🔥		KYLIE-LUNA	none	PT20S	2d	hd	false	false	15312	429		0	23	public	youtube	true	true		
+_qE47Ed9keo	2021-11-14T20:40:04Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it Big! #shorts #nobra #116		KYLIE-LUNA	none	PT10S	2d	hd	false	false	7660	317		0	14	public	youtube	true	true		
+c8aVNSBWDAY	2021-11-14T20:39:36Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it Big! #shorts #nobra #114		KYLIE-LUNA	none	PT10S	2d	hd	false	false	26332	633		0	26	public	youtube	true	true		
+_FpPX3Oarlw	2021-11-14T20:39:49Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it Big! #shorts #nobra #115		KYLIE-LUNA	none	PT10S	2d	hd	false	false	26076	743		0	22	public	youtube	true	true		
+Nm5uQceoOpk	2021-11-14T20:38:20Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it Big! #shorts #nobra #109		KYLIE-LUNA	none	PT10S	2d	hd	false	false	21512	521		0	20	public	youtube	true	true		
+cZnbt0RULGs	2021-11-14T20:37:59Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it Big! #shorts #nobra #108		KYLIE-LUNA	none	PT10S	2d	hd	false	false	15724	512		0	19	public	youtube	true	true		
+36tpIn1eGbI	2021-11-14T20:35:58Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it Big! #shorts #nobra #104		KYLIE-LUNA	none	PT10S	2d	hd	false	false	16672	487		0	20	public	youtube	true	true		
+RbyG60TwOOY	2021-11-14T20:35:29Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Hello Guys!!!😍		KYLIE-LUNA	none	PT11S	2d	hd	false	false	21495	812		0	31	public	youtube	true	true		
+oMzY4PJQG6Y	2021-11-14T10:39:12Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it Big Challenge #103 #Nobra #Shorts		KYLIE-LUNA	none	PT10S	2d	hd	false	false	18198	644		0	31	public	youtube	true	true		
+TVg0ihTayEM	2021-11-14T10:38:51Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it Big Challenge #101 #Nobra #Shorts		KYLIE-LUNA	none	PT11S	2d	hd	false	false	15395	413		0	22	public	youtube	true	true		
+5UPONb6cMvU	2021-11-13T17:01:01Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Random Awkward Moments😅		KYLIE-LUNA	none	PT8S	2d	hd	false	false	11820	156		0	14	public	youtube	true	true		
+T_7uKhPmpr4	2021-11-13T00:04:28Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Hey Guys! I Come Leaves		KYLIE-LUNA	none	PT11S	2d	hd	false	false	25572	693		0	21	public	youtube	true	true		
+U0HhQzy-enk	2021-11-12T23:59:27Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Hey, I'm Back, Wear it Big, No Bra #Shorts #Nobra		KYLIE-LUNA	none	PT10S	2d	hd	false	false	29656	1675		0	111	public	youtube	true	true		
+tl2UJXNmkyE	2021-11-11T19:01:01Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Malutrevejo Nobra Tiktok		KYLIE-LUNA	none	PT15S	2d	hd	false	false	39797	705		0	26	public	youtube	true	true		
+PG9YyXz986Q	2021-11-11T18:59:44Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it big!		KYLIE-LUNA	none	PT10S	2d	hd	false	false	45492	1326		0	51	public	youtube	true	true		
+9zmdFhSIte4	2021-11-11T19:00:10Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	I'm in My Bed		KYLIE-LUNA	none	PT7S	2d	hd	false	false	37303	862		0	21	public	youtube	true	true		
+QsgiIOnVlck	2021-11-11T18:59:31Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Do you Like Nobra Girls?		KYLIE-LUNA	none	PT9S	2d	hd	false	false	42478	1366		0	53	public	youtube	true	true		
+5wC2c8XosW0	2021-11-10T05:55:31Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	BEAUTY QUEEN MADINA ASH😍🔥		KYLIE-LUNA	none	PT10S	2d	hd	false	false	49024	814		0	34	public	youtube	true	true		
+kUT79QBxeAU	2021-11-10T05:56:09Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	WARNING ⚠		KYLIE-LUNA	none	PT11S	2d	hd	false	false	58413	1106		0	30	public	youtube	true	true		
+qvTvevcvWKE	2021-11-10T05:54:15Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wearing No Bra Challenge😉 Dany #shorts		KYLIE-LUNA	none	PT8S	2d	hd	false	false	51560	1019		0	39	public	youtube	true	true		
+5ALaZtaRylI	2021-11-10T05:53:51Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Pool Bikini Valeriyabearwolf Hot Dance🔥🤩		KYLIE-LUNA	none	PT10S	2d	hd	false	false	118112	1974		0	45	public	youtube	true	true		
+2nC6Bw-cyzk	2021-11-10T05:51:26Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Let's Here it Guys...🔥		KYLIE-LUNA	none	PT9S	2d	hd	false	false	69113	1744		0	147	public	youtube	true	true		
+2BTED0lqJC8	2021-11-10T05:52:50Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Introversion #Flirting		KYLIE-LUNA	none	PT9S	2d	hd	false	false	57623	1077		0	20	public	youtube	true	true		
+ztAhH3c2h2I	2021-11-10T05:49:42Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it Big? Dany & Luna New🔥 #shorts #Nobra		KYLIE-LUNA	none	PT10S	2d	hd	false	false	41296	816		0	73	public	youtube	true	true		
+G0bBOPKNNpM	2021-11-10T05:50:19Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Outfit Change Luna #Nobra #shorts		KYLIE-LUNA	none	PT7S	2d	hd	false	false	68914	1471		0	49	public	youtube	true	true		
+Wyg2djgUFO4	2021-11-07T18:45:28Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Day 1 vs 1 Year of Married Life🥴🥀		KYLIE-LUNA	none	PT14S	2d	hd	false	false	90475	731		0	44	public	youtube	true	true		
+vlG0qtsv_Sw	2021-11-07T07:52:40Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it Big Challenge 🔥 #shorts		KYLIE-LUNA	none	PT15S	2d	hd	false	false	59877	1452		0	48	public	youtube	true	true		
+B5AU50ZXwKM	2021-11-07T07:52:43Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it Big Challenge No Bra 🔥 #shorts		KYLIE-LUNA	none	PT6S	2d	hd	false	false	80869	1649		0	115	public	youtube	true	true		
+ZEiVo-0NxVY	2021-11-07T04:30:20Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Romantic Couples		KYLIE-LUNA	none	PT8S	2d	hd	false	false	40406	509		0	16	public	youtube	true	true		
+_egukt5fjx0	2021-11-07T04:22:29Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Malutrevejo Nobra #shorts		KYLIE-LUNA	none	PT9S	2d	hd	false	false	56974	1209		0	31	public	youtube	true	true		
+sKjQ8SXii1k	2021-11-06T18:50:36Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	SURPRISE!!	My Secret Photos👉\n https://shrinke.me/SPnTNl6	KYLIE-LUNA	none	PT10S	2d	hd	false	false	3444652	38921		0	753	public	youtube	true	true		
+-_inoUVwot0	2021-11-06T09:52:36Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wait for Twist ❤😱		KYLIE-LUNA	none	PT10S	2d	hd	false	false	189726	3572		0	127	public	youtube	true	true		
+k_h3QtoegwA	2021-11-06T09:50:48Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Draft		KYLIE-LUNA	none	PT13S	2d	hd	false	false	54624	1216		0	26	public	youtube	true	true		
+naU5aD3qZeY	2021-11-06T04:24:11Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Hey, I Love You 😱❤️		KYLIE-LUNA	none	PT8S	2d	hd	false	false	59215	1398		0	63	public	youtube	true	true		
+YvACEHgBqsA	2021-11-05T20:29:55Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it Big New*🔥 #shorts #nobra #dany		KYLIE-LUNA	none	PT10S	2d	hd	false	false	199701	5383		0	335	public	youtube	true	true		
+fnDxFq2l3Rk	2021-11-05T20:29:23Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it Big New*🔥 #shorts #nobra #luna		KYLIE-LUNA	none	PT10S	2d	hd	false	false	86472	3388		0	248	public	youtube	true	true		
+ENeJfdqfU9I	2021-11-05T05:02:27Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Night Look!❤️		KYLIE-LUNA	none	PT7S	2d	hd	false	false	31427	898		0	25	public	youtube	true	true		
+3pfASYl_nAM	2021-11-05T05:03:30Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	This Girls, Beautiful 😍🤩		KYLIE-LUNA	none	PT9S	2d	hd	false	false	57197	1237		0	46	public	youtube	true	true		
+PZ1FjoY6Kqg	2021-11-05T05:01:09Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wait Haney!		KYLIE-LUNA	none	PT11S	2d	hd	false	false	52656	1529		0	52	public	youtube	true	true		
+nFgou6td2QE	2021-11-05T05:01:31Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Make Senses		KYLIE-LUNA	none	PT9S	2d	hd	false	false	76860	1893		0	88	public	youtube	true	true		
+hXgBdusyMJQ	2021-11-05T05:01:51Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	I Got Plan😅		KYLIE-LUNA	none	PT7S	2d	hd	false	false	97826	2374		0	54	public	youtube	true	true		
+A_tq1MG_mrg	2021-11-04T16:01:09Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	I Almost Forget it’s NNN😂		KYLIE-LUNA	none	PT8S	2d	hd	false	false	63823	1730		0	125	public	youtube	true	true		
+gRqB-OVgZUc	2021-11-04T16:00:00Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	I Don’t even gotta say it		KYLIE-LUNA	none	PT8S	2d	hd	false	false	61608	1848		0	100	public	youtube	true	true		
+zaEynhDZqOw	2021-11-03T20:00:16Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Outfit Change #Shorts #Nobra #outfit #halloween #challenge		KYLIE-LUNA	none	PT16S	2d	hd	false	false	74649	1758		0	74	public	youtube	true	true		
+JqzVUdUR40s	2021-11-03T19:59:02Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	New Suit Alert ⚠		KYLIE-LUNA	none	PT8S	2d	hd	false	false	42691	1281		0	77	public	youtube	true	true		
+iccMBYqUZ_Y	2021-11-03T19:57:51Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	No Bra Challenge #Shorts #Nobra #bigbank #uniformchallenge		KYLIE-LUNA	none	PT12S	2d	hd	false	false	55800	1911		0	71	public	youtube	true	true		
+LjgfNyYClzs	2021-11-03T17:12:11Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	How do you Like the Ending? 😂 #Shorts		KYLIE-LUNA	none	PT12S	2d	hd	false	false	60269	666		0	46	public	youtube	true	true		
+2Nbdm26nEc0	2021-11-03T09:35:24Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Good Morning		KYLIE-LUNA	none	PT16S	2d	hd	false	false	75740	2275		0	109	public	youtube	true	true		
+lJY7Quve1ak	2021-11-02T05:38:34Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Who is your Crush?		KYLIE-LUNA	none	PT10S	2d	hd	false	false	95604	2000		0	119	public	youtube	true	true		
+GfrCszl5o-A	2021-11-02T05:38:11Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Do you Enjoy Halloween!		KYLIE-LUNA	none	PT12S	2d	hd	false	false	1386470	40141		0	951	public	youtube	true	true		
+hEzqTgegJoY	2021-11-01T08:07:48Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Couples Angeles in The City #shorts		KYLIE-LUNA	none	PT15S	2d	hd	false	false	67332	819		0	41	public	youtube	true	true		
+6qSl7Y7yNGE	2021-11-01T08:07:26Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Hijabi _Xijabli_ Isazaade		KYLIE-LUNA	none	PT16S	2d	hd	false	false	102377	2035		0	79	public	youtube	true	true		
+dhOAOHk6owE	2021-11-01T08:03:23Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Outfit Change Challenge #shorts		KYLIE-LUNA	none	PT8S	2d	hd	false	false	54721	1436		0	29	public	youtube	true	true		
+oE3xfeKkp4c	2021-11-01T08:04:40Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Buss it #shorts		KYLIE-LUNA	none	PT9S	2d	hd	false	false	74231	2257		0	42	public	youtube	true	true		
+fXu4nL1u5SU	2021-11-01T08:01:00Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Please Fill Me In... #shorts		KYLIE-LUNA	none	PT8S	2d	hd	false	false	1500667	26369		0	641	public	youtube	true	true		
+qbYpgmhXTyg	2021-10-31T17:56:16Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Malutrevejo Spider Outfit		KYLIE-LUNA	none	PT16S	2d	hd	false	false	96294	2697		0	73	public	youtube	true	true		
+450eECsPI9s	2021-10-30T18:48:18Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Big Big, So Big #shorts #Danyancats		KYLIE-LUNA	none	PT12S	2d	hd	false	false	27246	1312		0	46	public	youtube	true	true		
+TbUCuP9Hg3E	2021-10-30T18:45:57Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Big Big, Wear It Big #shorts		KYLIE-LUNA	none	PT8S	2d	hd	false	false	17493	904		0	28	public	youtube	true	true		
+ieRZEnGwojM	2021-10-30T18:45:27Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Plus Size And Curvy Lovers🔥🔥 #shorts		KYLIE-LUNA	none	PT10S	2d	hd	false	false	539343	13454		0	275	public	youtube	true	true		
+bA-2GLyU-J0	2021-10-30T18:46:55Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Bikini On Pool🔥		KYLIE-LUNA	none	PT12S	2d	hd	false	false	11694	486		0	24	public	youtube	true	true		
+O4Cx9GOb7s4	2021-10-29T09:48:55Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Malutrevejo #Shorts #viral #wearitbig		KYLIE-LUNA	none	PT13S	2d	hd	false	false	107128	1881		0	49	public	youtube	true	true		
+Ee9ZhGAXN7o	2021-10-29T09:48:33Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Hey Mom Drop Your Weapon!  #shorts		KYLIE-LUNA	none	PT45S	2d	hd	false	false	105969	3985		0	142	public	youtube	true	true		
+WL3nC_mfuZg	2021-10-29T09:49:28Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	You Will be Also Cry!!😥		KYLIE-LUNA	none	PT53S	2d	hd	false	false	60556	1155		0	58	public	youtube	true	true		
+nzJ035ZY840	2021-10-29T09:45:42Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it Big #Shorts Dany #Nobra New!		KYLIE-LUNA	none	PT10S	2d	hd	false	false	204839	5543		0	284	public	youtube	true	true		
+2apqbexWobM	2021-10-29T09:47:30Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Hi Guys!! 🔥🔥		KYLIE-LUNA	none	PT16S	2d	hd	false	false	127125	3465		0	112	public	youtube	true	true		
+dr_9S3IBXQU	2021-10-29T09:47:13Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	FakeBody! Turkey #Shorts #bikini		KYLIE-LUNA	none	PT10S	2d	hd	false	false	76022	1704		0	37	public	youtube	true	true		
+4fBFOdUNXmQ	2021-10-29T09:45:22Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it Big #Shorts Luna & Dany #Nobra New!		KYLIE-LUNA	none	PT10S	2d	hd	false	false	430661	9423		0	490	public	youtube	true	true		
+8Pab6VPo6cQ	2021-10-29T09:43:36Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Fake Body!  #shorts #wearitbig		KYLIE-LUNA	none	PT9S	2d	hd	false	false	70246	1364		0	26	public	youtube	true	true		
+qEsngHJvB0Y	2021-10-29T09:45:06Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it Big #Shorts Dany & Luna #Nobra New!		KYLIE-LUNA	none	PT10S	2d	hd	false	false	50815	2126		0	117	public	youtube	true	true		
+lYssmppsVWo	2021-10-28T18:22:44Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear It Big Challenge #Shorts #Nobra Luna & Dany		KYLIE-LUNA	none	PT10S	2d	hd	false	false	75052	2637		0	156	public	youtube	true	true		
+QCiuOCT0KaI	2021-10-27T05:09:15Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	I Love Your Dad #shorts		KYLIE-LUNA	none	PT6S	2d	hd	false	false	299136	6379		0	139	public	youtube	true	true		
+RFbXDj0Eu-M	2021-10-27T05:08:49Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it Big challenge #shorts		KYLIE-LUNA	none	PT10S	2d	hd	false	false	255952	7548		0	392	public	youtube	true	true		
+_Nt1mSUygCE	2021-10-26T09:11:17Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Cute Cheetah Lady😃		KYLIE-LUNA	none	PT9S	2d	hd	false	false	709336	12446		0	261	public	youtube	true	true		
+hbtaepx3QlU	2021-10-26T04:54:35Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	This was So Funny 😅😍		KYLIE-LUNA	none	PT16S	2d	hd	false	false	129818	3401		0	84	public	youtube	true	true		
+XexL3x4wJrc	2021-10-25T05:48:51Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Smile Also Real😃		KYLIE-LUNA	none	PT6S	2d	hd	false	false	1950571	46482		0	752	public	youtube	true	true		
+oE73aW4cuQ0	2021-10-25T05:49:19Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Plus Size Lover #Shorts #Luna		KYLIE-LUNA	none	PT6S	2d	hd	false	false	290515	8309		0	205	public	youtube	true	true		
+FiPoKoLS4oo	2021-10-25T05:48:14Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear It Big #Shorts #Luna		KYLIE-LUNA	none	PT10S	2d	hd	false	false	449447	10353		0	190	public	youtube	true	true		
+mWBom67phSs	2021-10-25T05:46:05Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Bikini on Pool Follow Viral Trend		KYLIE-LUNA	none	PT10S	2d	hd	false	false	159130	2215		0	30	public	youtube	true	true		
+VoeYpGXKef4	2021-10-25T05:45:33Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Hijabi Xijabli Isaazade Mariyam		KYLIE-LUNA	none	PT12S	2d	hd	false	false	78971	1245		0	43	public	youtube	true	true		
+7BPvaR1NqVk	2021-10-24T15:52:07Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Who Knows! 🥴	My Secret Photos👉\n https://shrinke.me/SPnTNl6	KYLIE-LUNA	none	PT13S	2d	hd	false	false	9799549	119741		0	884	public	youtube	true	true		
+AsZAHNArBOk	2021-10-24T15:49:52Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Yes or No! 🥴		KYLIE-LUNA	none	PT6S	2d	hd	false	false	100539	2874		0	205	public	youtube	true	true		
+_c8Olz02JR8	2021-10-24T15:48:49Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Malutrevejo Awesome Viral Dance #Shorts		KYLIE-LUNA	none	PT16S	2d	hd	false	false	116686	2910		0	69	public	youtube	true	true		
+oD4naVVtyFE	2021-10-23T10:40:50Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Aahhh This Is So Funny🤣🤣	My Secret Photos👉\n https://shrinke.me/SPnTNl6	KYLIE-LUNA	none	PT11S	2d	hd	false	false	2165093	9365		0	69	public	youtube	true	true		
+0e6EI1Rz73Q	2021-10-21T10:10:22Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear It Big Challenge #shorts #nobra #wearitbig		KYLIE-LUNA	none	PT10S	2d	hd	false	false	237095	8523		0	380	public	youtube	true	true		
+bgwGrS5lVYQ	2021-10-21T09:54:02Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Squid Game Another Level 😅		KYLIE-LUNA	none	PT16S	2d	hd	false	false	369082	5002		0	86	public	youtube	true	true		
+TRVJ67MUnhY	2021-10-21T09:52:45Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	What's up Guys!		KYLIE-LUNA	none	PT15S	2d	hd	false	false	922813	19910		0	622	public	youtube	true	true		
+48ObRZ6NTzg	2021-10-21T07:31:29Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it Big Challenge #shorts #luna #nobra #wearitbig		KYLIE-LUNA	none	PT10S	2d	hd	false	false	611973	13640		0	258	public	youtube	true	true		
+UQ6bxOx3V1E	2021-10-19T18:38:02Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Squishy on your House😃		KYLIE-LUNA	none	PT8S	2d	hd	false	false	1998367	41257		0	1062	public	youtube	true	true		
+MAQ7y5YqjMM	2021-10-19T18:38:26Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it Big Challenge #Shorts		KYLIE-LUNA	none	PT10S	2d	hd	false	false	688681	14740		0	689	public	youtube	true	true		
+yy9YxC3LUiw	2021-10-18T10:01:56Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Outfit Change Challenge!! 🔥🔥		KYLIE-LUNA	none	PT7S	2d	hd	false	false	538866	9944		0	175	public	youtube	true	true		
+B2DlNYmlUcU	2021-10-17T11:22:02Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Bikini On Home 🤟 Back Again 🔥		KYLIE-LUNA	none	PT7S	2d	hd	false	false	236481	7064		0	170	public	youtube	true	true		
+sl1ut0qeyjE	2021-10-16T08:02:26Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	My Bestfriend!!!		KYLIE-LUNA	none	PT10S	2d	hd	false	false	226189	2391		0	76	public	youtube	true	true		
+cFXpSAj7NkM	2021-10-16T08:01:34Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Ta Ta TaTa!!		KYLIE-LUNA	none	PT11S	2d	hd	false	false	748816	15822		0	387	public	youtube	true	true		
+NWsdHfz3VPc	2021-10-16T08:00:48Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Paca Pa Ca...??		KYLIE-LUNA	none	PT11S	2d	hd	false	false	171415	5248		0	117	public	youtube	true	true		
+8oUIkEZe6y4	2021-10-15T03:20:58Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	I Love Your....!		KYLIE-LUNA	none	PT6S	2d	hd	false	false	672100	12329		0	280	public	youtube	true	true		
+3TQ8eBnXlUQ	2021-10-15T03:18:32Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	I need You!💙🤍		KYLIE-LUNA	none	PT7S	2d	hd	false	false	189292	4825		0	168	public	youtube	true	true		
+O0fVZsyJSTs	2021-10-15T03:19:28Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Simple Dimple #Shorts		KYLIE-LUNA	none	PT8S	2d	hd	false	false	12753	386		0	26	public	youtube	true	true		
+gowqFVPCRys	2021-10-14T19:02:05Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Hi Guys!!		KYLIE-LUNA	none	PT7S	2d	hd	false	false	3358957	67176		0	1446	public	youtube	true	true		
+oHAZVtqpUnA	2021-10-14T19:00:43Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it Big #Shorts #Nobra		KYLIE-LUNA	none	PT10S	2d	hd	false	false	359112	8863		0	328	public	youtube	true	true		
+NSF55Zdp9wA	2021-10-14T19:01:25Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Eat Your Vegetables #squidgame #shorts		KYLIE-LUNA	none	PT10S	2d	hd	false	false	10446	337		0	9	public	youtube	true	true		
+YLDERR5QW4Y	2021-10-14T19:00:06Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	All is Real and Big🥰		KYLIE-LUNA	none	PT6S	2d	hd	false	false	3438318	78625		0	1832	public	youtube	true	true		
+MszSp1fumK4	2021-10-11T06:43:38Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Up And Down		KYLIE-LUNA	none	PT16S	2d	hd	false	false	558097	12751		0	372	public	youtube	true	true		
+PAAP7bthFMM	2021-10-11T06:39:49Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Hijabi _Xijabli_ New Shorts No Bra		KYLIE-LUNA	none	PT9S	2d	hd	false	false	166074	2950		0	79	public	youtube	true	true		
+krnZe5KRNYY	2021-10-10T17:14:25Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Hey Mom, Show Your Weapon🔥 #Shorts	My Secret Photos👉\n https://shrinke.me/SPnTNl6	KYLIE-LUNA	none	PT8S	2d	hd	false	false	7448497	100317		0	1312	public	youtube	true	true		
+rbTmTVv44XY	2021-10-10T17:15:02Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Hey Mom, Show Your Weapon🔥 #Shorts		KYLIE-LUNA	none	PT8S	2d	hd	false	false	5361541	76062		0	1569	public	youtube	true	true		
+v_CSF2fAonE	2021-10-10T17:15:09Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Hey Mom, Show Your Weapon🔥 #Shorts		KYLIE-LUNA	none	PT8S	2d	hd	false	false	14841	461		0	16	public	youtube	true	true		
+LkvXU-PTfH4	2021-10-10T09:22:51Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it Big Challenge🔥🔥 #Shorts #Nobra		KYLIE-LUNA	none	PT10S	2d	hd	false	false	15425	489		0	66	public	youtube	true	true		
+AOf55NGaUFQ	2021-10-09T17:25:18Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	😊😊😊😊		KYLIE-LUNA	none	PT11S	2d	hd	false	false	352761	8094		0	501	public	youtube	true	true		
+IFoh1rElTzs	2021-10-08T18:17:14Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Nobody Likes me😢		KYLIE-LUNA	none	PT11S	2d	hd	false	false	119096	3275		0	290	public	youtube	true	true		
+w1Ut3Nz3u2A	2021-10-08T17:18:48Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	My New Shorts Video 😍		KYLIE-LUNA	none	PT10S	2d	hd	false	false	62352	1150		0	37	public	youtube	true	true		
+qEEdd1NiLEk	2021-10-08T10:23:44Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Красиво я вошла в твою грешную жизнь. Ставишь лайк?		KYLIE-LUNA	none	PT8S	2d	hd	false	false	49247	579		0	28	public	youtube	true	true		
+_ljRVEM_OAI	2021-10-07T17:52:05Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Tiktok Shake Challenge #Nobra #Shorts		KYLIE-LUNA	none	PT16S	2d	hd	false	false	979054	18580		0	297	public	youtube	true	true		
+mpC44-Ij_5k	2021-10-07T10:55:05Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	I am Very Squishy 😅		KYLIE-LUNA	none	PT8S	2d	hd	false	false	10161	184		0	24	public	youtube	true	true		
+wqLzQGNFupY	2021-10-07T06:24:46Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Bounce Challenge TikTok #Shorts #pt #bounce #viral		KYLIE-LUNA	none	PT13S	2d	hd	false	false	5043	132		0	12	public	youtube	true	true		
+mYyo0bIMmSc	2021-10-06T18:06:23Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	With Friends New Shorts		KYLIE-LUNA	none	PT8S	2d	hd	false	false	387207	12850		0	168	public	youtube	true	true		
+8KraBmlptfE	2021-10-06T12:24:20Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Why aren't you in Uniform!🔥 #Shorts #uniformchallenge		KYLIE-LUNA	none	PT8S	2d	hd	false	false	1435442	16687		0	212	public	youtube	true	true		
+F_OCR6orG2A	2021-10-06T12:22:53Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Why aren't you in Uniform!🔥 #Shorts #uniformchallenge		KYLIE-LUNA	none	PT8S	2d	hd	false	false	315569	5454		0	71	public	youtube	true	true		
+wjZLfo4M4i0	2021-10-06T12:21:50Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Why aren't you in Uniform!🔥 #Shorts #uniformchallenge		KYLIE-LUNA	none	PT8S	2d	hd	false	false	86584	2562		0	47	public	youtube	true	true		
+RycTfVe_2IY	2021-10-06T12:22:04Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Why aren't you in Uniform!🔥 #Shorts #uniformchallenge		KYLIE-LUNA	none	PT8S	2d	hd	false	false	149433	3471		0	42	public	youtube	true	true		
+DGoOMW6do6A	2021-10-06T06:08:45Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it Big Challenge New #shorts		KYLIE-LUNA	none	PT10S	2d	hd	false	false	1034515	19655		0	469	public	youtube	true	true		
+vyjYlJdech4	2021-10-06T02:43:35Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Knock Knock Who is there?		KYLIE-LUNA	none	PT11S	2d	hd	false	false	132705	2080		0	76	public	youtube	true	true		
+xCShEy7TXtk	2021-10-06T02:43:10Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Bikini Woman Dance #Shorts		KYLIE-LUNA	none	PT5S	2d	hd	false	false	129747	2573		0	54	public	youtube	true	true		
+l_jrn_Qupis	2021-10-06T02:31:01Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Ltl Bounce So many Moves #Shorts #Nobra		KYLIE-LUNA	none	PT12S	2d	hd	false	false	59120	1296		0	47	public	youtube	true	true		
+7CM0mCDjyrc	2021-10-05T18:52:57Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Big Bank Challenge💥 TikTok #Shorts #bigbank		KYLIE-LUNA	none	PT7S	2d	hd	false	false	38711	861		0	26	public	youtube	true	true		
+PTHh2TEcGtg	2021-10-05T18:41:21Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Big Bank Challenge Bestfriend🔥 #Shorts		KYLIE-LUNA	none	PT12S	2d	hd	false	false	49855	972		0	26	public	youtube	true	true		
+mhvnrArug80	2021-10-05T18:41:38Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Big Bank Challenge Bestfriend🔥 #Shorts		KYLIE-LUNA	none	PT12S	2d	hd	false	false	35782	560		0	23	public	youtube	true	true		
+Th42o-PSTyc	2021-10-05T18:41:03Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Big Bank Challenge Bestfriend🔥 #Shorts		KYLIE-LUNA	none	PT12S	2d	hd	false	false	1029	33		0	8	public	youtube	true	true		
+xJsHlm7Yh2s	2021-10-05T09:34:24Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Malutrevejo New Shorts		KYLIE-LUNA	none	PT8S	2d	hd	false	false	64547	1247		0	44	public	youtube	true	true		
+f_gfxtlBdbI	2021-10-03T14:07:01Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it Big Challenge #Shorts		KYLIE-LUNA	none	PT11S	2d	hd	false	false	349713	8923		0	306	public	youtube	true	true		
+tF6jEzxXrkM	2021-10-03T03:52:27Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it Big Challenge #Shorts		KYLIE-LUNA	none	PT10S	2d	hd	false	false	15197	429		0	45	public	youtube	true	true		
+DE1zB3-Mu7g	2021-10-02T09:20:46Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it Big Challenge #Shorts		KYLIE-LUNA	none	PT10S	2d	hd	false	false	1212953	22425		0	387	public	youtube	true	true		
+FjeMGwCqQpY	2021-10-02T09:21:33Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Uniform Challenge #Shorts		KYLIE-LUNA	none	PT9S	2d	hd	false	false	4561771	50039		0	783	public	youtube	true	true		
+llVIEVC1DME	2021-09-30T19:50:40Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Girl I Love You💖😍 #Shorts		KYLIE-LUNA	none	PT9S	2d	hd	false	false	178428	1061		0	16	public	youtube	true	true		
+NfmaZro5Nuw	2021-09-30T09:19:51Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	A little Bounce🔥		KYLIE-LUNA	none	PT12S	2d	hd	false	false	843899	28154		0	867	public	youtube	true	true		
+fE92dpdIOpo	2021-09-30T09:19:27Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear It Big #shorts #wearitbig (Do Subscribe Please) 🥰🙏		KYLIE-LUNA	none	PT10S	2d	hd	false	false	2911986	45552		0	1109	public	youtube	true	true		
+T-ECYHmH0hk	2021-09-30T05:33:46Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Phao Dance 😍😍		KYLIE-LUNA	none	PT6S	2d	hd	false	false	139194	3182		0	29	public	youtube	true	true		
+igmxbpkaquM	2021-09-29T18:10:00Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Any BODY Bikini BODY 🔥		KYLIE-LUNA	none	PT10S	2d	hd	false	false	154145	1996		0	36	public	youtube	true	true		
+USChAEh9Y3A	2021-09-28T22:25:36Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Childs Always Tell True 😍		KYLIE-LUNA	none	PT7S	2d	hd	false	false	70458	1053		0	9	public	youtube	true	true		
+D0cyjexZnWk	2021-09-28T06:14:05Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Corsets Challenge TikTok Compilation🤑🔥 Shorts		KYLIE-LUNA	none	PT1M43S	2d	hd	false	false	3011	62		0	4	public	youtube	true	true		
+aK6reagvC9Q	2021-09-27T17:35:32Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Uniform Challenge Shorts Compilation #Nobra		KYLIE-LUNA	none	PT1M4S	2d	hd	false	false	2314	31		0	1	public	youtube	true	true		
+Eswv15DvRWU	2021-09-27T16:59:46Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Hey Mom, Drop Your Weapon!!		KYLIE-LUNA	none	PT8S	2d	hd	false	false	15219746	291583		0	8390	public	youtube	true	true		
+nlS-YYxhUaU	2021-09-27T15:44:31Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Danyancat Playing Fortnite 😍😍		KYLIE-LUNA	none	PT1M20S	2d	hd	false	false	311	2		0	0	public	youtube	true	true		
+nXSKizcwslQ	2021-09-27T14:45:00Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it Big #Nobra #Shorts		KYLIE-LUNA	none	PT7S	2d	hd	false	false	3019	57		0	2	public	youtube	true	true		
+oh_Ml1SzKpU	2021-09-27T14:41:57Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	BooM BooM TikTok 🔥 Viral #shorts		KYLIE-LUNA	none	PT9S	2d	hd	false	false	118867	1251		0	20	public	youtube	true	true		
+SaotwBk0jvM	2021-09-27T03:24:23Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	BooM BooM		KYLIE-LUNA	none	PT15S	2d	hd	false	false	75435	752		0	12	public	youtube	true	true		
+aCiSGyavM8Q	2021-09-27T03:21:34Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	BooM BooM		KYLIE-LUNA	none	PT7S	2d	hd	false	false	2572318	37655		0	422	public	youtube	true	true		
+nHRYvIpiF3M	2021-09-26T18:55:43Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Malutrevejo The Best Million Hearts💖 Shorts		KYLIE-LUNA	none	PT16S	2d	hd	false	false	609	10		0	0	public	youtube	true	true		
+4jDv-ZRFYyk	2021-09-26T15:17:11Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Valeriyabearwolf New Video		KYLIE-LUNA	none	PT7S	2d	hd	false	false	55287	750		0	12	public	youtube	true	true		
+dJ8Xf2YU3i0	2021-09-26T07:09:03Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Lenatamburini appelez-moi Geny G 💁🏼\u200d♀️		KYLIE-LUNA	none	PT1M	2d	hd	false	false	34652	437		0	8	public	youtube	true	true		
+KGbIvTtmgVs	2021-09-25T19:58:11Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it Big Challenge 🔥 #Shorts		KYLIE-LUNA	none	PT10S	2d	hd	false	false	2179	30		0	1	public	youtube	true	true		
+O6acun7R9BU	2021-09-25T19:56:21Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it Big Challenge 🔥 #Shorts		KYLIE-LUNA	none	PT10S	2d	hd	false	false	2414469	43430		0	1101	public	youtube	true	true		
+ziDBcl94sa4	2021-09-25T19:55:59Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it Big Challenge 🔥 #Shorts		KYLIE-LUNA	none	PT10S	2d	hd	false	false	716918	13721		0	417	public	youtube	true	true		
+7zoQwDHdLYY	2021-09-25T19:53:45Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it Big Challenge 🔥 #Shorts		KYLIE-LUNA	none	PT10S	2d	hd	false	false	1236989	25693		0	712	public	youtube	true	true		
+4AD6Ass-n0Y	2021-09-25T19:55:29Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it Big Challenge 🔥 #Shorts		KYLIE-LUNA	none	PT10S	2d	hd	false	false	99651	1917		0	56	public	youtube	true	true		
+JfzCBoNCDSs	2021-09-25T19:52:32Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it Big Challenge 🔥 #Shorts		KYLIE-LUNA	none	PT10S	2d	hd	false	false	5947517	81637		0	502	public	youtube	true	true		
+cQe94q81P8o	2021-09-25T19:52:55Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it Big Challenge 🔥 #Shorts	My Secret Photos👉\n https://shrinke.me/SPnTNl6	KYLIE-LUNA	none	PT10S	2d	hd	false	false	7359448	63305		0	334	public	youtube	true	true		
+YAsqUaA_Gd4	2021-09-25T19:50:07Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it Big Challenge 🔥 #Shorts		KYLIE-LUNA	none	PT10S	2d	hd	false	false	436	6		0	0	public	youtube	true	true		
+6PPaADo7JTQ	2021-09-25T19:48:12Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it Big Challenge 🔥 #wearitbig #wearitbigchallenge #Nobra #Shorts		KYLIE-LUNA	none	PT1M14S	2d	hd	false	false	1826	35		0	2	public	youtube	true	true		
+FPLOgQngD98	2021-09-25T19:45:35Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it Big Challenge 🔥 #Shorts		KYLIE-LUNA	none	PT10S	2d	hd	false	false	994	16		0	1	public	youtube	true	true		
+tNBYRNTzyO4	2021-09-25T19:46:35Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it Big Challenge 🔥 #Shorts		KYLIE-LUNA	none	PT10S	2d	hd	false	false	1269	24		0	2	public	youtube	true	true		
+pNFoAoeYrV0	2021-09-25T19:45:46Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it Big Challenge 🔥 #Shorts	My Secret Photos👉\n https://shrinke.me/SPnTNl6	KYLIE-LUNA	none	PT10S	2d	hd	false	false	17364833	130744		0	679	public	youtube	true	true		
+af6Qqc-CNwc	2021-09-25T19:41:59Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it Big 🔥 #Nobra #Shorts	My Secret Photos👉\n https://shrinke.me/SPnTNl6	KYLIE-LUNA	none	PT10S	2d	hd	false	false	7613895	79829		0	648	public	youtube	true	true		
+c0Y8HpinRXI	2021-09-25T19:40:29Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it Big🔥 #Nobra #Shorts		KYLIE-LUNA	none	PT10S	2d	hd	false	false	2430	72		0	3	public	youtube	true	true		
+fufmk6s9eMg	2021-09-25T19:37:56Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wear it Big🔥 #Nobra #Shorts		KYLIE-LUNA	none	PT10S	2d	hd	false	false	30471	938		0	28	public	youtube	true	true		
+RLFTOAM90t8	2021-09-25T18:00:33Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Outfit Change Challenge🔥🔥 valeriyabearwolf #Shorts		KYLIE-LUNA	none	PT8S	2d	hd	false	false	39626	468		0	6	public	youtube	true	true		
+kWS53b8yVZ0	2021-09-25T09:52:31Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Outfit Change Countdown 💖🔥 #Shorts		KYLIE-LUNA	none	PT15S	2d	hd	false	false	59575	287		0	3	public	youtube	true	true		
+0B1LDwDN_qY	2021-09-25T08:47:13Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Duplicate Harley the Joker🤡💖		KYLIE-LUNA	none	PT7S	2d	hd	false	false	39100	274		0	3	public	youtube	true	true		
+JXzYiIfHFXc	2021-09-25T07:18:25Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	She is Crazy!!		KYLIE-LUNA	none	PT8S	2d	hd	false	false	58665	236		0	5	public	youtube	true	true		
+UN2BEqePjUg	2021-09-25T05:24:49Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Danyancats New Video #Shorts		KYLIE-LUNA	none	PT13S	2d	hd	false	false	1282394	43147		0	534	public	youtube	true	true		
+jz2ceL48Wb4	2021-09-24T16:49:58Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Valeriyabearwolf New Video😍 #shorts		KYLIE-LUNA	none	PT12S	2d	hd	false	false	43438	389		0	1	public	youtube	true	true		
+SgHSJbH6WWo	2021-09-23T16:14:01Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	School Girls Dancing TikTok #shorts		KYLIE-LUNA	none	PT15S	2d	hd	false	false	15991	198		0	7	public	youtube	true	true		
+853Z91Xpums	2021-09-23T16:14:39Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	School Girls Dancing TikTok #shorts		KYLIE-LUNA	none	PT11S	2d	hd	false	false	25690	241		0	7	public	youtube	true	true		
+AO49eD-4XTg	2021-09-23T16:15:03Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Hey mom, Show your Weapon 😃		KYLIE-LUNA	none	PT9S	2d	hd	false	false	5162387	118704		0	5106	public	youtube	true	true		
+_NnBAD-SUuE	2021-09-23T16:15:06Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Hey mom, Show your Weapon 😃		KYLIE-LUNA	none	PT8S	2d	hd	false	false	4484501	57140		0	804	public	youtube	true	true		
+U-EB8ExIG4g	2021-09-11T15:38:20Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Plus Size Lovers #Shorts #Tiktok		KYLIE-LUNA	none	PT13S	2d	hd	false	false	4402209	55425		0	885	public	youtube	true	true		
