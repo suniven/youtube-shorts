@@ -45,7 +45,6 @@ def get_yt_cover(vid):
         print(e)
     else:
         with open(img_path, 'wb') as f:
-            r = requests.get(img_url)
             f.write(r.content)
 
 
