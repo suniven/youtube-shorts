@@ -110,7 +110,7 @@ def get_video_info(browser, video_item):
     video.views = int(views)
     print('views: ', video.views)
 
-    # TODO: 视频描述
+    # TODO: 视频描述 需要先判断description是否存在
     description=browser.find_elements_by_xpath('//*[@id="description"]/span')
 
     insert_db(video)
