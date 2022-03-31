@@ -42,25 +42,25 @@ for labelID in labelIDs:
     # initialize the list of faces to include in the montage
     faces = []
 
-# loop over the sampled indexes
-for i in idxs:
-    # load the input image and extract the face ROI
-    image = cv2.imread(data[i]["imagePath"])
-    (top, right, bottom, left) = data[i]["loc"]
-    face = image[top:bottom, left:right]
+    # loop over the sampled indexes
+    for i in idxs:
+        # load the input image and extract the face ROI
+        image = cv2.imread(data[i]["imagePath"])
+        (top, right, bottom, left) = data[i]["loc"]
+        face = image[top:bottom, left:right]
 
-    # force resize the face ROI to 96x96 and then add it to the
-    # faces montage list
-    face = cv2.resize(face, (96, 96))
-    faces.append(face)
+        # force resize the face ROI to 96x96 and then add it to the
+        # faces montage list
+        face = cv2.resize(face, (96, 96))
+        faces.append(face)
 
-# create a montage using 96x96 "tiles" with 5 rows and 5 columns
-montage = build_montages(faces, (96, 96), (5, 5))[0]
+    # create a montage using 96x96 "tiles" with 5 rows and 5 columns
+    montage = build_montages(faces, (96, 96), (8, 8))[0]
 
-# show the output montage
-title = "Face ID #{}".format(labelID)
-title = "Unknown Faces" if labelID == -1 else title
-cv2.imshow(title, montage)
-cv2.waitKey(0)
+    # show the output montage
+    title = "Face ID #{}".format(labelID)
+    title = "Unknown Faces" if labelID == -1 else title
+    cv2.imshow(title, montage)
+    cv2.waitKey(0)
 
 
