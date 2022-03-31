@@ -28,22 +28,22 @@ for (i, imagePath) in enumerate(imagePaths):
     # load the input image and convert it from RGB (OpenCV ordering)
     # to dlib ordering (RGB)
     print("[INFO] processing image {}/{}".format(i + 1, len(imagePaths)))
-print(imagePath)
-image = cv2.imread(imagePath)
-rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+    print(imagePath)
+    image = cv2.imread(imagePath)
+    rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
-# detect the (x, y)-coordinates of the bounding boxes
-# corresponding to each face in the input image
-boxes = face_recognition.face_locations(rgb, model=args["detection_method"])
+    # detect the (x, y)-coordinates of the bounding boxes
+    # corresponding to each face in the input image
+    boxes = face_recognition.face_locations(rgb, model=args["detection_method"])
 
-# compute the facial embedding for the face
-encodings = face_recognition.face_encodings(rgb, boxes)
+    # compute the facial embedding for the face
+    encodings = face_recognition.face_encodings(rgb, boxes)
 
-# build a dictionary of the image path, bounding box location,
-# and facial encodings for the current image
-d = [{"imagePath": imagePath, "loc": box, "encoding": enc}
-     for (box, enc) in zip(boxes, encodings)]
-data.extend(d)
+    # build a dictionary of the image path, bounding box location,
+    # and facial encodings for the current image
+    d = [{"imagePath": imagePath, "loc": box, "encoding": enc}
+         for (box, enc) in zip(boxes, encodings)]
+    data.extend(d)
 
 # dump the facial encodings data to disk
 print("[INFO] serializing encodings...")
