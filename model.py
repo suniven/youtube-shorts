@@ -23,7 +23,7 @@ class Video(Base):
     comments_count=Column(Integer)
 
 
-class Comment:
+class Comment(Base):
     # 表名
     __tablename__ = 'comment'
 
@@ -32,9 +32,10 @@ class Comment:
     user = Column(String(64))
     user_link = Column(String(256))
     content = Column(String(2048))
+    date = Column(String(20))
 
 
-class User:
+class User(Base):
     # 表名
     __tablename__ = 'user'
 

@@ -14,25 +14,38 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.dialects import mysql
 
-publisher_link = 'https://www.tiktok.com/tag/wearitbigchallenge'
-browser = webdriver.Chrome()
+index = {
+    "VideoID": 0, "PublishedAt": 1, "ChannelId": 2, "CategoryID": 3, "Title": 4, "Description": 5, "ChannelTitle": 6,
+    "LiveBroadcastContent": 7, "Duration": 8, "Dimension": 9, "Definition": 10, "Caption": 11, "LicensedContent": 12,
+    "ViewCount": 13, "LikeCount": 14, "DislikeCount": 15, "FavoriteCount": 16, "CommentCount": 17, "PrivacyStatus": 18,
+    "License": 19, "Embeddable": 20, "PublicStatsViewable": 21, "TopicIds": 22, "RelevantTopicIds": 23
+}
 
-browser.get(publisher_link)
-time.sleep(4)
+str_test = "pKCRz-hta_A	2022-03-18T12:14:25Z	UCbd0IJ1OJAVcjjEH4t9VjEw	22	Wow😱🔥 #shorts		KYLIE-LUNA	none	PT23S	2d	hd	false	false	46409	1169		0	33	public	youtube	true	true		"
+str_test = str_test.split("\t")
+# print(str_test[:])
+for key, value in index.items():
+     print("{0}: {1}".format(key, str_test[value]))
 
-item = browser.find_element_by_css_selector('div.tiktok-yz6ijl-DivWrapper')
-html = item.get_attribute('innerHTML')
-# print(html)
-html = etree.HTML(html)
-video_link = html.cssselect('a')[0].attrib['href']
-img_name = re.sub('\/', '-', video_link[24:])
-print(img_name)
-
-img_link = html.cssselect('img')[0].attrib['src']
-img_link = 'http' + img_link[5:]
-print(img_link)
-
-browser.close()
+# publisher_link = 'https://www.tiktok.com/tag/wearitbigchallenge'
+# browser = webdriver.Chrome()
+#
+# browser.get(publisher_link)
+# time.sleep(4)
+#
+# item = browser.find_element_by_css_selector('div.tiktok-yz6ijl-DivWrapper')
+# html = item.get_attribute('innerHTML')
+# # print(html)
+# html = etree.HTML(html)
+# video_link = html.cssselect('a')[0].attrib['href']
+# img_name = re.sub('\/', '-', video_link[24:])
+# print(img_name)
+#
+# img_link = html.cssselect('img')[0].attrib['src']
+# img_link = 'http' + img_link[5:]
+# print(img_link)
+#
+# browser.close()
 
 # a = '43,567'
 # a = re.sub('(,)', '', a)
