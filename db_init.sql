@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS `video`
   `video_link`      varchar(256)               NOT NULL DEFAULT '' COMMENT '视频链接',
   `date`            varchar(20)                NOT NULL DEFAULT '' COMMENT '视频发布日期',
   `views`           int                        NOT NULL DEFAULT 0  COMMENT '视频观看次数',
-  `description`     varchar(4096)              NOT NULL DEFAULT '' COMMENT '视频描述',
+  `description`     varchar(10000)              NOT NULL DEFAULT '' COMMENT '视频描述',
   `comments_count`  int                        NOT NULL DEFAULT 0  COMMENT '视频评论数量',
   PRIMARY KEY (`id`),
   KEY `publisher`(`publisher`),
@@ -24,6 +24,7 @@ CREATE TABLE IF NOT EXISTS `comment`
   `user`         varchar(64)                NOT NULL COMMENT '评论者',
   `user_link`    varchar(256)               NOT NULL COMMENT '评论者主页链接',
   `content`      varchar(2048)              NOT NULL COMMENT '评论内容',
+  `date`         varchar(20)                NOT NULL COMMENT '发布日期',
   PRIMARY KEY (`id`),
   KEY `video_id` (`video_id`)
 ) ENGINE = InnoDB
