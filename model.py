@@ -49,3 +49,4 @@ class User(Base):
     description = Column(String(4096))
     details = Column(String(1024))
     links = Column(String(4096))
+    user_id = Column(String(24))
