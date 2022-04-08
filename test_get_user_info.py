@@ -97,17 +97,21 @@ if __name__ == '__main__':
     f = open("./user_link.txt", encoding='UTF-8')
     lines = f.readlines()
     lines = list(set(lines))  # 去重
+    print(len(lines))
 
     for line in lines:
         line = line.strip('\n')
         print(line)
         publisher_link = line + '/about'
-        browser = webdriver.Chrome()
+        option = webdriver.ChromeOptions()
+        option.add_argument('headless')
+        browser = webdriver.Chrome(chrome_options=option)
         try:
             browser.get(publisher_link)
             time.sleep(5)
             get_user_info(browser, line)
-
+        except:
+            print("broswer error")
         finally:
             browser.close()
     f.close()
