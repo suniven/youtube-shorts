@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `comment`
 CREATE TABLE IF NOT EXISTS `user`
 (
   `id`           bigint(20) auto_increment  NOT NULL            COMMENT 'id',
-  `type`         tinyint                    NOT NULL            COMMENT '0-普通用户 1-视频发布者',
+  `type`         tinyint                    NOT NULL            COMMENT '0-普通用户 1-垃圾评论用户',
   `username`     varchar(64)                NOT NULL            COMMENT '用户名',
   `user_id`      varchar(24)                NOT NULL            COMMENT '用户24位编码标识',
   `homepage`     varchar(256)               NOT NULL            COMMENT '主页链接',
