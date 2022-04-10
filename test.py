@@ -13,14 +13,21 @@ from sqlalchemy import Column, String, create_engine, Integer
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.dialects import mysql
+from urllib.parse import urlparse
 
-a="http://www.youtube.com/channel/UCj5LuOzJgPOe8F-WH0Hbmrw"
-print(a[-24:])
+url = '''*Son unos de los **babes.Camsoda.Uno*    mañas no se la  Sun: 'Hotter'  Sugar: 'Sweeter'  Joonie: 'Cooler'  Yoongi: 'Butter'    Son unos de los mejores conciertos  , no puede ir pero de tan solo verlos desde pantalla, se que estuvo sorprendente,'''
 
-a = "234,567位订阅者"
-a = ''.join(filter(str.isdigit, a))
+parse = urlparse(url)
 
-print(a)
+print(parse)
+
+# a="http://www.youtube.com/channel/UCj5LuOzJgPOe8F-WH0Hbmrw"
+# print(a[-24:])
+#
+# a = "234,567位订阅者"
+# a = ''.join(filter(str.isdigit, a))
+#
+# print(a)
 #
 # index = {
 #     "VideoID": 0, "PublishedAt": 1, "ChannelId": 2, "CategoryID": 3, "Title": 4, "Description": 5, "ChannelTitle": 6,

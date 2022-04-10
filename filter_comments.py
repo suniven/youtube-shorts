@@ -23,5 +23,5 @@ if __name__ == '__main__':
     print("len: ",len(comments))
     for comment in comments:
         # print(comment)
-        link = re.findall(r'\w+\.\w+', comment.content)
+        link = re.findall(r'([a-zA-Z0-9]{1,63}(\.[a-zA-Z0-9]{1,63})+)', comment.content)
         print(comment.id, comment.user_link[-12:], link)
