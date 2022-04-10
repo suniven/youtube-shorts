@@ -12,7 +12,7 @@ from model import Comment
 import re
 
 if __name__ == '__main__':
-    engine = create_engine('mysql+pymysql://root:1101syw@localhost:3306/test?charset=utf8mb4', echo=True,
+    engine = create_engine('mysql+pymysql://root:1101syw@localhost:3306/youtube_shorts?charset=utf8mb4', echo=True,
                            max_overflow=8)
     DBSession = sessionmaker(bind=engine)
     session = DBSession()
@@ -23,5 +23,5 @@ if __name__ == '__main__':
     print("len: ",len(comments))
     for comment in comments:
         # print(comment)
-        link = re.findall(r'([a-zA-Z0-9]{1,63}(\.[a-zA-Z0-9]{1,63})+)', comment.content)
+        link = re.findall(r'(?:[\w](?:[\w\-]{0,61}[\w])?\.)+[a-zA-Z]{2,6}', comment.content)
         print(comment.id, comment.user_link[-12:], link)

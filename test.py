@@ -15,11 +15,12 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.dialects import mysql
 from urllib.parse import urlparse
 
-url = '''*Son unos de los **babes.Camsoda.Uno*    mañas no se la  Sun: 'Hotter'  Sugar: 'Sweeter'  Joonie: 'Cooler'  Yoongi: 'Butter'    Son unos de los mejores conciertos  , no puede ir pero de tan solo verlos desde pantalla, se que estuvo sorprendente,'''
+# url = '''*Son unos de los **babes.Camsoda.Uno*    mañas no se la  Sun: 'Hotter'  Sugar: 'Sweeter'  Joonie: 'Cooler'  Yoongi: 'Butter'    Son unos de los mejores conciertos  , no puede ir pero de tan solo verlos desde pantalla, se que estuvo sorprendente,'''
 
-parse = urlparse(url)
+url="baidu.com"
 
-print(parse)
+a=re.findall(r'(?:[\w](?:[\w\-]{0,61}[\w])?\.)+[a-zA-Z]{2,6}',url)
+print(a)
 
 # a="http://www.youtube.com/channel/UCj5LuOzJgPOe8F-WH0Hbmrw"
 # print(a[-24:])
