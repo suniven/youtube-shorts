@@ -15,8 +15,8 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.dialects import mysql
 from urllib.parse import urlparse
 
-url="http://i.want.you"
-print("%s ：截图成功！！！" % url)
+a = re.findall(r'(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}', "_KUYYA.SITE.eeee.oi")
+print(a)
 
 #
 # browser = webdriver.Chrome()
