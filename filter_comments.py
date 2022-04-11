@@ -34,7 +34,9 @@ proxies = {
 def judge_comment(comment):
     links = re.findall(r'(?:[\w](?:[\w\-]{0,61}[\w])?\.)+[a-zA-Z]{2,6}', comment.content)
     print(comment.id, comment.user_link[-24:], links)
-    browser = webdriver.Chrome()
+    option = webdriver.ChromeOptions()
+    option.add_argument('--headless')
+    browser = webdriver.Chrome(chrome_options=option)
     cnt = 0
     for link in links:
         try:
