@@ -59,6 +59,7 @@ CREATE TABLE IF NOT EXISTS `site`
     `land_page`  varchar(2048)             NOT NULL DEFAULT '' COMMENT '色情网站落地页链接',
     `page_title` varchar(256)              NOT NULL DEFAULT '' COMMENT '网站标题',
     `screenshot` varchar(256)              NOT NULL DEFAULT '' COMMENT '网站截图',
+    `type`       tinyint                   NOT NULL DEFAULT 2 COMMENT '0-普通网站 1-色情网站 2-未分类',
     PRIMARY KEY (`id`),
     KEY `comment_id` (`comment_id`)
 ) ENGINE = InnoDB

@@ -1,8 +1,8 @@
 # TODO: 统计评论中包含色情链接的数量
 # TODO: 将包含色情链接的评论打上tag
-# TODO: 保存落地页的相关信息 eg. title 截图
+# 保存落地页的相关信息 eg. title 截图
 # TODO: 将发布此类评论的用户打上tag并统计每名用户发了多少条此类评论
-# TODO: 访问色情链接，保存跳转后的落地页链接
+# 访问色情链接，保存跳转后的落地页链接
 
 from sqlalchemy import Column, String, create_engine, Integer, SmallInteger
 from sqlalchemy.orm import sessionmaker
@@ -31,12 +31,10 @@ proxies = {
 }
 
 
-def judge_comment(comment):
+def judge_comment(comment, broswer):
     links = re.findall(r'(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}', comment.content)
     print(comment.id, comment.user_link[-24:], links)
-    option = webdriver.ChromeOptions()
-    option.add_argument('--headless')
-    browser = webdriver.Chrome(chrome_options=option)
+
     cnt = 0
     for link in links:
         try:
@@ -79,10 +77,8 @@ def judge_comment(comment):
                 session.add(site)
                 session.commit()
                 session.close()
-        except:
-            print("响应失败")
-
-    browser.quit()
+        except Exception as e:
+            print("Err: ", e)
 
 
 if __name__ == '__main__':
@@ -93,6 +89,11 @@ if __name__ == '__main__':
         Comment.content.op('regexp')(r'([a-zA-Z0-9]([a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}')).all()
     session.close()
 
+    option = webdriver.ChromeOptions()
+    option.add_argument('--headless')
+    browser = webdriver.Chrome(chrome_options=option)
     print("len: ", len(comments))
     for comment in comments:
-        judge_comment(comment)
+        if comment.id == 20568:
+            judge_comment(comment, browser)
+    browser.quit()
