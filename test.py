@@ -14,9 +14,36 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.dialects import mysql
 from urllib.parse import urlparse
+import os
+import sys
 
-a = re.findall(r'(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}', "_KUYYA.SITE.eeee.oi")
-print(a)
+
+# tmd图片怎么和数据库差了一条草了
+def get_allfile(path):  # 获取所有文件
+    all_file = []
+    for f in os.listdir(path):  # listdir返回文件中所有目录
+        f_name = os.path.join(path, f)
+        all_file.append(f_name)
+    return all_file
+
+
+sqlconn = 'mysql+pymysql://root:1101syw@localhost:3306/test?charset=utf8mb4'
+engine = create_engine(sqlconn, echo=True, max_overflow=8)
+DBSession = sessionmaker(bind=engine)
+session = DBSession()
+rows = session.query(model.Site).filter(model.Site.type == 2).all()
+files = get_allfile('./screenshots/')
+print(files[:])
+for row in rows:
+    if row.screenshot in files:
+        files.remove(row.screenshot)
+print(files[:])                         # tmd找到了 id:20568   20568_0.png
+session.close()
+
+
+
+# a = re.findall(r'(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}', "_KUYYA.SITE.eeee.oi")
+# print(a)
 
 #
 # browser = webdriver.Chrome()
