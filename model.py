@@ -19,8 +19,8 @@ class Video(Base):
     video_link = Column(String(256))
     date = Column(String(20))
     views = Column(Integer)
-    description=Column(String(4096))
-    comments_count=Column(Integer)
+    description = Column(String(4096))
+    comments_count = Column(Integer)
 
 
 class Comment(Base):
@@ -50,3 +50,16 @@ class User(Base):
     details = Column(String(1024))
     links = Column(String(4096))
     user_id = Column(String(24))
+
+
+class Site(Base):
+    # 表名
+    __tablename__ = 'site'
+
+    id = Column(mysql.BIGINT, primary_key=True)
+    comment_id = Column(mysql.BIGINT)
+    user_id = Column(String(24))
+    url = Column(String(256))
+    land_page = Column(String(2048))
+    page_title = Column(String(256))
+    screenshot = Column(String(256))
