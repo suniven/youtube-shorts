@@ -32,7 +32,7 @@ proxies = {
 
 
 def judge_comment(comment):
-    links = re.findall(r'(?:[\w](?:[\w\-]{0,61}[\w])?\.)+[a-zA-Z]{2,6}', comment.content)
+    links = re.findall(r'(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}', comment.content)
     print(comment.id, comment.user_link[-24:], links)
     option = webdriver.ChromeOptions()
     option.add_argument('--headless')
@@ -82,7 +82,7 @@ def judge_comment(comment):
         except:
             print("响应失败")
 
-    browser.close()
+    browser.quit()
 
 
 if __name__ == '__main__':
