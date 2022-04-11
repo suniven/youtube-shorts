@@ -15,12 +15,31 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.dialects import mysql
 from urllib.parse import urlparse
 
-# url = '''*Son unos de los **babes.Camsoda.Uno*    mañas no se la  Sun: 'Hotter'  Sugar: 'Sweeter'  Joonie: 'Cooler'  Yoongi: 'Butter'    Son unos de los mejores conciertos  , no puede ir pero de tan solo verlos desde pantalla, se que estuvo sorprendente,'''
+url="http://i.want.you"
+print("%s ：截图成功！！！" % url)
 
-url="baidu.com"
+#
+# browser = webdriver.Chrome()
+# try:
+#     browser.get('http://i.want.you')
+#     time.sleep(5)
+#     # 获取网站的信息
+#     http_status = '响应成功'
+#     if browser.title:
+#         title = browser.title
+#         print(title)
+#     else:
+#         title = ''
+#     print('响应成功')
+# except:
+#     print('响应失败')
 
-a=re.findall(r'(?:[\w](?:[\w\-]{0,61}[\w])?\.)+[a-zA-Z]{2,6}',url)
-print(a)
+# str = '''*Son unos de los **babes.Camsoda.Uno*    mañas no se la  Sun: 'Hotter'  Sugar: 'Sweeter'  Joonie: 'Cooler'  Yoongi: 'Butter'    Son unos de los mejores conciertos  , no puede ir pero de tan solo verlos desde pantalla, se que estuvo sorprendente,'''
+
+# url="baidu.com"
+#
+# a=re.findall(r'(?:[\w](?:[\w\-]{0,61}[\w])?\.)+[a-zA-Z]{2,6}',url)
+# print(a)
 
 # a="http://www.youtube.com/channel/UCj5LuOzJgPOe8F-WH0Hbmrw"
 # print(a[-24:])
