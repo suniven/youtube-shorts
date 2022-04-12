@@ -60,6 +60,13 @@ def judge_comment(comment, broswer):
                     print("截图失败：%s" % err_msg)
 
                 print("-----------------------------")
+
+                # 判断弹窗
+                WebDriverWait(browser, 20, 0.5).until(EC.alert_is_present())  # 最大等待时间30s,每0.5s检测一次元素，只要检测到即可进行下一步操作
+                update_status = browser.switch_to.alert.text
+                print(update_status)
+                browser.switch_to.alert.accept()  # 点击弹出框的确定按钮
+
                 land_page = browser.current_url
                 site = Site()
                 site.user_id = comment.user_link[-24:]
