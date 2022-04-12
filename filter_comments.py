@@ -1,8 +1,9 @@
-# TODO: 统计评论中包含色情链接的数量
+# 统计评论中包含色情链接的数量
 # TODO: 将包含色情链接的评论打上tag
 # 保存落地页的相关信息 eg. title 截图
 # TODO: 将发布此类评论的用户打上tag并统计每名用户发了多少条此类评论
 # 访问色情链接，保存跳转后的落地页链接
+# TODO: 截图时判断是否已经存在
 
 from sqlalchemy import Column, String, create_engine, Integer, SmallInteger
 from sqlalchemy.orm import sessionmaker
@@ -75,6 +76,7 @@ def judge_comment(comment, broswer):
                 site.url = link
                 site.page_title = title
                 site.screenshot = './screenshots/' + str(comment.id) + '_' + str(cnt) + '.png'
+                site.type = 2
                 cnt = cnt + 1
 
                 # 插入数据库

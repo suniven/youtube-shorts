@@ -33,6 +33,7 @@ class Comment(Base):
     user_link = Column(String(256))
     content = Column(String(2048))
     date = Column(String(20))
+    type = Column(SmallInteger)
 
 
 class User(Base):
