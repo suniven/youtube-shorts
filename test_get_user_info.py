@@ -171,22 +171,19 @@ if __name__ == '__main__':
     lines = f.readlines()
     lines = list(set(lines))  # 去重
     print(len(lines))
+    option = webdriver.ChromeOptions()
+    option.add_argument('headless')
+    browser = webdriver.Chrome(chrome_options=option)
 
     for line in lines:
         line = line.strip('\n')
         print(line)
         publisher_link = line + '/about'
-        option = webdriver.ChromeOptions()
-        option.add_argument('headless')
-        browser = webdriver.Chrome(chrome_options=option)
-        try:
-            browser.get(publisher_link)
-            time.sleep(5)
-            get_user_info(browser, line, session)
-            # test(browser, line)
-        except:
-            print("broswer error")
-        finally:
-            browser.close()
+
+        browser.get(publisher_link)
+        time.sleep(5)
+        get_user_info(browser, line, session)
+
     f.close()
+    browser.quit()
     session.close()
