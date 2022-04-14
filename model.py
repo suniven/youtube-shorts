@@ -65,3 +65,4 @@ class Site(Base):
     page_title = Column(String(256))
     screenshot = Column(String(256))
     type = Column(SmallInteger)
+    detail = Column(String(24))

@@ -25,6 +25,7 @@ CREATE TABLE IF NOT EXISTS `comment`
     `user_link` varchar(256)              NOT NULL DEFAULT '' COMMENT '评论者主页链接',
     `content`   varchar(2048)             NOT NULL DEFAULT '' COMMENT '评论内容',
     `date`      varchar(20)               NOT NULL DEFAULT '' COMMENT '发布日期',
+    `type`      smallint                  NOT NULL DEFAULT 0 COMMENT '0-正常评论 1-包含色情链接的评论 2-包含其他链接的评论',
     PRIMARY KEY (`id`),
     KEY `video_id` (`video_id`)
 ) ENGINE = InnoDB
@@ -50,6 +51,7 @@ CREATE TABLE IF NOT EXISTS `user`
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8 COMMENT ='youtube用户表';
 
+
 CREATE TABLE IF NOT EXISTS `site`
 (
     `id`         bigint(20) auto_increment NOT NULL COMMENT 'id',
@@ -60,6 +62,7 @@ CREATE TABLE IF NOT EXISTS `site`
     `page_title` varchar(256)              NOT NULL DEFAULT '' COMMENT '网站标题',
     `screenshot` varchar(256)              NOT NULL DEFAULT '' COMMENT '网站截图',
     `type`       tinyint                   NOT NULL DEFAULT 2 COMMENT '0-普通网站 1-色情网站 2-未分类',
+    `detail`     varchar(24)               NOT NULL DEFAULT '' COMMENT '细分',
     PRIMARY KEY (`id`),
     KEY `comment_id` (`comment_id`)
 ) ENGINE = InnoDB
