@@ -4,7 +4,7 @@
 # 将发布此类评论的用户打上tag并统计每名用户发了多少条此类评论
 # 访问色情链接，保存跳转后的落地页链接
 # TODO: 截图时判断是否已经存在
-# TODO: 修改域名判断 发现有些链接形式后面还有/xxxx/xxxx
+# 修改域名判断 发现有些链接形式后面还有/xxxx/xxxx
 
 from sqlalchemy import Column, String, create_engine, Integer, SmallInteger
 from sqlalchemy.orm import sessionmaker
@@ -33,8 +33,9 @@ proxies = {
 }
 
 
-def judge_comment(comment, broswer):
-    links = re.findall(r'(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}', comment.content)
+def judge_comment(comment, broswer, session):
+    links = re.findall(r'((?:(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6})+(?:(?:\/[=\w\?]+)*))+',
+                       comment.content)
     print(comment.id, comment.user_link[-24:], links)
 
     cnt = 0
@@ -64,10 +65,12 @@ def judge_comment(comment, broswer):
                 print("-----------------------------")
 
                 # 判断弹窗
-                WebDriverWait(browser, 20, 0.5).until(EC.alert_is_present())  # 最大等待时间30s,每0.5s检测一次元素，只要检测到即可进行下一步操作
-                update_status = browser.switch_to.alert.text
-                print(update_status)
-                browser.switch_to.alert.accept()  # 点击弹出框的确定按钮
+                # TODO: 为了节省时间，目前不对所有url进行弹窗判断，因为已经知道哪些有弹窗
+                if comment.id == 20568:
+                    WebDriverWait(browser, 20, 0.5).until(EC.alert_is_present())  # 最大等待时间20s,每0.5s检测一次元素，只要检测到即可进行下一步操作
+                    update_status = browser.switch_to.alert.text
+                    print(update_status)
+                    browser.switch_to.alert.accept()  # 点击弹出框的确定按钮
 
                 land_page = browser.current_url
                 site = Site()
@@ -82,12 +85,10 @@ def judge_comment(comment, broswer):
                 cnt = cnt + 1
 
                 # 插入数据库
-                engine = create_engine(sqlconn, echo=True, max_overflow=8)
-                DBSession = sessionmaker(bind=engine)
-                session = DBSession()
+                # TODO: 插入前判断是否存在 sqlalchemy不会没有直接穿整个对象更新的方法吧不会吧不会吧
                 session.add(site)
                 session.commit()
-                session.close()
+
         except Exception as e:
             print("Err: ", e)
 
@@ -98,13 +99,13 @@ if __name__ == '__main__':
     session = DBSession()
     comments = session.query(Comment).filter(
         Comment.content.op('regexp')(r'([a-zA-Z0-9]([a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}')).all()
-    session.close()
 
     option = webdriver.ChromeOptions()
     option.add_argument('--headless')
+    option.add_argument("--window-size=1920,1050")  # 专门应对无头浏览器中不能最大化屏幕的方案
     browser = webdriver.Chrome(chrome_options=option)
     print("len: ", len(comments))
     for comment in comments:
-        if comment.id == 20568:
-            judge_comment(comment, browser)
+        judge_comment(comment, browser, session)
     browser.quit()
+    session.close()
