@@ -21,6 +21,7 @@ from selenium.webdriver.chrome.options import Options
 import re
 import os
 import requests
+import time
 
 sqlconn = 'mysql+pymysql://root:1101syw@localhost:3306/test-0414?charset=utf8mb4'
 headers = {
@@ -42,6 +43,7 @@ def judge_comment(comment, broswer, session):
     for link in links:
         try:
             res = requests.get('http://' + link, headers=headers, timeout=8, proxies=proxies)
+            time.sleep(3)
             print("Visiting Site: http://%s" % link)
             print("Status Code: %s" % res.status_code)
             if res.status_code != 200:
@@ -56,7 +58,7 @@ def judge_comment(comment, broswer, session):
                     title = ''
 
                 try:
-                    screenshot = '.\\screenshots\\' + str(comment.id) + '_' + str(cnt) + '.png'
+                    screenshot = '.\\screenshots_youtu.be\\' + str(comment.id) + '_' + str(cnt) + '.png'
                     browser.save_screenshot(screenshot)
                     print("截图成功")
                 except BaseException as err_msg:
@@ -106,6 +108,7 @@ if __name__ == '__main__':
     browser = webdriver.Chrome(chrome_options=option)
     print("len: ", len(comments))
     for comment in comments:
-        judge_comment(comment, browser, session)
+        if 'youtu.be' in comment.content:
+            judge_comment(comment, browser, session)
     browser.quit()
     session.close()
