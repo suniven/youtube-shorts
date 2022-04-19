@@ -105,6 +105,6 @@ if __name__ == '__main__':
     browser = webdriver.Chrome(chrome_options=option)
     print("len: ", len(comments))
     for comment in comments:
-        if comment.id == 20568:
+        if comment.id == 24575:
             judge_comment(comment, browser)
     browser.quit()
