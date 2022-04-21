@@ -49,9 +49,9 @@ if __name__ == '__main__':
     #          'https://www.tiktok.com/tag/bussitchallenge',
     #          'https://www.tiktok.com/tag/bigbankchallenge'
     #          ]
-    links = ['https://www.tiktok.com/tag/whyarentyouinuniformchallenge',
-             'https://www.tiktok.com/tag/bussitchallenge',
-             'https://www.tiktok.com/tag/bigbankchallenge'
+    links = ['https://www.tiktok.com/tag/whyarentyouinuniform',
+             'https://www.tiktok.com/tag/bussit',
+             'https://www.tiktok.com/tag/bigbank'
              ]
     option = webdriver.ChromeOptions()
     option.add_argument('--headless')

@@ -69,6 +69,17 @@ CREATE TABLE IF NOT EXISTS `site`
   DEFAULT CHARSET = utf8 COMMENT ='色情网站信息';
 
 
+CREATE TABLE IF NOT EXISTS `domain`
+(
+    `id`       bigint(20) auto_increment NOT NULL COMMENT 'id',
+    `raw_data` varchar(20000)            NOT NULL DEFAULT '' COMMENT 'whois raw data',
+    `domain_name` varchar()
+    `registry domain id`
+    `Registrar WHOIS Server`
+    PRIMARY KEY (`id`)
+) ENGINE = InnoDB
+  DEFAULT CHARSET = utf8 COMMENT ='域名信息';
+
 
 alter table video
     convert to character set utf8mb4;
@@ -77,4 +88,6 @@ alter table comment
 alter table user
     convert to character set utf8mb4;
 alter table site
+    convert to character set utf8mb4;
+alter table domain
     convert to character set utf8mb4;

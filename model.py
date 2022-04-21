@@ -66,3 +66,10 @@ class Site(Base):
     screenshot = Column(String(256))
     type = Column(SmallInteger)
     detail = Column(String(24))
+
+class Domain(Base):
+    # 表名
+    __tablename__ = 'domain'
+
+    id = Column(mysql.BIGINT, primary_key=True)
+

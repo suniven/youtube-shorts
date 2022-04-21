@@ -12,6 +12,8 @@ if __name__ == '__main__':
     for index, domain in enumerate(domains):
         sub = domain.split('.')
         domains[index] = sub[-2] + '.' + sub[-1]
+    domains = list(set(domains))  # 去重
+    domains = sorted(domains)
     for domain in domains:
         f2.write(domain)
     f1.close()
