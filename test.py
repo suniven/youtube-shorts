@@ -18,12 +18,38 @@ from urllib.parse import urlparse
 import os
 import sys
 
-a = """333 Sex.Uno If you would like to support my channel, I will be very grateful, every donation is important to me 😚 https://www.paypal.com/donate/?hosted_button_id=8V8QP43EHZ3M8"""
-res = re.findall(r'((?:(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6})+(?:(?:\/[=\w\?]+)*))+', a)
-print(res[:])
 
-res = re.findall(r'(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}', a)
-print(res[:])
+# tmd图片怎么又tm和数据库差了一条 20220421
+def get_allfile(path):  # 获取所有文件
+    all_file = []
+    for f in os.listdir(path):  # listdir返回文件中所有目录
+        f_name = os.path.join('./screenshots/', f)
+        all_file.append(f_name)
+    return all_file
+
+
+sqlconn = 'mysql+pymysql://root:1101syw@localhost:3306/test?charset=utf8mb4'
+engine = create_engine(sqlconn, echo=True, max_overflow=8)
+DBSession = sessionmaker(bind=engine)
+session = DBSession()
+rows = session.query(model.Site).filter(model.Site.type == 0).all()
+files = get_allfile('./screenshots/common/')
+# print(files[:])
+for row in rows:
+    if row.screenshot in files:
+        files.remove(row.screenshot)
+print(files[:])                         # id:24753   24753_0.png
+session.close()
+
+
+#
+# a = """333 Sex.Uno If you would like to support my channel, I will be very grateful, every donation is important to me 😚 https://www.paypal.com/donate/?hosted_button_id=8V8QP43EHZ3M8"""
+# res = re.findall(r'((?:(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6})+(?:(?:\/[=\w\?]+)*))+', a)
+# print(res[:])
+#
+# a="https://quickdates0.com/?a=929626&cr=30815&lid=16559&mh=V1JVanNCR2prSVhrenNqT3dmQXd5T055eUJs"
+# res = re.findall(r'(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}', a)
+# print(res[:])
 
 # def get_allfile(path):  # 获取所有文件
 #     all_file = []
