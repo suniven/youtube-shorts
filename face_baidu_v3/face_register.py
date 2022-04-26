@@ -18,6 +18,7 @@
 import requests
 import os
 import time
+import hashlib
 
 
 def send_request(img_base64, group_id, user_id):
@@ -36,16 +37,28 @@ def send_request(img_base64, group_id, user_id):
     response = requests.post(request_url, data=params, headers=headers)
     if response:
         print(response.json())
+        data = response.json()
+        if data["error_code"] == 0:
+            print("Register Successfully.")
+        elif data["error_code"] == 18:
+            time.sleep(2)
+            send_request(img_base64, group_id, user_id)
 
 
 if __name__ == '__main__':
-    yt_base64_path = '../cover_img/yt_base64/'
-    tt_base64_path = '../cover_img/tt_base64'
+    # yt_base64_path = '../cover_img/yt_base64/'
+    tt_base64_path = '../cover_img/tt_base64/'
 
-    yt_base64_list = os.listdir(yt_base64_path)
-    yt_base64_list.remove('no face')
+    # yt_base64_list = os.listdir(yt_base64_path)
+    # yt_base64_list.remove('no face')
     tt_base64_list = os.listdir(tt_base64_path)
     tt_base64_list.remove('no face')
 
-    for yt_base64_file in yt_base64_list:
-        f=open(yt_base64_path+yt_base64_file,"r",encoding='UTF-8')
+    group_id = 'group_tt'
+    for tt_base64_file in tt_base64_list:
+        f = open(tt_base64_path + tt_base64_file, "r", encoding='UTF-8')
+        tt_base64 = f.read().strip('\n')
+        f.close()
+        user_id = hashlib.md5(tt_base64_file[:-37].encode('UTF-8')).hexdigest()
+        print("Register {0} to Group {1}...".format(user_id, group_id))
+        send_request(tt_base64, group_id, user_id)

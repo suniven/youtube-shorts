@@ -1,9 +1,7 @@
 {
   "image": "027d8308a2ec665acb1bdf63e513bcb9",
   "image_type": "FACE_TOKEN",
-  "group_id": "group_repeat",
-  "user_id": "user1",
-  "user_info": "abc",
+  "group_id_list": "group_repeat,group_233",
   "quality_control": "LOW",
   "liveness_control": "NORMAL"
 }

@@ -73,12 +73,19 @@ CREATE TABLE IF NOT EXISTS `domain`
 (
     `id`       bigint(20) auto_increment NOT NULL COMMENT 'id',
     `raw_data` varchar(20000)            NOT NULL DEFAULT '' COMMENT 'whois raw data',
-    `domain_name` varchar()
-    `registry domain id`
-    `Registrar WHOIS Server`
+
     PRIMARY KEY (`id`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8 COMMENT ='域名信息';
+
+CREATE TABLE IF NOT EXISTS `tt_cover`
+(
+    `id`        bigint(20) auto_increment NOT NULL COMMENT 'id',
+    `file_name` varchar(200)              NOT NULL DEFAULT '' COMMENT '截图文件名',
+    `user_id`   varchar(32)               NOT NULL DEFAULT '' COMMENT '用户名的MD5值 用于建立人脸库注册人脸时的useid参数',
+    PRIMARY KEY (`id`)
+) ENGINE = InnoDB
+  DEFAULT CHARSET = utf8 COMMENT ='tiktok cover';
 
 
 alter table video
@@ -90,4 +97,6 @@ alter table user
 alter table site
     convert to character set utf8mb4;
 alter table domain
+    convert to character set utf8mb4;
+alter table tt_cover
     convert to character set utf8mb4;

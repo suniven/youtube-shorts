@@ -67,9 +67,18 @@ class Site(Base):
     type = Column(SmallInteger)
     detail = Column(String(24))
 
+
 class Domain(Base):
     # 表名
     __tablename__ = 'domain'
 
     id = Column(mysql.BIGINT, primary_key=True)
 
+
+class TT_Cover(Base):
+    # 表名
+    __tablename__ = 'tt_cover'
+
+    id = Column(mysql.BIGINT, primary_key=True)
+    file_name = Column(String(200))
+    user_id = Column(String(32))
