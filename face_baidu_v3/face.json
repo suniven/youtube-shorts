@@ -1,7 +1,11 @@
 {
-  "image": "027d8308a2ec665acb1bdf63e513bcb9",
-  "image_type": "FACE_TOKEN",
-  "group_id_list": "group_repeat,group_233",
-  "quality_control": "LOW",
-  "liveness_control": "NORMAL"
+  "face_token": "186ad2752937baa560ee7b65e4bccf7f",
+  "user_list": [
+    {
+      "group_id": "group_tt",
+      "user_id": "d60eae274a474cc1687a058d7e55ce4a",
+      "user_info": "",
+      "score": 77.640830993652
+    }
+  ]
 }
