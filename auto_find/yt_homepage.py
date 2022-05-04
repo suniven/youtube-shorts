@@ -94,15 +94,19 @@ if __name__ == '__main__':
         MAX_GET_COUNT = MAX_GET_COUNT - 1
         try:
             video_id = browser.current_url[-11:]
-            video_url = yt_url_prefix + video_id
-            js = 'window.open(\"' + video_url + '\");'
-            # print("js: ", js)
-            browser.execute_script(js)
-            handles = browser.window_handles
-            # print("Handles Count: ", len(browser.window_handles))
-            browser.switch_to.window(handles[1])
-            time.sleep(4)
-            check_video_comments(browser, session)
+
+            # 检查是否已经爬取过这个视频的评论了
+            rows = session.query(model.Comment).filter(model.Comment.video_id.like(video_id))
+            if not rows:
+                video_url = yt_url_prefix + video_id
+                js = 'window.open(\"' + video_url + '\");'
+                # print("js: ", js)
+                browser.execute_script(js)
+                handles = browser.window_handles
+                # print("Handles Count: ", len(browser.window_handles))
+                browser.switch_to.window(handles[1])
+                time.sleep(4)
+                check_video_comments(browser, session)
         except Exception as e:
             print("Error: ", e)
         finally:
