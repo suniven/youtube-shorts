@@ -21,6 +21,7 @@ class Video(Base):
     views = Column(Integer)
     description = Column(String(4096))
     comments_count = Column(Integer)
+    create_time = Column(mysql.BIGINT)
 
 
 class Comment(Base):
@@ -34,6 +35,7 @@ class Comment(Base):
     content = Column(String(2048))
     date = Column(String(20))
     type = Column(SmallInteger)
+    create_time = Column(mysql.BIGINT)
 
 
 class User(Base):
@@ -51,6 +53,7 @@ class User(Base):
     details = Column(String(1024))
     links = Column(String(4096))
     user_id = Column(String(24))
+    create_time = Column(mysql.BIGINT)
 
 
 class Site(Base):
@@ -66,6 +69,7 @@ class Site(Base):
     screenshot = Column(String(256))
     type = Column(SmallInteger)
     detail = Column(String(24))
+    create_time = Column(mysql.BIGINT)
 
 
 class Domain(Base):
@@ -82,3 +86,4 @@ class TT_Cover(Base):
     id = Column(mysql.BIGINT, primary_key=True)
     file_name = Column(String(200))
     user_id = Column(String(32))
+    create_time = Column(mysql.BIGINT)

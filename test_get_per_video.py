@@ -33,7 +33,6 @@ def scroll(driver):
 
 
 def insert_db(item):
-    # 哪个天才设计的数据库索引长度限制
     # 初始化数据库连接
     engine = create_engine('mysql+pymysql://root:1101syw@localhost:3306/test?charset=utf8mb4', echo=True,
                            max_overflow=8)

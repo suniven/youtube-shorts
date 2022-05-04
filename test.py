@@ -19,23 +19,40 @@ import os
 import sys
 import hashlib
 
-a=".obenj".encode("UTF-8")
-b=".obenj".encode("UTF-8")
-c="atqofficial_".encode("UTF-8")
-print(hashlib.md5(a).hexdigest())
-print(hashlib.md5(b).hexdigest())
-print(hashlib.md5(c).hexdigest())
+#
+# def findTheWinner(n: int, k: int) -> int:
+#     nums = [i + 1 for i in range(n)]
+#     cur_index = 0
+#     cur_num = n
+#     while len(nums) != 1:
+#         # print(nums[:])
+#         cur_index = (cur_index + k - 1) % cur_num
+#         nums.pop(cur_index)
+#         cur_num = cur_num - 1
+#         cur_index = cur_index % cur_num
+#     return nums[0]
+#
+#
+# x = findTheWinner(5, 2)
+# print(x)
 
-tt_base64_file='_ericamarta-video-6928510470575885574_base64.txt'
-tt_cover=model.TT_Cover()
-print(tt_base64_file[:-37])
-tt_cover.file_name=tt_base64_file[:-11]
-tt_cover.user_id=hashlib.md5(tt_base64_file[:-37].encode('UTF-8')).hexdigest()
-print(tt_cover.file_name)
-print(tt_cover.user_id)
-
-a="_ER175USP6M_base64.txt"
-print(a[:-11])
+# a = ".obenj".encode("UTF-8")
+# b = ".obenj".encode("UTF-8")
+# c = "atqofficial_".encode("UTF-8")
+# print(hashlib.md5(a).hexdigest())
+# print(hashlib.md5(b).hexdigest())
+# print(hashlib.md5(c).hexdigest())
+#
+# tt_base64_file = '_ericamarta-video-6928510470575885574_base64.txt'
+# tt_cover = model.TT_Cover()
+# print(tt_base64_file[:-37])
+# tt_cover.file_name = tt_base64_file[:-11]
+# tt_cover.user_id = hashlib.md5(tt_base64_file[:-37].encode('UTF-8')).hexdigest()
+# print(tt_cover.file_name)
+# print(tt_cover.user_id)
+#
+# a = "_ER175USP6M_base64.txt"
+# print(a[:-11])
 
 # e0ed881daf501a95cecc241811fe990f
 
