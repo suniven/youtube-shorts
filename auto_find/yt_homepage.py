@@ -94,9 +94,10 @@ if __name__ == '__main__':
         MAX_GET_COUNT = MAX_GET_COUNT - 1
         try:
             video_id = browser.current_url[-11:]
-
+            print("video_id: ", video_id)
             # 检查是否已经爬取过这个视频的评论了
-            rows = session.query(model.Comment).filter(model.Comment.video_id.like(video_id))
+            rows = session.query(model.Comment).filter(model.Comment.video_id.like(video_id)).all()
+            print("rows: ", len(rows))
             if not rows:
                 video_url = yt_url_prefix + video_id
                 js = 'window.open(\"' + video_url + '\");'
@@ -107,14 +108,16 @@ if __name__ == '__main__':
                 browser.switch_to.window(handles[1])
                 time.sleep(4)
                 check_video_comments(browser, session)
+                browser.close()
+                # print("After Closing...\nHandles Count: ", len(browser.window_handles))
+                browser.switch_to.window(main_handle)
+                time.sleep(2)
         except Exception as e:
             print("Error: ", e)
         finally:
-            browser.close()
-            # print("After Closing...\nHandles Count: ", len(browser.window_handles))
-            browser.switch_to.window(main_handle)
-            time.sleep(2)
+            print("Get Next Video...")
             browser.find_element_by_css_selector('#navigation-button-down > ytd-button-renderer > a').click()
+            time.sleep(2)   # 保证加载出来下个视频
             # break  # for test
 
     browser.close()
