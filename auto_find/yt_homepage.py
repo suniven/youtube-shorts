@@ -15,6 +15,7 @@ from sqlalchemy.dialects import mysql
 sqlconn = 'mysql+pymysql://root:1101syw@localhost:3306/test?charset=utf8mb4'
 yt_url_prefix = 'https://www.youtube.com/watch?v='  # 方便拉评论
 MAX_SCROLL_COUNT = 250  # 检查评论时页面下拉最大次数 同时下拉评论可以顺便解决自动连播的问题 250大概可以加载3k条？
+MAX_GET_COUNT = 20000  # 往下刷2w个视频
 
 
 def scroll(browser):
@@ -84,36 +85,34 @@ if __name__ == '__main__':
     engine = create_engine(sqlconn, echo=True, max_overflow=8)
     DBSession = sessionmaker(bind=engine)
     session = DBSession()
-    try:
-        browser.get('https://www.youtube.com/')
-        browser.find_element_by_css_selector('#items > ytd-guide-entry-renderer:nth-child(3)').click()
-        time.sleep(3)
-        main_handle = browser.current_window_handle
+    browser.get('https://www.youtube.com/')
+    browser.find_element_by_css_selector('#items > ytd-guide-entry-renderer:nth-child(3)').click()
+    time.sleep(3)
+    main_handle = browser.current_window_handle
 
-        while True:
-            try:
-                video_id = browser.current_url[-11:]
-                video_url = yt_url_prefix + video_id
-                js = 'window.open(\"' + video_url + '\");'
-                # print("js: ", js)
-                browser.execute_script(js)
-                handles = browser.window_handles
-                # print("Handles Count: ", len(browser.window_handles))
-                browser.switch_to.window(handles[1])
-                time.sleep(4)
-                check_video_comments(browser, session)
-            except Exception as e:
-                print("Error: ", e)
-            finally:
-                browser.close()
-                # print("After Closing...\nHandles Count: ", len(browser.window_handles))
-                browser.switch_to.window(main_handle)
-                time.sleep(2)
-                browser.find_element_by_css_selector('#navigation-button-down > ytd-button-renderer > a').click()
-                # break  # for test
-    except Exception as e:
-        print("Error: ", e)
-    finally:
-        browser.close()
-        browser.quit()
-        session.close()
+    while MAX_GET_COUNT:
+        MAX_GET_COUNT = MAX_GET_COUNT - 1
+        try:
+            video_id = browser.current_url[-11:]
+            video_url = yt_url_prefix + video_id
+            js = 'window.open(\"' + video_url + '\");'
+            # print("js: ", js)
+            browser.execute_script(js)
+            handles = browser.window_handles
+            # print("Handles Count: ", len(browser.window_handles))
+            browser.switch_to.window(handles[1])
+            time.sleep(4)
+            check_video_comments(browser, session)
+        except Exception as e:
+            print("Error: ", e)
+        finally:
+            browser.close()
+            # print("After Closing...\nHandles Count: ", len(browser.window_handles))
+            browser.switch_to.window(main_handle)
+            time.sleep(2)
+            browser.find_element_by_css_selector('#navigation-button-down > ytd-button-renderer > a').click()
+            # break  # for test
+
+    browser.close()
+    browser.quit()
+    session.close()
