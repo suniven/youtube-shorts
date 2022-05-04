@@ -1,3 +1,4 @@
+import re
 import time
 import model
 from timestamp import datetime_timestamp, timestamp_datetime, get_now_timestamp
@@ -11,8 +12,9 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.dialects import mysql
 
+sqlconn = 'mysql+pymysql://root:1101syw@localhost:3306/test?charset=utf8mb4'
 yt_url_prefix = 'https://www.youtube.com/watch?v='  # 方便拉评论
-MAX_SCROLL_COUNT = 400  # 检查评论时页面下拉最大次数 同时下拉评论可以顺便解决自动连播的问题
+MAX_SCROLL_COUNT = 250  # 检查评论时页面下拉最大次数 同时下拉评论可以顺便解决自动连播的问题 250大概可以加载3k条？
 
 
 def scroll(browser):
@@ -29,26 +31,59 @@ def scroll(browser):
 
 
 def check_comment(content):
-    return True
+    links = re.findall(r'((?:(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6})+(?:(?:\/[=\w\?]+)*))+',
+                       content)
+    if links:
+        return True
+    else:
+        return False
 
 
-def check_video_comments(browser):
-    time.sleep(2)
+def check_video_comments(browser, session):
     print("Visiting Video: ", browser.current_url)
+    browser.execute_script('window.scrollBy(0,800)')  # 保证评论可以加载出来
+    time.sleep(1)
     scroll(browser)
     comments_containers = browser.find_elements_by_css_selector('#contents > ytd-comment-thread-renderer')
     print("Comments Count: ", len(comments_containers))
     for comments_container in comments_containers:
         content = comments_container.find_element_by_css_selector('#content-text').text
-        check_comment(content)
         # print(content)
+        if check_comment(content):
+            comment = model.Comment()
+            comment.content = content
+            comment.video_id = browser.current_url[-11:]
+            comment.user = comments_container.find_element_by_css_selector('#author-text').text
+            comment.type = 2
+            comment.user_link = comments_container.find_element_by_css_selector('#author-text').get_attribute('href')
+            comment.date = comments_container.find_element_by_css_selector('.published-time-text').text
+            comment.create_time = get_now_timestamp()
+
+            print(comment.video_id)
+            print(comment.user)
+            print(comment.user_link)
+            print(comment.content)
+            print(comment.date)
+            print(comment.create_time)
+
+            session.add(comment)
+            session.commit()
 
     print('--------------------------')
 
 
 if __name__ == '__main__':
-    browser = webdriver.Chrome()
-    browser.maximize_window()
+    # 正常模式
+    # browser = webdriver.Chrome()
+    # browser.maximize_window()
+    # headless模式
+    option = webdriver.ChromeOptions()
+    option.add_argument('--headless')
+    option.add_argument("--window-size=1920,1080")
+    browser = webdriver.Chrome(chrome_options=option)
+    engine = create_engine(sqlconn, echo=True, max_overflow=8)
+    DBSession = sessionmaker(bind=engine)
+    session = DBSession()
     try:
         browser.get('https://www.youtube.com/')
         browser.find_element_by_css_selector('#items > ytd-guide-entry-renderer:nth-child(3)').click()
@@ -66,7 +101,7 @@ if __name__ == '__main__':
                 # print("Handles Count: ", len(browser.window_handles))
                 browser.switch_to.window(handles[1])
                 time.sleep(4)
-                check_video_comments(browser)
+                check_video_comments(browser, session)
             except Exception as e:
                 print("Error: ", e)
             finally:
@@ -75,8 +110,10 @@ if __name__ == '__main__':
                 browser.switch_to.window(main_handle)
                 time.sleep(2)
                 browser.find_element_by_css_selector('#navigation-button-down > ytd-button-renderer > a').click()
+                # break  # for test
     except Exception as e:
         print("Error: ", e)
     finally:
         browser.close()
         browser.quit()
+        session.close()
