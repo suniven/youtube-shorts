@@ -14,7 +14,7 @@ from sqlalchemy.dialects import mysql
 
 sqlconn = 'mysql+pymysql://root:1101syw@localhost:3306/test?charset=utf8mb4'
 yt_url_prefix = 'https://www.youtube.com/watch?v='  # 方便拉评论
-MAX_SCROLL_COUNT = 250  # 检查评论时页面下拉最大次数 同时下拉评论可以顺便解决自动连播的问题 250大概可以加载3k条？
+MAX_SCROLL_COUNT = 200  # 检查评论时页面下拉最大次数 同时下拉评论可以顺便解决自动连播的问题 250大概可以加载3k条？
 MAX_GET_COUNT = 20000  # 往下刷2w个视频
 
 
@@ -28,7 +28,7 @@ def scroll(browser):
             height = comment.size['height']
             flag = height - ex_height
             ex_height = height
-            time.sleep(2)
+            time.sleep(1.5)
 
 
 def check_comment(content):
