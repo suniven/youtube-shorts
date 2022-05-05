@@ -87,7 +87,7 @@ if __name__ == '__main__':
     session = DBSession()
     browser.get('https://www.youtube.com/')
     browser.find_element_by_css_selector('#items > ytd-guide-entry-renderer:nth-child(3)').click()
-    time.sleep(3)
+    time.sleep(4)
     main_handle = browser.current_window_handle
 
     while True:
