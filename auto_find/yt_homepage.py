@@ -75,13 +75,13 @@ def check_video_comments(browser, session):
 
 if __name__ == '__main__':
     # 正常模式
-    # browser = webdriver.Chrome()
-    # browser.maximize_window()
+    browser = webdriver.Chrome()
+    browser.maximize_window()
     # headless模式
-    option = webdriver.ChromeOptions()
-    option.add_argument('--headless')
-    option.add_argument("--window-size=1920,1080")
-    browser = webdriver.Chrome(chrome_options=option)
+    # option = webdriver.ChromeOptions()
+    # option.add_argument('--headless')
+    # option.add_argument("--window-size=1920,1080")
+    # browser = webdriver.Chrome(chrome_options=option)
     engine = create_engine(sqlconn, echo=True, max_overflow=8)
     DBSession = sessionmaker(bind=engine)
     session = DBSession()
@@ -90,8 +90,8 @@ if __name__ == '__main__':
     time.sleep(3)
     main_handle = browser.current_window_handle
 
-    while MAX_GET_COUNT:
-        MAX_GET_COUNT = MAX_GET_COUNT - 1
+    while True:
+        # MAX_GET_COUNT = MAX_GET_COUNT - 1
         try:
             video_id = browser.current_url[-11:]
             print("video_id: ", video_id)
@@ -99,6 +99,17 @@ if __name__ == '__main__':
             rows = session.query(model.Comment).filter(model.Comment.video_id.like(video_id)).all()
             print("rows: ", len(rows))
             if not rows:
+                comment = model.Comment()
+                comment.content = ''
+                comment.video_id = video_id
+                comment.user = ''
+                comment.type = -1   # 占位
+                comment.user_link = ''
+                comment.date = ''
+                comment.create_time = get_now_timestamp()
+                session.add(comment)
+                session.commit()
+
                 video_url = yt_url_prefix + video_id
                 js = 'window.open(\"' + video_url + '\");'
                 # print("js: ", js)
@@ -117,7 +128,7 @@ if __name__ == '__main__':
         finally:
             print("Get Next Video...")
             browser.find_element_by_css_selector('#navigation-button-down > ytd-button-renderer > a').click()
-            time.sleep(2)   # 保证加载出来下个视频
+            time.sleep(3)   # 保证加载出来下个视频
             # break  # for test
 
     browser.close()
