@@ -189,7 +189,7 @@ if __name__ == '__main__':
             print("Getting Page {0}...".format(i))
             url = url_prefix + str(i)
             browser.get(url)
-            time.sleep(2)
+            time.sleep(4)
             main_handle = browser.current_window_handle
             offer_links = browser.find_elements_by_css_selector('h2.mb-1 a')
             for offer_link in offer_links:
