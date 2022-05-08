@@ -198,8 +198,8 @@ if __name__ == '__main__':
                 browser.close()
                 browser.switch_to.window(main_handle)
                 time.sleep(0.5)
-                break  # for test
-            break  # for test
+                # break  # for test
+            # break  # for test
         except Exception as err:
             print("Error: ", err)
     browser.quit()
