@@ -19,7 +19,7 @@ class Video(Base):
     video_link = Column(String(256))
     date = Column(String(20))
     views = Column(Integer)
-    description = Column(String(4096))
+    description = Column(String(10000))
     comments_count = Column(Integer)
     create_time = Column(mysql.BIGINT)
 
@@ -94,14 +94,16 @@ class Affpay_Offer(Base):
     __tablename__ = 'affpay_offer'
 
     id = Column(mysql.BIGINT, primary_key=True)
+    url = Column(String(1024))
     title = Column(String(200))
     payout = Column(String(32))
+    status = Column(String(24))
     offer_create_time = Column(String(32))
     offer_update_time = Column(String(32))
     category = Column(String(32))
     geo = Column(String(64))
     network = Column(String(32))
-    description = Column(String(1024))
+    description = Column(String(10000))
     land_page = Column(String(1024))
     land_page_img = Column(String(256))
     create_time = Column(mysql.BIGINT)
@@ -112,6 +114,7 @@ class Offervault_Offer(Base):
     __tablename__ = 'offervault_offer'
 
     id = Column(mysql.BIGINT, primary_key=True)
+    url = Column(String(1024))
     title = Column(String(200))
     payout = Column(String(32))
     offer_create_time = Column(String(32))
@@ -119,7 +122,7 @@ class Offervault_Offer(Base):
     category = Column(String(32))
     geo = Column(String(64))
     network = Column(String(32))
-    description = Column(String(1024))
+    description = Column(String(10000))
     land_page = Column(String(1024))
     land_page_img = Column(String(256))
     create_time = Column(mysql.BIGINT)
