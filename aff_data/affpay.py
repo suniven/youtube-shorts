@@ -241,3 +241,4 @@ if __name__ == '__main__':
             # break  # for test
         # break  # for test
     browser.quit()
+    session.close()
