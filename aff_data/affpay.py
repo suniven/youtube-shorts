@@ -233,11 +233,11 @@ if __name__ == '__main__':
             # 弹窗处理测试
             # link = 'https://www.affplus.com/o/iluvo-de-de-ch-at-non-incent-cpl-mobile-2'
             # 折叠geo获取测试
-            link = 'https://www.affplus.com/o/sweetsext-au-ca-dk-ie-nz-no-gb-us-cpl-for-adult-dating-content-18-women-date-sex-sexy-tinder-flirt'
+            # link = 'https://www.affplus.com/o/sweetsext-au-ca-dk-ie-nz-no-gb-us-cpl-for-adult-dating-content-18-women-date-sex-sexy-tinder-flirt'
             get_offer(link, browser, engine)
             browser.close()
             browser.switch_to.window(main_handle)
             time.sleep(0.5)
-            break  # for test
-        break  # for test
+            # break  # for test
+        # break  # for test
     browser.quit()

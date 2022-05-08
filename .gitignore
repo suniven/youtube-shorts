@@ -130,3 +130,4 @@ dmypy.json
 # Pyre type checker
 .pyre/
 /aff_data/data/
+/helper_gui/Helper/.vs/
