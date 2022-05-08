@@ -113,7 +113,7 @@ def get_offer(offer_link, browser, engine):
         handles = browser.window_handles
         browser.switch_to.window(handles[2])
         affpay_offer.land_page = browser.current_url
-
+        # https://www.datingleben.com/mlp9/
         # 网站截图比预览图更清楚一点
         try:
             screenshot = '.\\data\\affpay\\screenshots\\' + affpay_offer.land_page_img.replace(".jpg", "") + '.png'
@@ -124,7 +124,7 @@ def get_offer(offer_link, browser, engine):
                 print("Screenshot Already Exists.")
 
         except BaseException as err_msg:
-            print("截图失败：%s" % err_msg)
+            print("Failed To Take Screenshots：%s" % err_msg)
 
         browser.close()
         browser.switch_to.window(handles[1])
