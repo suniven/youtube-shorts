@@ -87,3 +87,39 @@ class TT_Cover(Base):
     file_name = Column(String(200))
     user_id = Column(String(32))
     create_time = Column(mysql.BIGINT)
+
+
+class Affpay_Offer(Base):
+    # 表名
+    __tablename__ = 'affpay_offer'
+
+    id = Column(mysql.BIGINT, primary_key=True)
+    title = Column(String(200))
+    payout = Column(String(32))
+    offer_create_time = Column(String(32))
+    offer_update_time = Column(String(32))
+    category = Column(String(32))
+    geo = Column(String(64))
+    network = Column(String(32))
+    description = Column(String(1024))
+    land_page = Column(String(1024))
+    land_page_img = Column(String(256))
+    create_time = Column(mysql.BIGINT)
+
+
+class Offervault_Offer(Base):
+    # 表名
+    __tablename__ = 'offervault_offer'
+
+    id = Column(mysql.BIGINT, primary_key=True)
+    title = Column(String(200))
+    payout = Column(String(32))
+    offer_create_time = Column(String(32))
+    offer_update_time = Column(String(32))
+    category = Column(String(32))
+    geo = Column(String(64))
+    network = Column(String(32))
+    description = Column(String(1024))
+    land_page = Column(String(1024))
+    land_page_img = Column(String(256))
+    create_time = Column(mysql.BIGINT)

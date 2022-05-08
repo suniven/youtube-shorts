@@ -82,6 +82,7 @@ CREATE TABLE IF NOT EXISTS `domain`
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8 COMMENT ='域名信息';
 
+
 CREATE TABLE IF NOT EXISTS `tt_cover`
 (
     `id`          bigint(20) auto_increment NOT NULL COMMENT 'id',
@@ -91,6 +92,7 @@ CREATE TABLE IF NOT EXISTS `tt_cover`
     PRIMARY KEY (`id`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8 COMMENT ='tiktok cover';
+
 
 CREATE TABLE IF NOT EXISTS `affpay_offer`
 (
@@ -110,6 +112,7 @@ CREATE TABLE IF NOT EXISTS `affpay_offer`
     PRIMARY KEY (`id`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8 COMMENT ='affpay offer';
+
 
 CREATE TABLE IF NOT EXISTS `offervault_offer`
 (
