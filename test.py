@@ -20,14 +20,19 @@ import sys
 import hashlib
 
 browser = webdriver.Chrome()
-browser.get("https://www.baidu.com")
+browser.get("https://www.datingleben.com/mlp9/")
 time.sleep(4)
-browser.get("https://www.sina.com")
-time.sleep(4)
-browser.get("https://www.bing.com")
-time.sleep(4)
+url = browser.current_url
+print("url： ", url)
 browser.close()
-print("close")          # close的是handle  get是在当前handle
+browser.quit()
+
+# browser.get("https://www.sina.com")
+# time.sleep(4)
+# browser.get("https://www.bing.com")
+# time.sleep(4)
+# browser.close()
+# print("close")          # close的是handle  get是在当前handle
 
 #
 # def findTheWinner(n: int, k: int) -> int:

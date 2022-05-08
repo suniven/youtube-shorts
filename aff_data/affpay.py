@@ -48,7 +48,7 @@ def get_offer(offer_link, browser, engine):
     print("Visiting Offer: ", offer_link)
     js = 'window.open(\"' + offer_link + '\");'
     browser.execute_script(js)
-    time.sleep(4)
+    time.sleep(3)
     handles = browser.window_handles
     browser.switch_to.window(handles[1])  # 切换标签页
     affpay_offer = Affpay_Offer()
@@ -56,35 +56,49 @@ def get_offer(offer_link, browser, engine):
     try:
         affpay_offer.title = browser.find_element_by_css_selector('h1.richtext').text
         # print("title: ", affpay_offer.title)
-        affpay_offer.status = browser.find_element_by_css_selector('span.bg-green-500').text
-        # print("status了", affpay_offer.status)
-        affpay_offer.offer_create_time = browser.find_element_by_xpath(
-            '//*[@id="__layout"]/div/div[1]/div[2]/div[2]/div[1]/div/div/div[2]/div[2]/div/div[1]/div/span[2]').text
+        container = browser.find_element_by_xpath(
+            '//*[@id="__layout"]/div/div[1]/div[2]/div[2]/div[1]/div/div/div[2]/div[2]/div/div[1]/div')
+        spans = container.find_elements_by_tag_name('span')
+        affpay_offer.status = spans[0].text
+        # print("status: ", affpay_offer.status)
+        affpay_offer.offer_create_time = spans[1].text
         # print("create: ", affpay_offer.offer_create_time)
-        affpay_offer.offer_update_time = browser.find_element_by_xpath(
-            '//*[@id="__layout"]/div/div[1]/div[2]/div[2]/div[1]/div/div/div[2]/div[2]/div/div[1]/div/span[3]').text
+        affpay_offer.offer_update_time = spans[2].text
         # print("update: ", affpay_offer.offer_update_time)
         affpay_offer.create_time = get_now_timestamp()
-        affpay_offer.payout = browser.find_element_by_xpath(
-            '//*[@id="__layout"]/div/div[1]/div[2]/div[2]/div[1]/div/div/div[2]/div[2]/div/div[2]/div[2]/div[1]/div/span[1]').text + '/' + browser.find_element_by_xpath(
-            '//*[@id="__layout"]/div/div[1]/div[2]/div[2]/div[1]/div/div/div[2]/div[2]/div/div[2]/div[2]/div[1]/div/span[2]').text
-        # print("payout: ", affpay_offer.payout)
-        affpay_offer.network = browser.find_element_by_xpath(
-            '//*[@id="__layout"]/div/div[1]/div[2]/div[2]/div[1]/div/div/div[2]/div[1]/div[2]/div[1]/div/div[1]/h3').text
-        # print("network: ", affpay_offer.network)
     except Exception as err:
         print("Error: ", err)
 
-    affpay_offer.geo = ''
-    geos = browser.find_element_by_xpath(
-        '//*[@id="__layout"]/div/div[1]/div[2]/div[2]/div[1]/div/div/div[2]/div[2]/div/div[2]/div[2]/div[3]')
-    geos = geos.find_elements_by_tag_name('span')
-    for geo in geos:
-        affpay_offer.geo = affpay_offer.geo + ' ' + geo.text
+    try:
+        affpay_offer.network = browser.find_element_by_xpath(
+            '//*[@id="__layout"]/div/div[1]/div[2]/div[2]/div[1]/div/div/div[2]/div[1]/div[2]/div[1]/div/div[1]/h3').text
+        # print("network: ", affpay_offer.network)
 
-    # affpay的offer有category为空的情况，但是我们已经选择category了，所以不考虑判断元素是否存在了
-    affpay_offer.category = browser.find_element_by_xpath(
-        '//*[@id="__layout"]/div/div[1]/div[2]/div[2]/div[1]/div/div/div[2]/div[2]/div/div[2]/div[2]/div[2]/span[2]').text
+        affpay_offer.payout = ''
+        affpay_offer.category = ''
+        affpay_offer.geo = ''
+        divs = browser.find_elements_by_xpath(
+            '//*[@id="__layout"]/div/div[1]/div[2]/div[2]/div[1]/div/div/div[2]/div[2]/div/div[2]/div[2]/div')
+        for div in divs:
+            spans = div.find_elements_by_tag_name('span')
+            if spans[0].text == 'PAYOUT':
+                affpay_offer.payout = spans[1].text + '/' + spans[2].text
+                # print("payout: ", affpay_offer.payout)
+            elif spans[0].text == 'CATEGORY':
+                affpay_offer.category = spans[1].text
+                # print("category: ", affpay_offer.category)
+            elif spans[0].text == 'GEO':
+                geos = []
+                for span in spans:
+                    if span.text == 'GEO':
+                        continue
+                    else:
+                        geos.append(span.text)
+                affpay_offer.geo = ' '.join(geos[:])
+                # print("geo: ", affpay_offer.geo)
+
+    except Exception as err:
+        print("Error: ", err)
 
     affpay_offer.land_page_img = ''
     try:
@@ -109,11 +123,19 @@ def get_offer(offer_link, browser, engine):
     try:
         browser.find_element_by_xpath(
             '//*[@id="__layout"]/div/div[1]/div[2]/div[2]/div[1]/div/div/div[2]/div[2]/div/div[2]/div[1]').click()
-        time.sleep(3)
+        time.sleep(2)
+        # # 弹窗处理    ? 没用 只要我返回得够快弹窗就追不上我？
+        # # https://www.datingleben.com/mlp9/ 有弹窗 title like '%Iluvo.de%'
+        # if 'Iluvo.de' in affpay_offer.title:
+        #     print("*** Alert Processing... ***")
+        #     WebDriverWait(browser, 10, 0.5).until(EC.alert_is_present())  # 最大等待时间10s 每0.5s检测一次元素 检测到即可进行下一步操作
+        #     alert = browser.switch_to.alert
+        #     print("Alter Info: ", alert.text)
+        #     alert.accept()  # 点击弹出框的确定按钮
+
         handles = browser.window_handles
         browser.switch_to.window(handles[2])
         affpay_offer.land_page = browser.current_url
-        # https://www.datingleben.com/mlp9/
         # 网站截图比预览图更清楚一点
         try:
             screenshot = '.\\data\\affpay\\screenshots\\' + affpay_offer.land_page_img.replace(".jpg", "") + '.png'
@@ -188,7 +210,7 @@ if __name__ == '__main__':
         print("Getting Page {0}...".format(i))
         url = url_prefix + str(i)
         browser.get(url)
-        time.sleep(4)
+        time.sleep(3)
         main_handle = browser.current_window_handle
         offer_links = browser.find_elements_by_css_selector('h2.mb-1 a')
         for offer_link in offer_links:
@@ -198,6 +220,9 @@ if __name__ == '__main__':
             if rows:
                 print("Offer {0} Has Already Been Visited.".format(link))
                 continue
+            # 弹窗处理测试
+            # link = 'https://www.affplus.com/o/iluvo-de-de-ch-at-non-incent-cpl-mobile-2'
+            #
             get_offer(link, browser, engine)
             browser.close()
             browser.switch_to.window(main_handle)
