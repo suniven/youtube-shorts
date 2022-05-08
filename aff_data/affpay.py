@@ -103,8 +103,7 @@ def get_offer(offer_link, browser, engine):
                 geos = soup.get_text()[4:].replace("GEOs", "")
                 geos = " ".join(re.sub(r"[0-9]+", "", geos).split("\n"))
                 geos = " ".join(geos.split())
-                # print(geos)
-
+                affpay_offer.geo = geos
                 # print("geo: ", affpay_offer.geo)
 
     except Exception as err:
