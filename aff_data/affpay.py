@@ -48,7 +48,7 @@ def get_offer(offer_link, browser, engine):
     print("Visiting Offer: ", offer_link)
     js = 'window.open(\"' + offer_link + '\");'
     browser.execute_script(js)
-    time.sleep(2)
+    time.sleep(4)
     handles = browser.window_handles
     browser.switch_to.window(handles[1])  # 切换标签页
     affpay_offer = Affpay_Offer()
@@ -184,22 +184,24 @@ if __name__ == '__main__':
     session = DBSession()
 
     for i in range(1, PAGE_COUNT + 1):
-        try:
-            print("--------------------")
-            print("Getting Page {0}...".format(i))
-            url = url_prefix + str(i)
-            browser.get(url)
-            time.sleep(4)
-            main_handle = browser.current_window_handle
-            offer_links = browser.find_elements_by_css_selector('h2.mb-1 a')
-            for offer_link in offer_links:
-                link = offer_link.get_attribute('href')
-                get_offer(link, browser, engine)
-                browser.close()
-                browser.switch_to.window(main_handle)
-                time.sleep(0.5)
-                # break  # for test
+        print("--------------------")
+        print("Getting Page {0}...".format(i))
+        url = url_prefix + str(i)
+        browser.get(url)
+        time.sleep(4)
+        main_handle = browser.current_window_handle
+        offer_links = browser.find_elements_by_css_selector('h2.mb-1 a')
+        for offer_link in offer_links:
+            link = offer_link.get_attribute('href')
+            # 检查是否已经爬取过这个offer了
+            rows = session.query(Affpay_Offer).filter(Affpay_Offer.url.like(link)).all()
+            if rows:
+                print("Offer {0} Has Already Been Visited.".format(link))
+                continue
+            get_offer(link, browser, engine)
+            browser.close()
+            browser.switch_to.window(main_handle)
+            time.sleep(0.5)
             # break  # for test
-        except Exception as err:
-            print("Error: ", err)
+        # break  # for test
     browser.quit()
