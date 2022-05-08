@@ -146,6 +146,7 @@ def get_offer(offer_link, browser, engine):
         browser.switch_to.window(handles[2])
         affpay_offer.land_page = browser.current_url
         # 网站截图比预览图更清楚一点
+        # TODO: No Img 名称先不考虑了
         try:
             screenshot = '.\\data\\affpay\\screenshots\\' + affpay_offer.land_page_img.replace(".jpg", "") + '.png'
             if not os.path.exists(screenshot):
