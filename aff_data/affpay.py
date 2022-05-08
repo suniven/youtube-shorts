@@ -1,4 +1,5 @@
 import os
+import re
 import time
 import lxml
 import requests
@@ -88,13 +89,22 @@ def get_offer(offer_link, browser, engine):
                 affpay_offer.category = spans[1].text
                 # print("category: ", affpay_offer.category)
             elif spans[0].text == 'GEO':
-                geos = []
-                for span in spans:
-                    if span.text == 'GEO':
-                        continue
-                    else:
-                        geos.append(span.text)
-                affpay_offer.geo = ' '.join(geos[:])
+                # geos = []
+                # for span in spans:
+                #     if span.text == 'GEO':
+                #         continue
+                #     else:
+                #         geos.append(span.text)  # 折叠的span.text为空 就离谱
+                # print("geos: ", geos[:])
+                # affpay_offer.geo = ' '.join(geos)
+
+                # 测试 用soup可以
+                soup = BeautifulSoup(div.get_attribute('innerHTML'), "lxml")
+                geos = soup.get_text()[4:].replace("GEOs", "")
+                geos = " ".join(re.sub(r"[0-9]+", "", geos).split("\n"))
+                geos = " ".join(geos.split())
+                # print(geos)
+
                 # print("geo: ", affpay_offer.geo)
 
     except Exception as err:
@@ -222,11 +232,12 @@ if __name__ == '__main__':
                 continue
             # 弹窗处理测试
             # link = 'https://www.affplus.com/o/iluvo-de-de-ch-at-non-incent-cpl-mobile-2'
-            #
+            # 折叠geo获取测试
+            link = 'https://www.affplus.com/o/sweetsext-au-ca-dk-ie-nz-no-gb-us-cpl-for-adult-dating-content-18-women-date-sex-sexy-tinder-flirt'
             get_offer(link, browser, engine)
             browser.close()
             browser.switch_to.window(main_handle)
             time.sleep(0.5)
-            # break  # for test
-        # break  # for test
+            break  # for test
+        break  # for test
     browser.quit()

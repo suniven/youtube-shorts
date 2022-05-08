@@ -21,7 +21,7 @@ import hashlib
 
 browser = webdriver.Chrome()
 browser.get("https://www.datingleben.com/mlp9/")
-time.sleep(4)
+time.sleep(2)
 url = browser.current_url
 print("url： ", url)
 browser.close()
