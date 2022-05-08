@@ -54,6 +54,10 @@ def get_offer(offer_link, browser, engine):
     browser.switch_to.window(handles[1])  # 切换标签页
     affpay_offer = Affpay_Offer()
     affpay_offer.url = offer_link
+    affpay_offer.title = ''
+    affpay_offer.status = ''
+    affpay_offer.offer_create_time = ''
+    affpay_offer.offer_update_time = ''
     try:
         affpay_offer.title = browser.find_element_by_css_selector('h1.richtext').text
         # print("title: ", affpay_offer.title)
@@ -66,7 +70,6 @@ def get_offer(offer_link, browser, engine):
         # print("create: ", affpay_offer.offer_create_time)
         affpay_offer.offer_update_time = spans[2].text
         # print("update: ", affpay_offer.offer_update_time)
-        affpay_offer.create_time = get_now_timestamp()
     except Exception as err:
         print("Error: ", err)
 
@@ -183,6 +186,7 @@ def get_offer(offer_link, browser, engine):
         affpay_offer.description = description
     except Exception as err:
         print("Getting Description Error: ", err)
+    affpay_offer.create_time = get_now_timestamp()
 
     # for test
     print("offer title: ", affpay_offer.title)
