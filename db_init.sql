@@ -126,7 +126,7 @@ CREATE TABLE IF NOT EXISTS `offervault_offer`
     `offer_update_time` varchar(32)               NOT NULL DEFAULT '' COMMENT 'offer更新时间',
     `category`          varchar(256)              NOT NULL DEFAULT '' COMMENT 'offer类别',
     `geo`               VARCHAR(2048)              NOT NULL DEFAULT '' COMMENT '国家地区',
-    `network`           VARCHAR(32)               NOT NULL DEFAULT '' COMMENT '营销网络',
+    `network`           VARCHAR(256)               NOT NULL DEFAULT '' COMMENT '营销网络',
     `description`       VARCHAR(10000)            NOT NULL DEFAULT '' COMMENT 'offer描述',
     `land_page`         VARCHAR(1024)             NOT NULL DEFAULT '' COMMENT '落地页链接',
     `land_page_img`     VARCHAR(256)              NOT NULL DEFAULT '' COMMENT '落地页图片',

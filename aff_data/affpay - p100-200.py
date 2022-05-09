@@ -44,7 +44,7 @@ def check_if_exist(browser, element, condition):
         return False
 
 
-def get_offer(offer_link, browser, engine):
+def get_offer(offer_link, browser, session):
     print("--------------------------------")
     print("Visiting Offer: ", offer_link)
     js = 'window.open(\"' + offer_link + '\");'
@@ -219,7 +219,7 @@ if __name__ == '__main__':
     DBSession = sessionmaker(bind=engine)
     session = DBSession()
 
-    for i in range(101, PAGE_COUNT + 1):    #101-200
+    for i in range(101, PAGE_COUNT + 1):  # 101-200
         print("--------------------")
         print("Getting Page {0}...".format(i))
         url = url_prefix + str(i)
@@ -238,7 +238,7 @@ if __name__ == '__main__':
             # link = 'https://www.affplus.com/o/iluvo-de-de-ch-at-non-incent-cpl-mobile-2'
             # 折叠geo获取测试
             # link = 'https://www.affplus.com/o/sweetsext-au-ca-dk-ie-nz-no-gb-us-cpl-for-adult-dating-content-18-women-date-sex-sexy-tinder-flirt'
-            get_offer(link, browser, engine)
+            get_offer(link, browser, session)
             browser.close()
             browser.switch_to.window(main_handle)
             time.sleep(0.5)

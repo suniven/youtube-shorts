@@ -121,7 +121,7 @@ class Offervault_Offer(Base):
     offer_update_time = Column(String(32))
     category = Column(String(256))
     geo = Column(String(2048))
-    network = Column(String(32))
+    network = Column(String(256))
     description = Column(String(10000))
     land_page = Column(String(1024))
     land_page_img = Column(String(256))
