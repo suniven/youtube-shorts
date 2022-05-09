@@ -60,6 +60,8 @@ def get_offer(browser, session, offer_link):
     offervault_offer.offer_update_time = ''
     offervault_offer.geo = ''
     offervault_offer.description = ''
+    offervault_offer.land_page_img = ''
+    offervault_offer.land_page = ''
 
     preview_url = ''
 
@@ -109,7 +111,11 @@ def get_offer(browser, session, offer_link):
                     geos = list(set(geos))  # 不知道为什么会有重复的不想找原因了反正就这样去个重算了
                     offervault_offer.geo = ' '.join(geos)
             elif th == 'Preview:':
-                preview_url = td.find_element_by_tag_name('a').get_attribute('href')
+                try:
+                    preview_url = td.find_element_by_tag_name('a').get_attribute('href')
+                except Exception as err:
+                    print("No Preview Available.")
+                    print(err)
 
     except Exception as err:
         print(err)
