@@ -95,7 +95,7 @@ def get_offer(browser, session, offer_link):
                     countries = ul.find_elements_by_tag_name('a')
                     geos = []
                     for country in countries:
-                        print("country: ", country.text)
+                        # print("country: ", country.text)
                         geos.append(country.text)
                     offervault_offer.geo = ' '.join(geos)
                 except Exception as err:
@@ -104,7 +104,7 @@ def get_offer(browser, session, offer_link):
                     geos = []
                     for span in spans:
                         if span.text:
-                            print("span: ", span.text)
+                            # print("span: ", span.text)
                             geos.append(span.text)
                     geos = list(set(geos))  # 不知道为什么会有重复的不想找原因了反正就这样去个重算了
                     offervault_offer.geo = ' '.join(geos)
@@ -231,14 +231,14 @@ if __name__ == '__main__':
                 if rows:
                     print("*** Offer {0} Has Already Been Visited. ***".format(link))
                     continue
-                # 折叠countries测试
-                offer_link = 'https://offervault.com/offer/b2cdfbacede6f41df8017045d803b1df/badoink-vod-nz-au-ca-gb-us'
+                # # 折叠countries测试
+                # offer_link = 'https://offervault.com/offer/b2cdfbacede6f41df8017045d803b1df/badoink-vod-nz-au-ca-gb-us'
                 get_offer(browser, session, offer_link)
                 browser.close()
                 browser.switch_to.window(main_handle)
                 time.sleep(0.5)
-                break  # for test
-            break  # for test
+            #     break  # for test
+            # break  # for test
 
             # 判断是否还有下一页
             if not check_if_exist(browser,
