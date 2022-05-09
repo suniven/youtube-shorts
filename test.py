@@ -19,13 +19,16 @@ import os
 import sys
 import hashlib
 
-browser = webdriver.Chrome()
-browser.get("https://www.datingleben.com/mlp9/")
-time.sleep(2)
-url = browser.current_url
-print("url： ", url)
-browser.close()
-browser.quit()
+page = re.findall(r'page=[0-9]+', 'https://offervault.com/?selectedTab=topOffers&search=&page=199')[0][5:]
+print(page)
+
+# browser = webdriver.Chrome()
+# browser.get("https://www.datingleben.com/mlp9/")
+# time.sleep(2)
+# url = browser.current_url
+# print("url： ", url)
+# browser.close()
+# browser.quit()
 
 # browser.get("https://www.sina.com")
 # time.sleep(4)
