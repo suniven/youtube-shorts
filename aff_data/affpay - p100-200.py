@@ -20,7 +20,7 @@ from bs4 import BeautifulSoup
 sqlconn = 'mysql+pymysql://root:1101syw@localhost:3306/test?charset=utf8mb4'
 url_prefix = 'https://www.affplus.com/search?verticals=Adult&sort=time_desc&page='  # 后面加页数
 # url_prefix = 'https://www.affplus.com/search?verticals=Dating&sort=time_desc&page='  # 后面加页数
-PAGE_COUNT = 100
+PAGE_COUNT = 200
 headers = {
     'user-agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
 }
@@ -219,7 +219,7 @@ if __name__ == '__main__':
     DBSession = sessionmaker(bind=engine)
     session = DBSession()
 
-    for i in range(1, PAGE_COUNT + 1):
+    for i in range(101, PAGE_COUNT + 1):    #101-200
         print("--------------------")
         print("Getting Page {0}...".format(i))
         url = url_prefix + str(i)
