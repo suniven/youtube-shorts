@@ -194,6 +194,21 @@ def get_offer(browser, session, offer_link):
     session.commit()
 
 
+def get_next_page(browser, retry):
+    try:  # 可能出错 stale element reference: element is not attached to the page document
+        if retry == 10:
+            return
+        next_page = browser.find_element_by_xpath(
+            '//*[@id="__layout"]/div/section[2]/div/div/div/div[1]/div[1]/div/div/div[2]/ul/li[10]/button')
+        next_page.click()
+        time.sleep(2)
+        retry = 0
+        return
+    except:
+        retry = retry + 1
+        get_next_page(browser, retry)
+
+
 if __name__ == '__main__':
     # 正常模式
     browser = webdriver.Chrome()
@@ -253,9 +268,8 @@ if __name__ == '__main__':
                 break
             else:
                 # 跳转到下一页
-                next_page = browser.find_element_by_xpath(
-                    '//*[@id="__layout"]/div/section[2]/div/div/div/div[1]/div[1]/div/div/div[2]/ul/li[10]/button').click()
-                time.sleep(2.5)
+                get_next_page(browser, 0)
+
 
     except Exception as err:
         print(err)
