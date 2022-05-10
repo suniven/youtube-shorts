@@ -206,6 +206,7 @@ def get_next_page(browser, retry):
         return
     except:
         retry = retry + 1
+        print("Try Again.")
         get_next_page(browser, retry)
 
 
