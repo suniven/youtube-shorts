@@ -157,7 +157,8 @@ def get_offer(browser, session, offer_link):
             handles = browser.window_handles
             browser.switch_to.window(handles[2])  # 切换标签页
 
-            offervault_offer.land_page = browser.current_url
+            # offervault_offer.land_page = browser.current_url
+            offervault_offer.land_page = preview_url
             # 截图
             try:
                 screenshot = '.\\data\\offervault\\screenshots\\' + offervault_offer.land_page_img.replace(".jpg",
