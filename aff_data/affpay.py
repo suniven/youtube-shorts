@@ -139,7 +139,7 @@ def get_offer(offer_link, browser, session):
             '//*[@id="__layout"]/div/div[1]/div[2]/div[2]/div[1]/div/div/div[2]/div[2]/div/div[2]/div[1]').click()
         time.sleep(2)
         # # 弹窗处理    ? 没用 只要我返回得够快弹窗就追不上我？
-        # # https://www.datingleben.com/mlp9/ 有弹窗 title like '%Iluvo.de%'
+        # # https://www.datingleben.com/mlp9/ 有弹窗 title like '%Iluvo.de%' or title like '%Douwant.me%'
         # if 'Iluvo.de' in affpay_offer.title:
         #     print("*** Alert Processing... ***")
         #     WebDriverWait(browser, 10, 0.5).until(EC.alert_is_present())  # 最大等待时间10s 每0.5s检测一次元素 检测到即可进行下一步操作
