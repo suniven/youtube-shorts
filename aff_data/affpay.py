@@ -20,8 +20,8 @@ from bs4 import BeautifulSoup
 sqlconn = 'mysql+pymysql://root:1101syw@localhost:3306/test?charset=utf8mb4'
 url_prefix = 'https://www.affplus.com/search?verticals=Adult&sort=time_desc&page='  # 后面加页数
 # url_prefix = 'https://www.affplus.com/search?verticals=Dating&sort=time_desc&page='  # 后面加页数
-START_PAGE=84
-END_PAGE=100
+START_PAGE = 84
+END_PAGE = 100
 PAGE_COUNT = 100
 headers = {
     'user-agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
@@ -149,7 +149,10 @@ def get_offer(offer_link, browser, session):
 
         handles = browser.window_handles
         browser.switch_to.window(handles[2])
-        affpay_offer.land_page = browser.current_url
+        if 'The Geek Gaming Smartlink' in affpay_offer.title:   # 先这样吧懒得管了
+            affpay_offer.land_page = 'about:blank'
+        else:
+            affpay_offer.land_page = browser.current_url
         # 网站截图比预览图更清楚一点
         # TODO: No Img 名称先不考虑了
         try:
