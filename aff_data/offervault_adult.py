@@ -235,7 +235,7 @@ if __name__ == '__main__':
                 # 检查是否已经爬取过这个offer了
                 rows = session.query(Offervault_Offer).filter(Offervault_Offer.url.like(offer_link)).all()
                 if rows:
-                    print("*** Offer {0} Has Already Been Visited. ***".format(link))
+                    print("*** Offer {0} Has Already Been Visited. ***".format(offer_link))
                     continue
                 # # 折叠countries测试
                 # offer_link = 'https://offervault.com/offer/b2cdfbacede6f41df8017045d803b1df/badoink-vod-nz-au-ca-gb-us'
