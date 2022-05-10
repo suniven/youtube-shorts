@@ -95,7 +95,7 @@ class Affpay_Offer(Base):
 
     id = Column(mysql.BIGINT, primary_key=True)
     url = Column(String(1024))
-    title = Column(String(200))
+    title = Column(String(600))
     payout = Column(String(32))
     status = Column(String(24))
     offer_create_time = Column(String(32))
@@ -115,7 +115,7 @@ class Offervault_Offer(Base):
 
     id = Column(mysql.BIGINT, primary_key=True)
     url = Column(String(1024))
-    title = Column(String(200))
+    title = Column(String(600))
     payout = Column(String(32))
     offer_create_time = Column(String(32))
     offer_update_time = Column(String(32))

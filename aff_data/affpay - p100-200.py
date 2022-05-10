@@ -20,7 +20,7 @@ from bs4 import BeautifulSoup
 sqlconn = 'mysql+pymysql://root:1101syw@localhost:3306/test?charset=utf8mb4'
 url_prefix = 'https://www.affplus.com/search?verticals=Adult&sort=time_desc&page='  # 后面加页数
 # url_prefix = 'https://www.affplus.com/search?verticals=Dating&sort=time_desc&page='  # 后面加页数
-START_PAGE=144
+START_PAGE=172
 END_PAGE=200
 PAGE_COUNT = 200
 headers = {

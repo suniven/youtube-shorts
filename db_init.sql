@@ -98,7 +98,7 @@ CREATE TABLE IF NOT EXISTS `affpay_offer`
 (
     `id`                bigint(20) auto_increment NOT NULL COMMENT 'id',
     `url`               varchar(1024)             NOT NULL COMMENT 'offer自身网址',
-    `title`             varchar(200)              NOT NULL DEFAULT '' COMMENT 'offer标题',
+    `title`             varchar(600)              NOT NULL DEFAULT '' COMMENT 'offer标题',
     `payout`            varchar(32)               NOT NULL DEFAULT '' COMMENT '酬金',
     `status`            varchar(24)               NOT NULL DEFAULT '' COMMENT 'offer状态',
     `offer_create_time` varchar(32)               NOT NULL DEFAULT 0 COMMENT 'offer创建时间',
@@ -120,7 +120,7 @@ CREATE TABLE IF NOT EXISTS `offervault_offer`
 (
     `id`                bigint(20) auto_increment NOT NULL COMMENT 'id',
     `url`               varchar(1024)             NOT NULL COMMENT 'offer自身网址',
-    `title`             varchar(200)              NOT NULL DEFAULT '' COMMENT 'offer标题',
+    `title`             varchar(600)              NOT NULL DEFAULT '' COMMENT 'offer标题',
     `payout`            varchar(32)               NOT NULL DEFAULT '' COMMENT '酬金',
     `offer_create_time` varchar(32)               NOT NULL DEFAULT 0 COMMENT 'offer创建时间',
     `offer_update_time` varchar(32)               NOT NULL DEFAULT '' COMMENT 'offer更新时间',
