@@ -51,6 +51,7 @@ if __name__ == '__main__':
     # browser = webdriver.Chrome(chrome_options=option)
     f = open("./tt_url.txt", "r", encoding="UTF8")
     links = f.readlines()
+    f.close()
     links = list(set(links))
     link_prefix = 'https://www.tiktok.com/tag/'
     for link in links:
@@ -80,6 +81,9 @@ if __name__ == '__main__':
                             r.raise_for_status()  # 如果响应状态码不是 200，就主动抛出异常
                         except requests.RequestException as e:
                             print("Request Error: ", e)
+                            f_err = open("./cover_img/tt_not_success.txt", "a", encoding="UTF8")
+                            f_err.write(img_link + '\n')
+                            f_err.close()
                         else:
                             with open(img_path, 'wb') as f:
                                 f.write(r.content)
