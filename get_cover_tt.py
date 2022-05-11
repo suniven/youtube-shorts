@@ -15,7 +15,7 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.dialects import mysql
 
-MAX_COUNT = 300
+MAX_COUNT = 400
 
 
 # 往下加载MAX_COUNT次 不能继续就结束
@@ -51,8 +51,10 @@ if __name__ == '__main__':
     # browser = webdriver.Chrome(chrome_options=option)
     f = open("./tt_url.txt", "r", encoding="UTF8")
     links = f.readlines()
+    links = list(set(links))
+    link_prefix = 'https://www.tiktok.com/tag/'
     for link in links:
-        link = link.strip('\n')
+        link = link_prefix + link.strip('\n')
         if link:
             try:
                 browser.get(link)
