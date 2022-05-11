@@ -202,7 +202,7 @@ def get_next_page(browser, retry):
         next_page = browser.find_element_by_xpath(
             '//*[@id="__layout"]/div/section[2]/div/div/div/div[1]/div[1]/div/div/div[2]/ul/li[10]/button')
         next_page.click()
-        time.sleep(2)
+        time.sleep(5)
         retry = 0
         return
     except:
