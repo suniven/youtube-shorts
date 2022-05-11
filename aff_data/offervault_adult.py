@@ -175,7 +175,7 @@ def get_offer(browser, session, offer_link):
 
             browser.close()
             browser.switch_to.window(handles[1])
-            time.sleep(0.5)
+            time.sleep(1)
         except Exception as err:
             print("Get Landing Page Error.")
             print(err)
@@ -202,7 +202,7 @@ def get_next_page(browser, retry):
         next_page = browser.find_element_by_xpath(
             '//*[@id="__layout"]/div/section[2]/div/div/div/div[1]/div[1]/div/div/div[2]/ul/li[10]/button')
         next_page.click()
-        time.sleep(5)
+        time.sleep(4)
         retry = 0
         return
     except:
@@ -259,7 +259,7 @@ if __name__ == '__main__':
                 get_offer(browser, session, offer_link)
                 browser.close()
                 browser.switch_to.window(main_handle)
-                time.sleep(0.5)
+                time.sleep(2)
             #     break  # for test
             # break  # for test
 
