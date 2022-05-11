@@ -159,19 +159,20 @@ def get_offer(browser, session, offer_link):
 
             # offervault_offer.land_page = browser.current_url
             offervault_offer.land_page = preview_url
-            # 截图
-            try:
-                screenshot = '.\\data\\offervault\\screenshots\\' + offervault_offer.land_page_img.replace(".jpg",
-                                                                                                           "") + '.png'
-                if not os.path.exists(screenshot):
-                    browser.save_screenshot(screenshot)
-                    print("Take Screenshot successfully.")
-                else:
-                    print("Screenshot Already Exists.")
+            if browser.title:
+                # 截图
+                try:
+                    screenshot = '.\\data\\offervault\\screenshots\\' + offervault_offer.land_page_img.replace(".jpg",
+                                                                                                               "") + '.png'
+                    if not os.path.exists(screenshot):
+                        browser.save_screenshot(screenshot)
+                        print("Take Screenshot successfully.")
+                    else:
+                        print("Screenshot Already Exists.")
 
-            except Exception as err:
-                print("Failed To Take Screenshots.")
-                print(err)
+                except Exception as err:
+                    print("Failed To Take Screenshots.")
+                    print(err)
 
             browser.close()
             browser.switch_to.window(handles[1])
