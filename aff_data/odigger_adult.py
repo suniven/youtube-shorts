@@ -232,7 +232,7 @@ if __name__ == '__main__':
                 browser.close()
                 browser.switch_to.window(main_handle)
                 time.sleep(1)
-                print("Reminder: Page{0} - {1}".format(start_page, end_page))
+                print("Reminder: Current Page{0}".format(page))
                 # break # for test
 
 
