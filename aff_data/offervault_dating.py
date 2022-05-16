@@ -233,8 +233,8 @@ if __name__ == '__main__':
             '//*[@id="__layout"]/div/section[1]/div[1]/div/div[1]/div[1]/div/div[1]/ul/li[3]/div/div[1]')
         ActionChains(browser).move_to_element(multi_select).click().perform()  # **必须要模拟鼠标悬浮否则没反应
         dating_tag = browser.find_element_by_xpath(
-            '//*[@id="__layout"]/div/section[1]/div[1]/div/div[1]/div[1]/div/div[1]/ul/li[3]/div/div[3]/ul/li[21]')
-        ActionChains(browser).move_to_element(dating_tag).click().perform()
+            '//*[@id="__layout"]/div/section[1]/div[1]/div/div[1]/div[1]/div/div[1]/ul/li[3]/div/div[3]/ul/li[21]').click()
+        # ActionChains(browser).move_to_element(dating_tag).click().perform()
         time.sleep(3)
 
         while True:
