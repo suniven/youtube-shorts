@@ -77,7 +77,8 @@ def get_offer(browser, offer_link, session):
             if td_1.text == 'Offer Name:':
                 odigger_offer.title = td_2.text
             elif td_1.text == 'Preview:':
-                odigger_offer.land_page = td_2.find_element_by_tag_name('a').get_attribute('href')
+                if td_2.find_element_by_tag_name('a').get_attribute('href'):
+                    odigger_offer.land_page = td_2.find_element_by_tag_name('a').get_attribute('href')
             elif td_1.text == 'Categories:':
                 odigger_offer.category = td_2.text
             elif td_1.text == 'Network:':
