@@ -126,3 +126,23 @@ class Offervault_Offer(Base):
     land_page = Column(String(1024))
     land_page_img = Column(String(256))
     create_time = Column(mysql.BIGINT)
+
+
+class Odigger_Offer(Base):
+    # 表名
+    __tablename__ = 'odigger_offer'
+
+    id = Column(mysql.BIGINT, primary_key=True)
+    url = Column(String(1024))
+    title = Column(String(600))
+    payout = Column(String(32))
+    offer_create_time = Column(String(32))
+    offer_update_time = Column(String(32))
+    category = Column(String(256))
+    geo = Column(String(2048))
+    network = Column(String(256))
+    description = Column(String(10000))
+    land_page = Column(String(1024))
+    land_page_img = Column(String(256))
+    status = Column(String(24))
+    create_time = Column(mysql.BIGINT)
