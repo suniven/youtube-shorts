@@ -6,6 +6,7 @@
 # 截图时判断是否已经存在
 # 修改域名判断 发现有些链接形式后面还有/xxxx/xxxx
 
+from timestamp import get_now_timestamp
 from sqlalchemy.sql import and_, asc, desc, or_
 from sqlalchemy import Column, String, create_engine, Integer, SmallInteger
 from sqlalchemy.orm import sessionmaker
@@ -86,6 +87,7 @@ def judge_comment(comment, broswer, session):
                 site.screenshot = './screenshots/' + str(comment.id) + '_' + str(cnt) + '.png'
                 site.type = 2
                 site.detail = ''
+                site.create_time=get_now_timestamp()
                 cnt = cnt + 1
 
                 # 插入数据库
