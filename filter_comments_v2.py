@@ -103,7 +103,7 @@ if __name__ == '__main__':
     engine = create_engine(sqlconn, echo=True, max_overflow=8)
     DBSession = sessionmaker(bind=engine)
     session = DBSession()
-    comments = session.query(Comment).filter(Site.type == 2, and_(
+    comments = session.query(Comment).filter(Comment.type == 2, and_(
         Comment.content.op('regexp')(r'([a-zA-Z0-9]([a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}'))).all()
 
     option = webdriver.ChromeOptions()
