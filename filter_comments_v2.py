@@ -87,7 +87,7 @@ def judge_comment(comment, broswer, session):
                 site.screenshot = './screenshots/' + str(comment.id) + '_' + str(cnt) + '.png'
                 site.type = 2
                 site.detail = ''
-                site.create_time=get_now_timestamp()
+                site.create_time = get_now_timestamp()
                 cnt = cnt + 1
 
                 # 插入数据库
@@ -96,6 +96,9 @@ def judge_comment(comment, broswer, session):
                 if not rows:
                     session.add(site)
                     session.commit()
+
+                # 修改该条comment 算了先不改了
+                # res = session.query(Comment).filter(Comment.id == comment.id).update({"type": 3})
 
         except Exception as e:
             print("Err: ", e)
