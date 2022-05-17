@@ -22,7 +22,7 @@ import re
 import os
 import requests
 
-sqlconn = 'mysql+pymysql://root:1101syw@localhost:3306/test-0414?charset=utf8mb4'
+sqlconn = 'mysql+pymysql://root:1101syw@localhost:3306/test?charset=utf8mb4'
 headers = {
     'user-agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
 }
