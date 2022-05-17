@@ -3,7 +3,7 @@
 # 保存落地页的相关信息 eg. title 截图
 # 将发布此类评论的用户打上tag并统计每名用户发了多少条此类评论
 # 访问色情链接，保存跳转后的落地页链接
-# TODO: 截图时判断是否已经存在
+# 截图时判断是否已经存在
 # 修改域名判断 发现有些链接形式后面还有/xxxx/xxxx
 
 from sqlalchemy import Column, String, create_engine, Integer, SmallInteger
@@ -57,8 +57,11 @@ def judge_comment(comment, broswer, session):
 
                 try:
                     screenshot = '.\\screenshots\\' + str(comment.id) + '_' + str(cnt) + '.png'
-                    browser.save_screenshot(screenshot)
-                    print("截图成功")
+                    if not os.path.exists(screenshot):
+                        browser.save_screenshot(screenshot)
+                        print("截图成功")
+                    else:
+                        print("截图已存在")
                 except BaseException as err_msg:
                     print("截图失败：%s" % err_msg)
 
