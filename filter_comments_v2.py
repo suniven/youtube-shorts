@@ -6,6 +6,7 @@
 # 截图时判断是否已经存在
 # 修改域名判断 发现有些链接形式后面还有/xxxx/xxxx
 
+from sqlalchemy.sql import and_, asc, desc, or_
 from sqlalchemy import Column, String, create_engine, Integer, SmallInteger
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
@@ -88,9 +89,11 @@ def judge_comment(comment, broswer, session):
                 cnt = cnt + 1
 
                 # 插入数据库
-                # TODO: 插入前判断是否存在 sqlalchemy不会没有直接穿整个对象更新的方法吧不会吧不会吧
-                session.add(site)
-                session.commit()
+                # 插入前判断是否存在 sqlalchemy不会没有直接穿整个对象更新的方法吧不会吧不会吧
+                rows = session.query(Site).filter(Site.screenshot.like(site.screenshot)).all()
+                if not rows:
+                    session.add(site)
+                    session.commit()
 
         except Exception as e:
             print("Err: ", e)
@@ -100,8 +103,8 @@ if __name__ == '__main__':
     engine = create_engine(sqlconn, echo=True, max_overflow=8)
     DBSession = sessionmaker(bind=engine)
     session = DBSession()
-    comments = session.query(Comment).filter(
-        Comment.content.op('regexp')(r'([a-zA-Z0-9]([a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}')).all()
+    comments = session.query(Comment).filter(Site.type == 2, and_(
+        Comment.content.op('regexp')(r'([a-zA-Z0-9]([a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}'))).all()
 
     option = webdriver.ChromeOptions()
     option.add_argument('--headless')
