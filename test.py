@@ -19,8 +19,18 @@ import os
 import sys
 import hashlib
 
-page = re.findall(r'page=[0-9]+', 'https://offervault.com/?selectedTab=topOffers&search=&page=199')[0][5:]
-print(page)
+a = 'https://www.paypal.com/donate/?hosted_button_id=8V8QP43EHZ3M8'
+print(a.split('/')[2])
+
+sqlconn = 'mysql+pymysql://root:1101syw@localhost:3306/test?charset=utf8mb4'
+engine = create_engine(sqlconn, echo=True, max_overflow=8)
+DBSession = sessionmaker(bind=engine)
+session = DBSession()
+rows = session.query(model.Affpay_Offer).all()
+print(len(rows))
+
+# page = re.findall(r'page=[0-9]+', 'https://offervault.com/?selectedTab=topOffers&search=&page=199')[0][5:]
+# print(page)
 
 # browser = webdriver.Chrome()
 # browser.get("https://www.datingleben.com/mlp9/")
