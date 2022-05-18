@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS `comment`
     `user_link`   varchar(256)              NOT NULL DEFAULT '' COMMENT '评论者主页链接',
     `content`     varchar(2048)             NOT NULL DEFAULT '' COMMENT '评论内容',
     `date`        varchar(20)               NOT NULL DEFAULT '' COMMENT '发布日期',
-    `type`        smallint                  NOT NULL DEFAULT 0 COMMENT '0-正常评论 1-包含色情链接的评论 2-包含其他链接的评论',
+    `type`        smallint                  NOT NULL DEFAULT 0 COMMENT '-1-占位 0-正常评论 1-包含色情链接的评论 2-包含其他链接的评论',
     `create_time` bigint(20)                NOT NULL DEFAULT 0 COMMENT '数据创建时间',
     PRIMARY KEY (`id`),
     KEY `video_id` (`video_id`)
