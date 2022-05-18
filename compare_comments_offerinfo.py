@@ -11,13 +11,17 @@ if __name__ == '__main__':
     for comment in comments:
         comment = comment.strip('\n')
         if comment:
+            comment = '.'.join(comment.split('.')[-2:])
+            # print(comment)
             comments_list.append(comment)
 
     # offers_list=[]
     for offer in offers:
         offer = offer.strip('\n')
-        if offer in comments_list:
-            print(offer)
-            f = open('./compare_url_result.txt', 'w', encoding='UTF8')
-            f.write(offer + '\n')
-            f.close()
+        if offer:
+            for comment in comments_list:
+                if comment in offer:
+                    print("offer: {0}\ncomment: {1}".format(offer, comment))
+                    f = open('./compare_url_result.txt', 'w', encoding='UTF8')
+                    f.write(offer + '\n')
+                    f.close()

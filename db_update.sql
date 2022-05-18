@@ -296,3 +296,8 @@ WHERE type = 2
 UPDATE site
 SET type = 0
 WHERE type = 2;
+
+UPDATE site
+SET type = 0
+WHERE type = 1
+  AND land_page LIKE '%google.com%';
