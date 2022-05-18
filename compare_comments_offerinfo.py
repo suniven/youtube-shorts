@@ -22,6 +22,6 @@ if __name__ == '__main__':
             for comment in comments_list:
                 if comment in offer:
                     print("offer: {0}\ncomment: {1}".format(offer, comment))
-                    f = open('./compare_url_result.txt', 'w', encoding='UTF8')
+                    f = open('./compare_url_result.txt', 'a', encoding='UTF8')
                     f.write(offer + '\n')
                     f.close()
