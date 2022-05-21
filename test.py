@@ -21,7 +21,7 @@ import hashlib
 from timestamp import timestamp_datetime
 
 print(timestamp_datetime(1651363200))
-
+print(timestamp_datetime(time.time()))
 
 #
 # a = 'https://www.paypal.com/donate/?hosted_button_id=8V8QP43EHZ3M8'

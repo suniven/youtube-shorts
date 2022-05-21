@@ -127,6 +127,7 @@ if __name__ == '__main__':
             print("Error: ", e)
         finally:
             print("Get Next Video...")
+            print(print(timestamp_datetime(time.time())))
             browser.find_element_by_css_selector('#navigation-button-down > ytd-button-renderer > a').click()
             time.sleep(3)   # 保证加载出来下个视频
             # break  # for test
