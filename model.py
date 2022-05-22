@@ -32,7 +32,7 @@ class Comment(Base):
     video_id = Column(String(24))
     user = Column(String(64))
     user_link = Column(String(256))
-    content = Column(String(2048))
+    content = Column(String(15000))
     date = Column(String(20))
     type = Column(SmallInteger)
     create_time = Column(mysql.BIGINT)
