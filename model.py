@@ -77,6 +77,21 @@ class Domain(Base):
     __tablename__ = 'domain'
 
     id = Column(mysql.BIGINT, primary_key=True)
+    domain_name = Column(String(100))
+    registrant_id = Column(String(100))
+    registrant_name = Column(String(100))
+    registrant_organization = Column(String(100))
+    registrant_street = Column(String(100))
+    registrant_city = Column(String(30))
+    registrant_province = Column(String(30))
+    registrant_postal_code = Column(String(30))
+    registrant_country = Column(String(30))
+    registrant_phone = Column(String(30))
+    registrant_phone_ext = Column(String(30))
+    registrant_fax = Column(String(30))
+    registrant_fax_ext = Column(String(30))
+    registrant_email = Column(String(100))
+    raw_data = Column(String(15000))
 
 
 class TT_Cover(Base):
