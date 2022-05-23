@@ -75,8 +75,22 @@ CREATE TABLE IF NOT EXISTS `site`
 
 CREATE TABLE IF NOT EXISTS `domain`
 (
-    `id`       bigint(20) auto_increment NOT NULL COMMENT 'id',
-    `raw_data` varchar(20000)            NOT NULL DEFAULT '' COMMENT 'whois raw data',
+    `id`                      bigint(20) auto_increment NOT NULL COMMENT 'id',
+    `domain_name`             varchar(100)              NOT NULL DEFAULT '' COMMENT '域名',
+    `registrant_id`           varchar(100)              NOT NULL DEFAULT '' COMMENT 'registrant id',
+    `registrant_name`         varchar(100)              NOT NULL DEFAULT '' COMMENT 'registrant name',
+    `registrant_organization` varchar(100)              NOT NULL DEFAULT '' COMMENT 'registrant org',
+    `registrant_street`       varchar(100)              NOT NULL DEFAULT '' COMMENT 'registrant street',
+    `registrant_city`         varchar(30)               NOT NULL DEFAULT '' COMMENT 'registrant city',
+    `registrant_province`     varchar(30)               NOT NULL DEFAULT '' COMMENT 'registrant province',
+    `registrant_postal_code`  varchar(30)               NOT NULL DEFAULT '' COMMENT 'registrant postal code',
+    `registrant_country`      varchar(30)               NOT NULL DEFAULT '' COMMENT 'registrant country',
+    `registrant_phone`        varchar(30)               NOT NULL DEFAULT '' COMMENT 'registrant phone',
+    `registrant_phone_ext`    varchar(30)               NOT NULL DEFAULT '' COMMENT 'registrant phone ext',
+    `registrant_fax`          varchar(30)               NOT NULL DEFAULT '' COMMENT 'registrant fax',
+    `registrant_fax_ext`      varchar(30)               NOT NULL DEFAULT '' COMMENT 'registrant fax ext',
+    `registrant_email`        varchar(100)              NOT NULL DEFAULT '' COMMENT 'registrant email',
+    `raw_data`                varchar(15000)            NOT NULL DEFAULT '' COMMENT 'whois raw data',
 
     PRIMARY KEY (`id`)
 ) ENGINE = InnoDB
