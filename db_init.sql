@@ -89,7 +89,7 @@ CREATE TABLE IF NOT EXISTS `domain`
     `registrant_phone_ext`    varchar(30)               NOT NULL DEFAULT '' COMMENT 'registrant phone ext',
     `registrant_fax`          varchar(30)               NOT NULL DEFAULT '' COMMENT 'registrant fax',
     `registrant_fax_ext`      varchar(30)               NOT NULL DEFAULT '' COMMENT 'registrant fax ext',
-    `registrant_email`        varchar(100)              NOT NULL DEFAULT '' COMMENT 'registrant email',
+    `registrant_email`        varchar(200)              NOT NULL DEFAULT '' COMMENT 'registrant email',
     `raw_data`                varchar(15000)            NOT NULL DEFAULT '' COMMENT 'whois raw data',
 
     PRIMARY KEY (`id`)

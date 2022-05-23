@@ -90,7 +90,7 @@ class Domain(Base):
     registrant_phone_ext = Column(String(30))
     registrant_fax = Column(String(30))
     registrant_fax_ext = Column(String(30))
-    registrant_email = Column(String(100))
+    registrant_email = Column(String(200))
     raw_data = Column(String(15000))
 
 

@@ -13,13 +13,15 @@ sqlconn = 'mysql+pymysql://root:1101syw@localhost:3306/test?charset=utf8mb4'
 
 
 def call_ruby_script(domain_name, session):
+    print("----{0}----".format(domain_name))
     cmd = 'get_domain_info.rb -d ' + domain_name
     result = os.popen(cmd)
+    result = result.read()
     # print(result.read())
     if "ServerNotFound" in result:
         print("No Domain Info.")
         return
-    result = result.read()
+
     domain_info = Domain()
     domain_info.domain_name = domain_name
     domain_info.raw_data = result
@@ -43,44 +45,45 @@ def call_ruby_script(domain_name, session):
             items = line.split(':')
             if items[0] == 'Registry Registrant ID':
                 if items[1]:
-                    domain_info.registrant_id = items[1]
+                    domain_info.registrant_id = items[1][1:]
             elif items[0] == 'Registrant Name':
                 if items[1]:
-                    domain_info.registrant_name = items[1]
+                    domain_info.registrant_name = items[1][1:]
             elif items[0] == 'Registrant Organization':
                 if items[1]:
-                    domain_info.registrant_organization = items[1]
+                    domain_info.registrant_organization = items[1][1:]
             elif items[0] == 'Registrant Street':
                 if items[1]:
-                    domain_info.registrant_street = items[1]
+                    domain_info.registrant_street = items[1][1:]
             elif items[0] == 'Registrant City':
                 if items[1]:
-                    domain_info.registrant_city = items[1]
+                    domain_info.registrant_city = items[1][1:]
             elif items[0] == 'Registrant State/Province':
                 if items[1]:
-                    domain_info.registrant_province = items[1]
+                    domain_info.registrant_province = items[1][1:]
             elif items[0] == 'Registrant Postal Code':
                 if items[1]:
-                    domain_info.registrant_postal_code = items[1]
+                    domain_info.registrant_postal_code = items[1][1:]
             elif items[0] == 'Registrant Country':
                 if items[1]:
-                    domain_info.registrant_country = items[1]
+                    domain_info.registrant_country = items[1][1:]
             elif items[0] == 'Registrant Phone':
                 if items[1]:
-                    domain_info.registrant_phone = items[1]
+                    domain_info.registrant_phone = items[1][1:]
             elif items[0] == 'Registrant Phone Ext':
                 if items[1]:
-                    domain_info.registrant_phone_ext = items[1]
+                    domain_info.registrant_phone_ext = items[1][1:]
             elif items[0] == 'Registrant Fax':
                 if items[1]:
-                    domain_info.registrant_fax = items[1]
+                    domain_info.registrant_fax = items[1][1:]
             elif items[0] == 'Registrant Fax Ext':
                 if items[1]:
-                    domain_info.registrant_fax_ext = items[1]
+                    domain_info.registrant_fax_ext = items[1][1:]
             elif items[0] == 'Registrant Email':
                 if items[1]:
-                    domain_info.registrant_email = items[1]
+                    domain_info.registrant_email = items[1][1:]
 
+    # print(domain_info.raw_data)
     session.add(domain_info)
     session.commit()
 
@@ -90,7 +93,8 @@ if __name__ == '__main__':
     DBSession = sessionmaker(bind=engine)
     session = DBSession()
 
-    f = open("../txt files/domain_in_comments.txt", "r", encoding="UTF8")
+    f = open("../txt files/compare_url_result.txt", "r", encoding="UTF8")
+    # f = open("../txt files/domain_in_comments.txt", "r", encoding="UTF8")
     # f = open("../txt files/domain_in_offers.txt", "r", encoding="UTF8")
     domain_list = f.readlines()
     f.close()
