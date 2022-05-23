@@ -12,7 +12,7 @@ from model import Domain
 sqlconn = 'mysql+pymysql://root:1101syw@localhost:3306/test?charset=utf8mb4'
 
 
-def call_ruby_script(domain_name):
+def call_ruby_script(domain_name, session):
     cmd = 'get_domain_info.rb -d ' + domain_name
     result = os.popen(cmd)
     # print(result.read())
@@ -98,10 +98,10 @@ if __name__ == '__main__':
     for domain in domain_list:
         domain = domain.strip('\n')
         if domain:
-            domain = domain.split('.')[-2:]
-            rows = session.query(Domain).filter(Domain.domain_name.like(domain_name)).all()
+            domain = '.'.join(domain.split('.')[-2:])
+            rows = session.query(Domain).filter(Domain.domain_name.like(domain)).all()
             if rows:
                 continue
-            call_ruby_script(domain)
+            call_ruby_script(domain, session)
 
     session.close()
