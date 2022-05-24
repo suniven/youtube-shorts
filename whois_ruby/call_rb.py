@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import os
 import time
 import re
@@ -15,8 +16,14 @@ sqlconn = 'mysql+pymysql://root:1101syw@localhost:3306/test?charset=utf8mb4'
 def call_ruby_script(domain_name, session):
     print("----{0}----".format(domain_name))
     cmd = 'get_domain_info.rb -d ' + domain_name
-    result = os.popen(cmd)
-    result = result.read()
+    with os.popen(cmd) as fp:
+        result = fp._stream.buffer.read()
+    try:
+        result = result.decode("utf8", "ignore")
+    except UnicodeDecodeError:
+        result = result.decode('gbk')
+
+    # result = result.read()
     # print(result.read())
     if "ServerNotFound" in result:
         print("No Domain Info.")
@@ -93,9 +100,9 @@ if __name__ == '__main__':
     DBSession = sessionmaker(bind=engine)
     session = DBSession()
 
-    f = open("../txt files/compare_url_result.txt", "r", encoding="UTF8")
+    # f = open("../txt files/compare_url_result.txt", "r", encoding="UTF8")
     # f = open("../txt files/domain_in_comments.txt", "r", encoding="UTF8")
-    # f = open("../txt files/domain_in_offers.txt", "r", encoding="UTF8")
+    f = open("../txt files/domain_in_offers.txt", "r", encoding="UTF8")
     domain_list = f.readlines()
     f.close()
 
