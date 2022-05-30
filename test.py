@@ -20,24 +20,32 @@ import sys
 import hashlib
 from timestamp import timestamp_datetime
 import base64
+# Get the first 20 hits for: "Breaking Code" WordPress blog
+from googlesearch import search
+for url in search('"Brisex.Uno"', stop=20):
+    print(url)
 
-'''
-通用文字识别
-'''
 
-request_url = "https://aip.baidubce.com/rest/2.0/ocr/v1/general_basic"
-params = {
-    "url": "https://www.whois.com/eimg/5/07/507f3d6c2ced8585e10f84abc754f3c10ae1c619.png",
-    "language_type": "ENG"
-}
-access_token = '24.0517a9b8c406efc450556ac5df9a0880.2592000.1655785788.282335-26288350'
-request_url = request_url + "?access_token=" + access_token
-headers = {'content-type': 'application/x-www-form-urlencoded'}
-response = requests.post(request_url, data=params, headers=headers)
-if response:
-    print(response.json())
+curl 'https://customsearch.googleapis.com/customsearch/v1?cx=a7dbc3e35111d44eb&num=20&q=%22BRISEX.Uno%22&access_token=AIzaSyD7MID4GdYQt3YKUqsqIlKZiPxtU-NPNnM&key=AIzaSyD7MID4GdYQt3YKUqsqIlKZiPxtU-NPNnM' --header 'Accept: application/json' --compressed
 
-# print(timestamp_datetime(1651363200))
+#
+# '''
+# 通用文字识别
+# '''
+#
+# request_url = "https://aip.baidubce.com/rest/2.0/ocr/v1/general_basic"
+# params = {
+#     "url": "https://www.whois.com/eimg/5/07/507f3d6c2ced8585e10f84abc754f3c10ae1c619.png",
+#     "language_type": "ENG"
+# }
+# access_token = '24.0517a9b8c406efc450556ac5df9a0880.2592000.1655785788.282335-26288350'
+# request_url = request_url + "?access_token=" + access_token
+# headers = {'content-type': 'application/x-www-form-urlencoded'}
+# response = requests.post(request_url, data=params, headers=headers)
+# if response:
+#     print(response.json())
+
+# print(timestamp_datetime(1652809740))
 # print(timestamp_datetime(time.time()))
 
 #
