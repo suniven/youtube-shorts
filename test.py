@@ -20,13 +20,15 @@ import sys
 import hashlib
 from timestamp import timestamp_datetime
 import base64
+
+
 # Get the first 20 hits for: "Breaking Code" WordPress blog
 from googlesearch import search
 for url in search('"Brisex.Uno"', stop=20):
     print(url)
 
 
-curl 'https://customsearch.googleapis.com/customsearch/v1?cx=a7dbc3e35111d44eb&num=20&q=%22BRISEX.Uno%22&access_token=AIzaSyD7MID4GdYQt3YKUqsqIlKZiPxtU-NPNnM&key=AIzaSyD7MID4GdYQt3YKUqsqIlKZiPxtU-NPNnM' --header 'Accept: application/json' --compressed
+# curl 'https://customsearch.googleapis.com/customsearch/v1?cx=a7dbc3e35111d44eb&num=20&q=%22BRISEX.Uno%22&access_token=AIzaSyD7MID4GdYQt3YKUqsqIlKZiPxtU-NPNnM&key=AIzaSyD7MID4GdYQt3YKUqsqIlKZiPxtU-NPNnM' --header 'Accept: application/json' --compressed
 
 #
 # '''

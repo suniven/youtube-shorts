@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS `comment`
     `video_id`    varchar(24)               NOT NULL DEFAULT '' COMMENT '视频id',
     `user`        varchar(64)               NOT NULL DEFAULT '' COMMENT '评论者',
     `user_link`   varchar(256)              NOT NULL DEFAULT '' COMMENT '评论者主页链接',
-    `content`     varchar(15000)             NOT NULL DEFAULT '' COMMENT '评论内容',
+    `content`     varchar(15000)            NOT NULL DEFAULT '' COMMENT '评论内容',
     `date`        varchar(20)               NOT NULL DEFAULT '' COMMENT '发布日期',
     `type`        smallint                  NOT NULL DEFAULT 0 COMMENT '-1-占位 0-正常评论 1-包含色情链接的评论 2-包含其他链接的评论',
     `create_time` bigint(20)                NOT NULL DEFAULT 0 COMMENT '数据创建时间',
@@ -173,6 +173,20 @@ CREATE TABLE IF NOT EXISTS `odigger_offer`
   DEFAULT CHARSET = utf8 COMMENT ='odigger offer';
 
 
+CREATE TABLE IF NOT EXISTS `google_search_result`
+(
+    `id`          bigint(20) auto_increment NOT NULL COMMENT 'id',
+    `query`       varchar(512)              NOT NULL COMMENT '查询内容',
+    `url`         varchar(2048)             NOT NULL COMMENT '查询结果链接',
+    `title`       varchar(1024)             NOT NULL COMMENT '查询结果标题',
+    `snippet`     varchar(2048)             NOT NULL COMMENT '查询结果snippet',
+    `create_time` bigint(20)                NOT NULL DEFAULT 0 COMMENT '数据创建时间',
+
+    PRIMARY KEY (`id`)
+) ENGINE = InnoDB
+  DEFAULT CHARSET = utf8 COMMENT ='Google Custom Search Result';
+
+
 alter table video
     convert to character set utf8mb4;
 alter table comment
@@ -190,4 +204,6 @@ alter table affpay_offer
 alter table offervault_offer
     convert to character set utf8mb4;
 alter table odigger_offer
+    convert to character set utf8mb4;
+alter table google_search_result
     convert to character set utf8mb4;

@@ -161,3 +161,15 @@ class Odigger_Offer(Base):
     land_page_img = Column(String(256))
     status = Column(String(24))
     create_time = Column(mysql.BIGINT)
+
+
+class Google_Search_Result(Base):
+    # 表名
+    __tablename__ = 'google_search_result'
+
+    id = Column(mysql.BIGINT, primary_key=True)
+    query = Column(String(512))
+    url = Column(String(2048))
+    title = Column(String(1024))
+    snippet = Column(String(2048))
+    create_time = Column(mysql.BIGINT)
