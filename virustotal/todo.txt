@@ -1,0 +1,31 @@
+* crawler
+    1. url
+        - detection (Security Vendors' Analysis)
+          x/y
+          analysis
+        - details (Categories (Category of the URL or domain content as provided by different engines))
+          eg. Forcepoint ThreatSeeker	dynamic content
+              Sophos	                spyware and malware
+              Comodo Valkyrie Verdict	unknown
+              Webroot	                Phishing and Other Frauds
+
+    2. domain
+        - detection (Security Vendors' Analysis)
+          https://www.virustotal.com/gui/domain/[domain]/detection
+          x/y
+          analysis
+        - details (Categories (Category of the URL or domain content as provided by different engines))
+          https://www.virustotal.com/gui/domain/[domain]/details
+          eg. Forcepoint ThreatSeeker	sex
+              Webroot	                Phishing and Other Frauds
+              alphaMountain.ai	        Suspicious
+              Comodo Valkyrie Verdict	media sharing
+              BitDefender	            misc
+        - relations (Subdomains)
+          https://www.virustotal.com/gui/domain/[domain]/relations
+
+* api
+    1. domain
+        - subdomain (free) 但是如果上面爬虫完成的话也不需要了/先获取subdomain列表然后把subdomain放爬虫里跑看哪个方便
+    2. url
+        - analyses (Premium) 要钱

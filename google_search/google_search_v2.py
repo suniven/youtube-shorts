@@ -22,7 +22,7 @@ proxies = {
 
 
 def send_request(query, session):
-    for url in search(query, stop=20, verify_ssl=True, user_agent=get_random_user_agent()):  # stop=None
+    for url in search(query, stop=20, proxies=proxies, verify_ssl=False, user_agent=get_random_user_agent()):  # stop=None
         google_search_result = Google_Search_Result()
         google_search_result.query = query.replace("\"", "")
         google_search_result.title = ""
@@ -47,7 +47,8 @@ if __name__ == '__main__':
         if url:
             kw = "\"" + url + "\""
             print("-- Query: {0} --".format(kw))
-            rows = session.query(Google_Search_Result).filter(Google_Search_Result.query.like(kw)).all()
+            rows = session.query(Google_Search_Result).filter(
+                Google_Search_Result.query.like(kw.replace("\"", ""))).all()
             if rows:
                 continue
             send_request(kw, session)

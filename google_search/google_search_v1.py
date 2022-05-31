@@ -30,7 +30,8 @@ def send_request(query, session):
     request_url = "https://customsearch.googleapis.com/customsearch/v1"
     cx = 'a7dbc3e35111d44eb'
     key = 'AIzaSyD7MID4GdYQt3YKUqsqIlKZiPxtU-NPNnM'
-    request_url = request_url + "?cx=" + cx + "&q=" + query + "&key=" + key
+    num = '10'
+    request_url = request_url + "?cx=" + cx + "&q=" + query + "&key=" + key + "&num=" + num
     headers = {'content-type': 'application/json'}
     response = requests.get(request_url, headers=headers, timeout=(3.05, 15), proxies=proxies, verify=False)
     if response:
@@ -68,9 +69,10 @@ if __name__ == '__main__':
         if url:
             kw = "\"" + url + "\""
             print("-- Query: {0} --".format(kw))
-            rows = session.query(Google_Search_Result).filter(Google_Search_Result.query.like(kw)).all()
+            rows = session.query(Google_Search_Result).filter(
+                Google_Search_Result.query.like(kw.replace("\"", ""))).all()
             if rows:
                 continue
             send_request(kw, session)
-            time.sleep(8)
+            time.sleep(10)
     session.close()
