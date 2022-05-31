@@ -28,7 +28,7 @@ def send_request(query, session):
     key = 'AIzaSyD7MID4GdYQt3YKUqsqIlKZiPxtU-NPNnM'
     request_url = request_url + "?cx=" + cx + "&q=" + query + "&key=" + key
     headers = {'content-type': 'application/json'}
-    response = requests.get(request_url, headers=headers, proxies=proxies)
+    response = requests.get(request_url, headers=headers, timeout=(3.05, 15), proxies=proxies, verify=False)
     if response:
         # print(response.json())
         data = response.json()
@@ -65,6 +65,9 @@ if __name__ == '__main__':
             domain = '.'.join(domain.split('.')[-2:])
             kw = "\"" + domain + "\""
             print("-- Query: {0} --".format(kw))
+            rows = session.query(Google_Search_Result).filter(Google_Search_Result.query.like(kw)).all()
+            if rows:
+                continue
             send_request(kw, session)
             time.sleep(8)
     session.close()
