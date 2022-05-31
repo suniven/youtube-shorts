@@ -1,0 +1,13 @@
+Error: Query "SEXXO.Baby"	ErrMsg: (pymysql.err.IntegrityError) (1048, "Column 'url' cannot be null") [SQL: 'INSERT INTO google_search_result (query, url, title, snippet, create_time) VALUES (%(query)s, %(url)s, %(title)s, %(snippet)s, %(create_time)s)'] [parameters: {'query': 'SEXXO.Baby', 'url': None, 'title': 'Sexxo Baby free style - YouTube', 'snippet': '', 'create_time': 1653983280}] (Background on this error at: http://sqlalche.me/e/gkpj)
+Error: Query "SEXXO.Baby"	ErrMsg: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=99.0.4844.84)
+
+Error: Query "SEXXO.Baby"	ErrMsg: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=99.0.4844.84)
+
+Error: Query "SEXXO.Baby"	ErrMsg: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=99.0.4844.84)
+
+Error: Query "SEXXO.Baby"	ErrMsg: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=99.0.4844.84)
+

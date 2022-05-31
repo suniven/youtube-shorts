@@ -20,13 +20,18 @@ import sys
 import hashlib
 from timestamp import timestamp_datetime
 import base64
+import ssl
+from googlesearch import search, get_random_user_agent
 
-
-# Get the first 20 hits for: "Breaking Code" WordPress blog
-from googlesearch import search
-for url in search('"Brisex.Uno"', stop=20):
+ssl._create_default_https_context = ssl._create_unverified_context
+for url in search('"Brisex.Uno"', stop=20, user_agent=get_random_user_agent()):  # stop=None
     print(url)
-
+#
+# def test(a=9):
+#     print(a)
+#
+#
+# test(a=10)
 
 # curl 'https://customsearch.googleapis.com/customsearch/v1?cx=a7dbc3e35111d44eb&num=20&q=%22BRISEX.Uno%22&access_token=AIzaSyD7MID4GdYQt3YKUqsqIlKZiPxtU-NPNnM&key=AIzaSyD7MID4GdYQt3YKUqsqIlKZiPxtU-NPNnM' --header 'Accept: application/json' --compressed
 

@@ -1,3 +1,7 @@
+# google custom search api
+# 限制最多十条返回结果
+# https://developers.google.com/custom-search/v1/reference/rest/v1/cse/list
+
 import os
 import time
 import requests
@@ -55,15 +59,14 @@ if __name__ == '__main__':
     DBSession = sessionmaker(bind=engine)
     session = DBSession()
 
-    f = open("../txt files/domain_in_comments.txt", "r", encoding="UTF8")
+    f = open("../txt files/url_in_comments.txt", "r", encoding="UTF8")
     # f = open("../txt files/for_test.txt", "r", encoding="UTF8")
-    domain_list = f.readlines()
+    url_list = f.readlines()
     f.close()
-    for domain in domain_list:
-        domain = domain.strip('\n')
-        if domain:
-            domain = '.'.join(domain.split('.')[-2:])
-            kw = "\"" + domain + "\""
+    for url in url_list:
+        url = url.strip('\n')
+        if url:
+            kw = "\"" + url + "\""
             print("-- Query: {0} --".format(kw))
             rows = session.query(Google_Search_Result).filter(Google_Search_Result.query.like(kw)).all()
             if rows:
