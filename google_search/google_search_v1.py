@@ -33,7 +33,7 @@ def send_request(query, session):
     num = '10'
     request_url = request_url + "?cx=" + cx + "&q=" + query + "&key=" + key + "&num=" + num
     headers = {'content-type': 'application/json'}
-    response = requests.get(request_url, headers=headers, timeout=(3.05, 15), proxies=proxies, verify=False)
+    response = requests.get(request_url, headers=headers, timeout=(3.05, 15), proxies=proxies)
     if response:
         # print(response.json())
         data = response.json()
@@ -53,6 +53,8 @@ def send_request(query, session):
             f_err = open("./error_log.txt", "a", encoding="UTF8")
             f_err.write("Error: Query {0}\tErrMsg: {1}\n".format(query, err_msg))
             f_err.close()
+    else:
+        print("- No Response. -")
 
 
 if __name__ == '__main__':
@@ -72,6 +74,7 @@ if __name__ == '__main__':
             rows = session.query(Google_Search_Result).filter(
                 Google_Search_Result.query.like(kw.replace("\"", ""))).all()
             if rows:
+                print("- Already Got -")
                 continue
             send_request(kw, session)
             time.sleep(10)

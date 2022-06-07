@@ -187,6 +187,99 @@ CREATE TABLE IF NOT EXISTS `google_search_result`
   DEFAULT CHARSET = utf8 COMMENT ='Google Custom Search Result';
 
 
+CREATE TABLE IF NOT EXISTS `virustotal_url`
+(
+    `id`          bigint(20) auto_increment NOT NULL COMMENT 'id',
+    `url`         varchar(2048)             NOT NULL DEFAULT '' COMMENT '链接',
+    `ratio`       varchar(16)               NOT NULL DEFAULT '' COMMENT '异常/总数',
+    `create_time` bigint(20)                NOT NULL DEFAULT 0 COMMENT '数据创建时间',
+
+    PRIMARY KEY (`id`)
+) ENGINE = InnoDB
+  DEFAULT CHARSET = utf8 COMMENT ='virustotal url';
+
+
+CREATE TABLE IF NOT EXISTS `virustotal_url_detection`
+(
+    `id`          bigint(20) auto_increment NOT NULL COMMENT 'id',
+    `url_id`      bigint(20)                NOT NULL COMMENT 'url在virustotal_url表中的id',
+    `url`         varchar(2048)             NOT NULL DEFAULT '' COMMENT '链接',
+    `vendor`      varchar(64)               NOT NULL DEFAULT '' COMMENT '安全厂家',
+    `analysis`    varchar(64)               NOT NULL DEFAULT '' COMMENT '分析结果',
+    `create_time` bigint(20)                NOT NULL DEFAULT 0 COMMENT '数据创建时间',
+
+    PRIMARY KEY (`id`)
+) ENGINE = InnoDB
+  DEFAULT CHARSET = utf8 COMMENT ='virustotal url detection result';
+
+
+CREATE TABLE IF NOT EXISTS `virustotal_url_details`
+(
+    `id`          bigint(20) auto_increment NOT NULL COMMENT 'id',
+    `url_id`      bigint(20)                NOT NULL COMMENT 'url在virustotal_url表中的id',
+    `url`         varchar(2048)             NOT NULL DEFAULT '' COMMENT '链接',
+    `engine`      varchar(64)               NOT NULL DEFAULT '' COMMENT '安全引擎',
+    `category`    varchar(64)               NOT NULL DEFAULT '' COMMENT '分类结果',
+    `create_time` bigint(20)                NOT NULL DEFAULT 0 COMMENT '数据创建时间',
+
+    PRIMARY KEY (`id`)
+) ENGINE = InnoDB
+  DEFAULT CHARSET = utf8 COMMENT ='virustotal url details';
+
+
+CREATE TABLE IF NOT EXISTS `virustotal_domain`
+(
+    `id`          bigint(20) auto_increment NOT NULL COMMENT 'id',
+    `domain`      varchar(512)             NOT NULL DEFAULT '' COMMENT 'domain',
+    `ratio`       varchar(16)               NOT NULL DEFAULT '' COMMENT '异常/总数',
+    `create_time` bigint(20)                NOT NULL DEFAULT 0 COMMENT '数据创建时间',
+
+    PRIMARY KEY (`id`)
+) ENGINE = InnoDB
+  DEFAULT CHARSET = utf8 COMMENT ='virustotal domain';
+
+
+CREATE TABLE IF NOT EXISTS `virustotal_domain_detection`
+(
+    `id`          bigint(20) auto_increment NOT NULL COMMENT 'id',
+    `domain`      varchar(512)              NOT NULL DEFAULT '' COMMENT 'domain',
+    `subdomain`   varchar(1024)             NOT NULL DEFAULT '' COMMENT 'subdomain',
+    `vendor`      varchar(64)               NOT NULL DEFAULT '' COMMENT '安全厂家',
+    `analysis`    varchar(64)               NOT NULL DEFAULT '' COMMENT '分析结果',
+    `type`        varchar(16)               NOT NULL DEFAULT '' COMMENT 'domain/subdomain',
+    `create_time` bigint(20)                NOT NULL DEFAULT 0 COMMENT '数据创建时间',
+
+    PRIMARY KEY (`id`)
+) ENGINE = InnoDB
+  DEFAULT CHARSET = utf8 COMMENT ='virustotal domain detection result';
+
+
+CREATE TABLE IF NOT EXISTS `virustotal_domain_details`
+(
+    `id`          bigint(20) auto_increment NOT NULL COMMENT 'id',
+    `domain`      varchar(512)              NOT NULL DEFAULT '' COMMENT 'domain',
+    `subdomain`   varchar(1024)             NOT NULL DEFAULT '' COMMENT 'subdomain',
+    `engine`      varchar(64)               NOT NULL DEFAULT '' COMMENT '安全引擎',
+    `category`    varchar(64)               NOT NULL DEFAULT '' COMMENT '分类结果',
+    `type`        varchar(16)               NOT NULL DEFAULT '' COMMENT 'domain/subdomain',
+    `create_time` bigint(20)                NOT NULL DEFAULT 0 COMMENT '数据创建时间',
+
+    PRIMARY KEY (`id`)
+) ENGINE = InnoDB
+  DEFAULT CHARSET = utf8 COMMENT ='virustotal domain details';
+
+CREATE TABLE IF NOT EXISTS `virustotal_subdomain`
+(
+    `id`          bigint(20) auto_increment NOT NULL COMMENT 'id',
+    `domain`      varchar(512)              NOT NULL DEFAULT '' COMMENT 'domain',
+    `subdomain`   varchar(1024)             NOT NULL DEFAULT '' COMMENT 'subdomain',
+    `ratio`       varchar(16)               NOT NULL DEFAULT '' COMMENT '异常/总数',
+    `create_time` bigint(20)                NOT NULL DEFAULT 0 COMMENT '数据创建时间',
+
+    PRIMARY KEY (`id`)
+) ENGINE = InnoDB
+  DEFAULT CHARSET = utf8 COMMENT ='subdomain';
+
 alter table video
     convert to character set utf8mb4;
 alter table comment
@@ -206,4 +299,21 @@ alter table offervault_offer
 alter table odigger_offer
     convert to character set utf8mb4;
 alter table google_search_result
+    convert to character set utf8mb4;
+
+alter table virustotal_url
+    convert to character set utf8mb4;
+alter table virustotal_url_detection
+    convert to character set utf8mb4;
+alter table virustotal_url_details
+    convert to character set utf8mb4;
+
+alter table virustotal_domain
+    convert to character set utf8mb4;
+alter table virustotal_domain_detection
+    convert to character set utf8mb4;
+alter table virustotal_domain_details
+    convert to character set utf8mb4;
+
+alter table virustotal_subdomain
     convert to character set utf8mb4;

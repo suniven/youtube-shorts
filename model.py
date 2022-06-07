@@ -173,3 +173,84 @@ class Google_Search_Result(Base):
     title = Column(String(1024))
     snippet = Column(String(2048))
     create_time = Column(mysql.BIGINT)
+
+
+class Virustotal_Url(Base):
+    # 表名
+    __tablename__ = 'virustotal_url'
+
+    id = Column(mysql.BIGINT, primary_key=True)
+    url = Column(String(2048))
+    ratio = Column(String(16))
+    create_time = Column(mysql.BIGINT)
+
+
+class Virustotal_Url_Detection(Base):
+    # 表名
+    __tablename__ = 'virustotal_url_detection'
+
+    id = Column(mysql.BIGINT, primary_key=True)
+    url_id = Column(mysql.BIGINT, primary_key=True)
+    url = Column(String(2048))
+    vendor = Column(String(64))
+    analysis = Column(String(64))
+    create_time = Column(mysql.BIGINT)
+
+
+class Virustotal_Url_Details(Base):
+    # 表名
+    __tablename__ = 'virustotal_url_details'
+
+    id = Column(mysql.BIGINT, primary_key=True)
+    url_id = Column(mysql.BIGINT, primary_key=True)
+    url = Column(String(2048))
+    engine = Column(String(64))
+    category = Column(String(64))
+    create_time = Column(mysql.BIGINT)
+
+
+class Virustotal_Domain(Base):
+    # 表名
+    __tablename__ = 'virustotal_domain'
+
+    id = Column(mysql.BIGINT, primary_key=True)
+    domain = Column(String(512))
+    ratio = Column(String(16))
+    create_time = Column(mysql.BIGINT)
+
+
+class Virustotal_Domain_Detection(Base):
+    # 表名
+    __tablename__ = 'virustotal_domain_detection'
+
+    id = Column(mysql.BIGINT, primary_key=True)
+    domain = Column(String(512))
+    subdomain = Column(String(1024))
+    vendor = Column(String(64))
+    analysis = Column(String(64))
+    type = Column(String(16))
+    create_time = Column(mysql.BIGINT)
+
+
+class Virustotal_Domain_Details(Base):
+    # 表名
+    __tablename__ = 'virustotal_domain_details'
+
+    id = Column(mysql.BIGINT, primary_key=True)
+    domain = Column(String(512))
+    subdomain = Column(String(1024))
+    engine = Column(String(64))
+    category = Column(String(64))
+    type = Column(String(16))
+    create_time = Column(mysql.BIGINT)
+
+
+class Virustotal_Subdomain(Base):
+    # 表名
+    __tablename__ = 'virustotal_subdomain'
+
+    id = Column(mysql.BIGINT, primary_key=True)
+    domain = Column(String(512))
+    subdomain = Column(String(1024))
+    ratio = Column(String(16))
+    create_time = Column(mysql.BIGINT)
