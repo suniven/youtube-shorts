@@ -24,41 +24,83 @@ import base64
 
 def control_in_shadow(browser, js):
     item = browser.execute_script(js)
-    print(type(item))
+    # print(type(item))
     return item  # 返回的对象在这里
 
 
-browser = webdriver.Chrome()
-browser.maximize_window()
-virustotal_url_page = 'https://www.virustotal.com/gui/url/b77fba6dce9cb493a319e2dcf81e018d99ec14438fcbf2410738fc9eb58c0246'
-browser.get(virustotal_url_page)
-time.sleep(2)
-js_numerator = 'return document.getElementsByTagName("url-view")[0].shadowRoot.getElementById("report").shadowRoot.querySelector(".veredict-widget vt-ui-detections-widget").shadowRoot.querySelector(".positives")'
-numerator = control_in_shadow(browser, js_numerator).text
-print(numerator)
-js_detections = 'return document.getElementsByTagName("url-view")[0].shadowRoot.querySelector("vt-ui-detections-list").shadowRoot.querySelector("#detections")'
-detections = control_in_shadow(browser, js_detections)
-detection_list = detections.find_elements_by_css_selector('.detection')
-print(type(detection_list))
-print(len(detection_list))
-for detection in detection_list:
-    vendor = detection.find_element_by_css_selector('.engine-name').text
-    analysis = detection.find_element_by_css_selector('.individual-detection').text
-    print("{0}: {1}".format(vendor, analysis))
+def load_more_subdomain(browser):
+    try:
+        js_remove_hidden = 'document.getElementsByTagName("domain-view")[0].shadowRoot.getElementById("relations").shadowRoot.querySelector("vt-ui-button").removeAttribute("hidden")'
+        browser.execute_script(js_remove_hidden)
+        while True:
+            print("loading...")
+            js_load_btn = 'return document.getElementsByTagName("domain-view")[0].shadowRoot.getElementById("relations").shadowRoot.querySelector("vt-ui-button")'
+            load_btn = control_in_shadow(browser, js_load_btn)
+            load_btn.click()
+            # scroll(browser)
+            # ActionChains(browser).move_to_element(load_btn).click().perform()
+            time.sleep(2)
+            js_trs = 'return document.getElementsByTagName("domain-view")[0].shadowRoot.getElementById("relations").shadowRoot.querySelector("vt-ui-generic-list").shadowRoot.querySelectorAll(".tr")'
+            trs = control_in_shadow(browser, js_trs)
+            print(len(trs))
+    except Exception as err:
+        print(err)
+        return
 
-js_detail = 'return document.getElementsByTagName("url-view")[0].shadowRoot.getElementById("report").shadowRoot.querySelectorAll("vt-ui-button")[2]'
-detail_btn = control_in_shadow(browser, js_detail)
-detail_btn.click()
 
-js_cate = 'return document.getElementsByTagName("url-view")[0].shadowRoot.getElementById("details").shadowRoot.querySelector("vt-ui-expandable span vt-ui-key-val-table").shadowRoot.querySelectorAll(".row")'
-cate_list = control_in_shadow(browser, js_cate)
-for cate in cate_list:
-    engine = cate.find_element_by_css_selector('.label').text
-    category = cate.find_element_by_css_selector('.value').text
-    print("{0}: {1}".format(engine, category))
+if __name__ == '__main__':
+    browser = webdriver.Chrome()
+    browser.maximize_window()
+    url = 'https://www.virustotal.com/gui/domain/gxnvbb.milfshorny.com/relations'
+    browser.get(url)
+    time.sleep(2)
+    load_more_subdomain(browser)
 
-time.sleep(5)
-browser.quit()
+    js_trs = 'return document.getElementsByTagName("domain-view")[0].shadowRoot.getElementById("relations").shadowRoot.querySelector("vt-ui-generic-list").shadowRoot.querySelectorAll(".tr")'
+    trs = control_in_shadow(browser, js_trs)
+    print(len(trs))
+
+    time.sleep(5)
+    browser.quit()
+
+#
+# def control_in_shadow(browser, js):
+#     item = browser.execute_script(js)
+#     print(type(item))
+#     return item  # 返回的对象在这里
+#
+#
+# browser = webdriver.Chrome()
+# browser.maximize_window()
+# virustotal_url_page = 'https://www.virustotal.com/gui/url/b77fba6dce9cb493a319e2dcf81e018d99ec14438fcbf2410738fc9eb58c0246'
+# browser.get(virustotal_url_page)
+# time.sleep(2)
+# js_numerator = 'return document.getElementsByTagName("url-view")[0].shadowRoot.getElementById("report").shadowRoot.querySelector(".veredict-widget vt-ui-detections-widget").shadowRoot.querySelector(".positives")'
+# numerator = control_in_shadow(browser, js_numerator).text
+# print(numerator)
+# js_detections = 'return document.getElementsByTagName("url-view")[0].shadowRoot.querySelector("vt-ui-detections-list").shadowRoot.querySelector("#detections")'
+# detections = control_in_shadow(browser, js_detections)
+# detection_list = detections.find_elements_by_css_selector('.detection')
+# print(type(detection_list))
+# print(len(detection_list))
+# for detection in detection_list:
+#     vendor = detection.find_element_by_css_selector('.engine-name').text
+#     analysis = detection.find_element_by_css_selector('.individual-detection').text
+#     print("{0}: {1}".format(vendor, analysis))
+#
+# js_detail = 'return document.getElementsByTagName("url-view")[0].shadowRoot.getElementById("report").shadowRoot.querySelectorAll("vt-ui-button")[2]'
+# detail_btn = control_in_shadow(browser, js_detail)
+# detail_btn.click()
+#
+# js_cate = 'return document.getElementsByTagName("url-view")[0].shadowRoot.getElementById("details").shadowRoot.querySelector("vt-ui-expandable span vt-ui-key-val-table").shadowRoot.querySelectorAll(".row")'
+# cate_list = control_in_shadow(browser, js_cate)
+# for cate in cate_list:
+#     engine = cate.find_element_by_css_selector('.label').text
+#     category = cate.find_element_by_css_selector('.value').text
+#     print("{0}: {1}".format(engine, category))
+#
+# time.sleep(5)
+# browser.quit()
 
 # f1 = open("./txt files/temp1.txt", "r", encoding="UTF8")
 # f2 = open("./txt files/temp2.txt", "w", encoding="UTF8")

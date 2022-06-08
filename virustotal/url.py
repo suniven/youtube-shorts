@@ -69,11 +69,11 @@ def get_detection_result(browser, session, url):
         denominator = control_in_shadow(browser, js_denominator).text.replace(" ", "")
         virustotal_url.ratio = numerator + denominator
         print("ratio: ", virustotal_url.ratio)
+        virustotal_url.create_time = get_now_timestamp()
+        session.add(virustotal_url)
+        session.commit()
     except Exception as err:
         print("*** virustotal_url ratio err *** :", err)
-    virustotal_url.create_time = get_now_timestamp()
-    session.add(virustotal_url)
-    session.commit()
 
     try:
         js_detections = 'return document.getElementsByTagName("url-view")[0].shadowRoot.querySelector("vt-ui-detections-list").shadowRoot.querySelector("#detections")'
@@ -98,25 +98,28 @@ def get_detection_result(browser, session, url):
 
 
 def get_details(browser, session, url):
-    js_detail = 'return document.getElementsByTagName("url-view")[0].shadowRoot.getElementById("report").shadowRoot.querySelectorAll("vt-ui-button")[2]'
-    detail_btn = control_in_shadow(browser, js_detail)
-    detail_btn.click()
-    rows = session.query(Virustotal_Url).filter(Virustotal_Url.url.like(url)).all()
-    url_id = rows[0].id
-    js_cate = 'return document.getElementsByTagName("url-view")[0].shadowRoot.getElementById("details").shadowRoot.querySelector("vt-ui-expandable span vt-ui-key-val-table").shadowRoot.querySelectorAll(".row")'
-    cate_list = control_in_shadow(browser, js_cate)
-    for cate in cate_list:
-        engine = cate.find_element_by_css_selector('.label').text
-        category = cate.find_element_by_css_selector('.value').text
-        # print("{0}: {1}".format(engine, category))
-        virustotal_url_details = Virustotal_Url_Details()
-        virustotal_url_details.url_id = url_id
-        virustotal_url_details.url = url
-        virustotal_url_details.engine = engine
-        virustotal_url_details.category = category
-        virustotal_url_details.create_time = get_now_timestamp()
-        session.add(virustotal_url_details)
-        session.commit()
+    try:
+        js_detail = 'return document.getElementsByTagName("url-view")[0].shadowRoot.getElementById("report").shadowRoot.querySelectorAll("vt-ui-button")[2]'
+        detail_btn = control_in_shadow(browser, js_detail)
+        detail_btn.click()
+        rows = session.query(Virustotal_Url).filter(Virustotal_Url.url.like(url)).all()
+        url_id = rows[0].id
+        js_cate = 'return document.getElementsByTagName("url-view")[0].shadowRoot.getElementById("details").shadowRoot.querySelector("vt-ui-expandable span vt-ui-key-val-table").shadowRoot.querySelectorAll(".row")'
+        cate_list = control_in_shadow(browser, js_cate)
+        for cate in cate_list:
+            engine = cate.find_element_by_css_selector('.label').text
+            category = cate.find_element_by_css_selector('.value').text
+            # print("{0}: {1}".format(engine, category))
+            virustotal_url_details = Virustotal_Url_Details()
+            virustotal_url_details.url_id = url_id
+            virustotal_url_details.url = url
+            virustotal_url_details.engine = engine
+            virustotal_url_details.category = category
+            virustotal_url_details.create_time = get_now_timestamp()
+            session.add(virustotal_url_details)
+            session.commit()
+    except Exception as err:
+        print("*** virustotal_url details err *** :", err)
 
 
 if __name__ == '__main__':
