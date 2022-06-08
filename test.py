@@ -21,29 +21,68 @@ import hashlib
 from timestamp import timestamp_datetime
 import base64
 
-f1 = open("./txt files/temp1.txt", "r", encoding="UTF8")
-f2 = open("./txt files/temp2.txt", "w", encoding="UTF8")
-f3 = open("./txt files/url_in_comments.txt", "r", encoding="UTF8")
 
-done_list = f1.readlines()
-c_list = f3.readlines()
-for i in range(len(done_list)):
-    done_list[i] = done_list[i].strip('\n')
-for i in range(len(c_list)):
-    c_list[i] = c_list[i].strip('\n')
+def control_in_shadow(browser, js):
+    item = browser.execute_script(js)
+    print(type(item))
+    return item  # 返回的对象在这里
 
-for done in done_list:
-    if done in c_list:
-        c_list.remove(done)
 
-print("len: ", len(c_list))
-print(c_list[:])
-for item in c_list:
-    f2.write(item + '\n')
+browser = webdriver.Chrome()
+browser.maximize_window()
+virustotal_url_page = 'https://www.virustotal.com/gui/url/b77fba6dce9cb493a319e2dcf81e018d99ec14438fcbf2410738fc9eb58c0246'
+browser.get(virustotal_url_page)
+time.sleep(2)
+js_numerator = 'return document.getElementsByTagName("url-view")[0].shadowRoot.getElementById("report").shadowRoot.querySelector(".veredict-widget vt-ui-detections-widget").shadowRoot.querySelector(".positives")'
+numerator = control_in_shadow(browser, js_numerator).text
+print(numerator)
+js_detections = 'return document.getElementsByTagName("url-view")[0].shadowRoot.querySelector("vt-ui-detections-list").shadowRoot.querySelector("#detections")'
+detections = control_in_shadow(browser, js_detections)
+detection_list = detections.find_elements_by_css_selector('.detection')
+print(type(detection_list))
+print(len(detection_list))
+for detection in detection_list:
+    vendor = detection.find_element_by_css_selector('.engine-name').text
+    analysis = detection.find_element_by_css_selector('.individual-detection').text
+    print("{0}: {1}".format(vendor, analysis))
 
-f1.close()
-f2.close()
-f3.close()
+js_detail = 'return document.getElementsByTagName("url-view")[0].shadowRoot.getElementById("report").shadowRoot.querySelectorAll("vt-ui-button")[2]'
+detail_btn = control_in_shadow(browser, js_detail)
+detail_btn.click()
+
+js_cate = 'return document.getElementsByTagName("url-view")[0].shadowRoot.getElementById("details").shadowRoot.querySelector("vt-ui-expandable span vt-ui-key-val-table").shadowRoot.querySelectorAll(".row")'
+cate_list = control_in_shadow(browser, js_cate)
+for cate in cate_list:
+    engine = cate.find_element_by_css_selector('.label').text
+    category = cate.find_element_by_css_selector('.value').text
+    print("{0}: {1}".format(engine, category))
+
+time.sleep(5)
+browser.quit()
+
+# f1 = open("./txt files/temp1.txt", "r", encoding="UTF8")
+# f2 = open("./txt files/temp2.txt", "w", encoding="UTF8")
+# f3 = open("./txt files/url_in_comments.txt", "r", encoding="UTF8")
+#
+# done_list = f1.readlines()
+# c_list = f3.readlines()
+# for i in range(len(done_list)):
+#     done_list[i] = done_list[i].strip('\n')
+# for i in range(len(c_list)):
+#     c_list[i] = c_list[i].strip('\n')
+#
+# for done in done_list:
+#     if done in c_list:
+#         c_list.remove(done)
+#
+# print("len: ", len(c_list))
+# print(c_list[:])
+# for item in c_list:
+#     f2.write(item + '\n')
+#
+# f1.close()
+# f2.close()
+# f3.close()
 
 # import ssl
 # from googlesearch import search, get_random_user_agent
@@ -169,7 +208,6 @@ f3.close()
 # print(files[:])                         # id:24753   24753_0.png
 # session.close()
 
-
 #
 # a = """333 Sex.Uno If you would like to support my channel, I will be very grateful, every donation is important to me 😚 https://www.paypal.com/donate/?hosted_button_id=8V8QP43EHZ3M8"""
 # res = re.findall(r'((?:(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6})+(?:(?:\/[=\w\?]+)*))+', a)
@@ -236,7 +274,6 @@ f3.close()
 #         files.remove(row.screenshot)
 # print(files[:])                         # tmd找到了 id:20568   20568_0.png
 # session.close()
-
 
 # a = re.findall(r'(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}', "_KUYYA.SITE.eeee.oi")
 # print(a)
