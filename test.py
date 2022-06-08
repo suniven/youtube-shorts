@@ -20,12 +20,37 @@ import sys
 import hashlib
 from timestamp import timestamp_datetime
 import base64
-import ssl
-from googlesearch import search, get_random_user_agent
 
-ssl._create_default_https_context = ssl._create_unverified_context
-for url in search('"Brisex.Uno"', stop=20, user_agent=get_random_user_agent()):  # stop=None
-    print(url)
+f1 = open("./txt files/temp1.txt", "r", encoding="UTF8")
+f2 = open("./txt files/temp2.txt", "w", encoding="UTF8")
+f3 = open("./txt files/url_in_comments.txt", "r", encoding="UTF8")
+
+done_list = f1.readlines()
+c_list = f3.readlines()
+for i in range(len(done_list)):
+    done_list[i] = done_list[i].strip('\n')
+for i in range(len(c_list)):
+    c_list[i] = c_list[i].strip('\n')
+
+for done in done_list:
+    if done in c_list:
+        c_list.remove(done)
+
+print("len: ", len(c_list))
+print(c_list[:])
+for item in c_list:
+    f2.write(item + '\n')
+
+f1.close()
+f2.close()
+f3.close()
+
+# import ssl
+# from googlesearch import search, get_random_user_agent
+#
+# ssl._create_default_https_context = ssl._create_unverified_context
+# for url in search('"Brisex.Uno"', stop=20, user_agent=get_random_user_agent()):  # stop=None
+#     print(url)
 #
 # def test(a=9):
 #     print(a)

@@ -36,8 +36,12 @@ def get_search_result(query, browser, session):
     time.sleep(5)
 
     try:
-        gsc_cursor = browser.find_element_by_css_selector('div.gsc-cursor')
-        page_count = len(gsc_cursor.find_elements_by_tag_name('div'))
+        try:
+            gsc_cursor = browser.find_element_by_css_selector('div.gsc-cursor')
+            page_count = len(gsc_cursor.find_elements_by_tag_name('div'))
+        except Exception as err:
+            page_count = 1  # 只有一页结果 没有翻页
+            print(err)
         for i in range(page_count):
             # 容易点击了第一个翻页之后，页面出现刷新的情况 导致stale element reference: element is not attached to the page document
             if i != 0:
