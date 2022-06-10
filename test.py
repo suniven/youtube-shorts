@@ -1,3 +1,5 @@
+from selenium.webdriver.common.keys import Keys
+
 import model
 import time
 import re
@@ -28,17 +30,22 @@ def control_in_shadow(browser, js):
     return item  # 返回的对象在这里
 
 
+def scroll(browser):
+    browser.execute_script('window.scrollBy(0,500)')
+
+
 def load_more_subdomain(browser):
     try:
-        js_remove_hidden = 'document.getElementsByTagName("domain-view")[0].shadowRoot.getElementById("relations").shadowRoot.querySelector("vt-ui-button").removeAttribute("hidden")'
-        browser.execute_script(js_remove_hidden)
-        while True:
+        # # 取消隐藏
+        # js_remove_hidden = 'document.getElementsByTagName("domain-view")[0].shadowRoot.getElementById("relations").shadowRoot.querySelector("vt-ui-button").removeAttribute("hidden")'
+        # browser.execute_script(js_remove_hidden)
+        for i in range(4):
             print("loading...")
-            js_load_btn = 'return document.getElementsByTagName("domain-view")[0].shadowRoot.getElementById("relations").shadowRoot.querySelector("vt-ui-button")'
+            js_load_btn = 'return document.getElementsByTagName("domain-view")[0].shadowRoot.getElementById("relations").shadowRoot.querySelectorAll("vt-ui-button")[1]'
             load_btn = control_in_shadow(browser, js_load_btn)
             load_btn.click()
             # scroll(browser)
-            # ActionChains(browser).move_to_element(load_btn).click().perform()
+            # ActionChains(browser).move_to_element(load_btn).move_by_offset(5, 5).click().perform()
             time.sleep(2)
             js_trs = 'return document.getElementsByTagName("domain-view")[0].shadowRoot.getElementById("relations").shadowRoot.querySelector("vt-ui-generic-list").shadowRoot.querySelectorAll(".tr")'
             trs = control_in_shadow(browser, js_trs)
@@ -55,11 +62,6 @@ if __name__ == '__main__':
     browser.get(url)
     time.sleep(2)
     load_more_subdomain(browser)
-
-    js_trs = 'return document.getElementsByTagName("domain-view")[0].shadowRoot.getElementById("relations").shadowRoot.querySelector("vt-ui-generic-list").shadowRoot.querySelectorAll(".tr")'
-    trs = control_in_shadow(browser, js_trs)
-    print(len(trs))
-
     time.sleep(5)
     browser.quit()
 

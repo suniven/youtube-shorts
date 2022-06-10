@@ -12,7 +12,8 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.dialects import mysql
 
-sqlconn = 'mysql+pymysql://root:1101syw@localhost:3306/test?charset=utf8mb4'
+# sqlconn = 'mysql+pymysql://root:1101syw@localhost:3306/test?charset=utf8mb4'
+sqlconn = 'mysql+pymysql://root:1101syw@localhost:3306/yt?charset=utf8mb4'
 yt_url_prefix = 'https://www.youtube.com/watch?v='  # 方便拉评论
 MAX_SCROLL_COUNT = 200  # 检查评论时页面下拉最大次数 同时下拉评论可以顺便解决自动连播的问题 250大概可以加载3k条？
 MAX_GET_COUNT = 20000  # 往下刷2w个视频
@@ -74,14 +75,15 @@ def check_video_comments(browser, session):
 
 
 if __name__ == '__main__':
-    # 正常模式
-    browser = webdriver.Chrome()
-    browser.maximize_window()
+    # # 正常模式
+    # browser = webdriver.Chrome()
+    # browser.maximize_window()
     # headless模式
-    # option = webdriver.ChromeOptions()
-    # option.add_argument('--headless')
-    # option.add_argument("--window-size=1920,1080")
-    # browser = webdriver.Chrome(chrome_options=option)
+    option = webdriver.ChromeOptions()
+    option.add_argument('--headless')
+    option.add_argument("--window-size=1920,1080")
+    option.add_argument("--mute-audio") # 静音
+    browser = webdriver.Chrome(chrome_options=option)
     engine = create_engine(sqlconn, echo=True, max_overflow=8)
     DBSession = sessionmaker(bind=engine)
     session = DBSession()
