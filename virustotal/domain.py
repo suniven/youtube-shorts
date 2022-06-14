@@ -145,7 +145,7 @@ def get_subdomain(browser, session, domain):
     try:
         # 先判断有没有subdomain这个部分
         js_find_subdomain = 'return document.getElementsByTagName("domain-view")[0].shadowRoot.getElementById("relations").shadowRoot.querySelector(".subdomains")'
-        if not find_subdomain(js_find_subdomain):
+        if not find_subdomain(browser, js_find_subdomain):
             print("** No subdomains. **")
             return
 
