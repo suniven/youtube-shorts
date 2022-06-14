@@ -39,15 +39,13 @@ def load_more_subdomain(browser):
         # # 取消隐藏
         # js_remove_hidden = 'document.getElementsByTagName("domain-view")[0].shadowRoot.getElementById("relations").shadowRoot.querySelector("vt-ui-button").removeAttribute("hidden")'
         # browser.execute_script(js_remove_hidden)
-        for i in range(4):
+        while True:
             print("loading...")
-            js_load_btn = 'return document.getElementsByTagName("domain-view")[0].shadowRoot.getElementById("relations").shadowRoot.querySelectorAll("vt-ui-button")[1]'
-            load_btn = control_in_shadow(browser, js_load_btn)
-            load_btn.click()
-            # scroll(browser)
-            # ActionChains(browser).move_to_element(load_btn).move_by_offset(5, 5).click().perform()
+            js_load_btn = 'document.getElementsByTagName("domain-view")[0].shadowRoot.getElementById("relations").shadowRoot.querySelector(".subdomains").querySelector(".load-more").click()'
+            browser.execute_script(js_load_btn)
             time.sleep(2)
-            js_trs = 'return document.getElementsByTagName("domain-view")[0].shadowRoot.getElementById("relations").shadowRoot.querySelector("vt-ui-generic-list").shadowRoot.querySelectorAll(".tr")'
+
+            js_trs = 'return document.getElementsByTagName("domain-view")[0].shadowRoot.getElementById("relations").shadowRoot.querySelector(".subdomains").querySelector("vt-ui-generic-list").shadowRoot.querySelectorAll(".tr")'
             trs = control_in_shadow(browser, js_trs)
             print(len(trs))
     except Exception as err:
@@ -58,10 +56,13 @@ def load_more_subdomain(browser):
 if __name__ == '__main__':
     browser = webdriver.Chrome()
     browser.maximize_window()
-    url = 'https://www.virustotal.com/gui/domain/gxnvbb.milfshorny.com/relations'
+    url = 'https://www.virustotal.com/gui/domain/milfshorny.com/relations'
     browser.get(url)
     time.sleep(2)
     load_more_subdomain(browser)
+    js_trs = 'return document.getElementsByTagName("domain-view")[0].shadowRoot.getElementById("relations").shadowRoot.querySelector("vt-ui-generic-list").shadowRoot.querySelectorAll(".tr")'
+    trs = control_in_shadow(browser, js_trs)
+    print(len(trs))
     time.sleep(5)
     browser.quit()
 

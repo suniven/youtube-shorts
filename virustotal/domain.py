@@ -109,23 +109,62 @@ def get_details(browser, session, domain):
         print("*** virustotal_domain details err *** :", err)
 
 
+def count_trs(browser):
+    js_trs = 'return document.getElementsByTagName("domain-view")[0].shadowRoot.getElementById("relations").shadowRoot.querySelector(".subdomains").querySelector("vt-ui-generic-list").shadowRoot.querySelectorAll(".tr")'
+    trs = control_in_shadow(browser, js_trs)
+    # print(len(trs))
+    return len(trs)
+
+
 def load_more_subdomain(browser):
     try:
-        while True:
-            js_load_btn = 'return document.getElementsByTagName("domain-view")[0].shadowRoot.getElementById("relations").shadowRoot.querySelector(".load-more")'
-            load_btn = control_in_shadow(browser, js_load_btn)
-            ActionChains(browser).move_to_element(load_btn).click().perform()
+        pre = 0
+        cur = count_trs(browser)
+        flag = cur - pre
+        while flag:
+            print("loading...")
+            js_load_btn = 'document.getElementsByTagName("domain-view")[0].shadowRoot.getElementById("relations").shadowRoot.querySelector(".subdomains").querySelector(".load-more").click()'
+            browser.execute_script(js_load_btn)
             time.sleep(2)
+            pre = cur
+            cur = count_trs(browser)
+            flag = cur - pre
     except:
         return
 
 
+def find_subdomain(browser, js):
+    try:
+        browser.execute_script(js)
+        return True
+    except:
+        return False
+
+
 def get_subdomain(browser, session, domain):
     try:
+        # 先判断有没有subdomain这个部分
+        js_find_subdomain = 'return document.getElementsByTagName("domain-view")[0].shadowRoot.getElementById("relations").shadowRoot.querySelector(".subdomains")'
+        if not find_subdomain(js_find_subdomain):
+            print("** No subdomains. **")
+            return
+
         js_relations = 'return document.getElementsByTagName("domain-view")[0].shadowRoot.getElementById("report").shadowRoot.querySelectorAll("vt-ui-button")[3]'
         relation_btn = control_in_shadow(browser, js_relations)
         relation_btn.click()
+
         load_more_subdomain()
+
+        js_trs = 'return document.getElementsByTagName("domain-view")[0].shadowRoot.getElementById("relations").shadowRoot.querySelector(".subdomains").querySelector("vt-ui-generic-list").shadowRoot.querySelectorAll(".tr")'
+        trs = control_in_shadow(browser, js_trs)
+        for tr in trs:
+            virustotal_subdomain = Virustotal_Subdomain()
+            virustotal_subdomain.domain = domain
+            virustotal_subdomain.subdomain = tr.find_elements_by_css_selector(".td")[0].text
+            virustotal_subdomain.ratio = ''
+            virustotal_subdomain.create_time = get_now_timestamp()
+            session.add(virustotal_subdomain)
+            session.commit()
 
     except Exception as err:
         print("*** virustotal_domain subdomain err *** :", err)
