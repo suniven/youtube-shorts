@@ -82,7 +82,7 @@ if __name__ == '__main__':
     option = webdriver.ChromeOptions()
     option.add_argument('--headless')
     option.add_argument("--window-size=1920,1080")
-    option.add_argument("--mute-audio") # 静音
+    option.add_argument("--mute-audio")  # 静音
     browser = webdriver.Chrome(chrome_options=option)
     engine = create_engine(sqlconn, echo=True, max_overflow=8)
     DBSession = sessionmaker(bind=engine)
@@ -92,48 +92,51 @@ if __name__ == '__main__':
     time.sleep(4)
     main_handle = browser.current_window_handle
 
-    while True:
-        # MAX_GET_COUNT = MAX_GET_COUNT - 1
-        try:
-            video_id = browser.current_url[-11:]
-            print("video_id: ", video_id)
-            # 检查是否已经爬取过这个视频的评论了
-            rows = session.query(model.Comment).filter(model.Comment.video_id.like(video_id)).all()
-            print("rows: ", len(rows))
-            if not rows:
-                comment = model.Comment()
-                comment.content = ''
-                comment.video_id = video_id
-                comment.user = ''
-                comment.type = -1   # 占位
-                comment.user_link = ''
-                comment.date = ''
-                comment.create_time = get_now_timestamp()
-                session.add(comment)
-                session.commit()
+    try:
+        while True:
+            # MAX_GET_COUNT = MAX_GET_COUNT - 1
+            try:
+                video_id = browser.current_url[-11:]
+                print("video_id: ", video_id)
+                # 检查是否已经爬取过这个视频的评论了
+                rows = session.query(model.Comment).filter(model.Comment.video_id.like(video_id)).all()
+                print("rows: ", len(rows))
+                if not rows:
+                    comment = model.Comment()
+                    comment.content = ''
+                    comment.video_id = video_id
+                    comment.user = ''
+                    comment.type = -1  # 占位
+                    comment.user_link = ''
+                    comment.date = ''
+                    comment.create_time = get_now_timestamp()
+                    session.add(comment)
+                    session.commit()
 
-                video_url = yt_url_prefix + video_id
-                js = 'window.open(\"' + video_url + '\");'
-                # print("js: ", js)
-                browser.execute_script(js)
-                handles = browser.window_handles
-                # print("Handles Count: ", len(browser.window_handles))
-                browser.switch_to.window(handles[1])
-                time.sleep(4)
-                check_video_comments(browser, session)
-                browser.close()
-                # print("After Closing...\nHandles Count: ", len(browser.window_handles))
-                browser.switch_to.window(main_handle)
-                time.sleep(2)
-        except Exception as e:
-            print("Error: ", e)
-        finally:
-            print("Get Next Video...")
-            print(print(timestamp_datetime(time.time())))
-            browser.find_element_by_css_selector('#navigation-button-down > ytd-button-renderer > a').click()
-            time.sleep(3)   # 保证加载出来下个视频
-            # break  # for test
-
-    browser.close()
-    browser.quit()
-    session.close()
+                    video_url = yt_url_prefix + video_id
+                    js = 'window.open(\"' + video_url + '\");'
+                    # print("js: ", js)
+                    browser.execute_script(js)
+                    handles = browser.window_handles
+                    # print("Handles Count: ", len(browser.window_handles))
+                    browser.switch_to.window(handles[1])
+                    time.sleep(4)
+                    check_video_comments(browser, session)
+                    browser.close()
+                    # print("After Closing...\nHandles Count: ", len(browser.window_handles))
+                    browser.switch_to.window(main_handle)
+                    time.sleep(2)
+            except Exception as e:
+                print("Error: ", e)
+            finally:
+                print("Get Next Video...")
+                print(print(timestamp_datetime(time.time())))
+                browser.find_element_by_css_selector('#navigation-button-down > ytd-button-renderer > a').click()
+                time.sleep(3)  # 保证加载出来下个视频
+                # break  # for test
+    except Exception as e:
+        print("Error: ", e)
+    finally:
+        browser.close()
+        browser.quit()
+        session.close()
