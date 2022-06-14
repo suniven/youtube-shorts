@@ -34,6 +34,14 @@ def scroll(browser):
     browser.execute_script('window.scrollBy(0,500)')
 
 
+def find_subdomain(browser, js):
+    item = browser.execute_script(js)
+    if item:
+        return True
+    print("NO")
+    return False
+
+
 def load_more_subdomain(browser):
     try:
         # # 取消隐藏
@@ -56,14 +64,16 @@ def load_more_subdomain(browser):
 if __name__ == '__main__':
     browser = webdriver.Chrome()
     browser.maximize_window()
-    url = 'https://www.virustotal.com/gui/domain/milfshorny.com/relations'
+    url = 'https://www.virustotal.com/gui/domain/womenscutest.life/relations'
     browser.get(url)
-    time.sleep(2)
-    load_more_subdomain(browser)
-    js_trs = 'return document.getElementsByTagName("domain-view")[0].shadowRoot.getElementById("relations").shadowRoot.querySelector("vt-ui-generic-list").shadowRoot.querySelectorAll(".tr")'
-    trs = control_in_shadow(browser, js_trs)
-    print(len(trs))
+    # time.sleep(2)
+    # load_more_subdomain(browser)
+    # js_trs = 'return document.getElementsByTagName("domain-view")[0].shadowRoot.getElementById("relations").shadowRoot.querySelector("vt-ui-generic-list").shadowRoot.querySelectorAll(".tr")'
+    # trs = control_in_shadow(browser, js_trs)
+    # print(len(trs))
     time.sleep(5)
+    js_find_subdomain = 'return document.getElementsByTagName("domain-view")[0].shadowRoot.getElementById("relations").shadowRoot.querySelector(".subdomains")'
+    find_subdomain(browser, js_find_subdomain)
     browser.quit()
 
 #

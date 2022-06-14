@@ -134,11 +134,10 @@ def load_more_subdomain(browser):
 
 
 def find_subdomain(browser, js):
-    try:
-        browser.execute_script(js)
+    item = browser.execute_script(js)
+    if item:
         return True
-    except:
-        return False
+    return False
 
 
 def get_subdomain(browser, session, domain):
@@ -167,6 +166,9 @@ def get_subdomain(browser, session, domain):
             session.commit()
 
     except Exception as err:
+        f = open("./domain_fail_log.txt", "a", encoding="UTF8")
+        f.write(domain + '\tsubdomain error.' + '\n')
+        f.close()
         print("*** virustotal_domain subdomain err *** :", err)
 
 
