@@ -111,9 +111,9 @@ if __name__ == '__main__':
     rows = session.query(Virustotal_Subdomain).filter().all()
     for row in rows:
         subdomain = row.subdomain
-        rows = session.query(Virustotal_Domain_Details).filter(
-            Virustotal_Domain_Details.subdomain.like(subdomain)).all()
-        if rows:
+        rows = session.query(Virustotal_Subdomain).filter(
+            Virustotal_Subdomain.subdomain.like(subdomain)).all()
+        if rows[0].ratio:
             print("* SubDomain {0} Has Already Been Visited.".format(subdomain))
             continue
         print("--- Analysing {0} ---".format(subdomain))
