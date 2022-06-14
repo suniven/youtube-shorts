@@ -110,9 +110,9 @@ def get_details(browser, session, domain):
 
 
 def count_trs(browser):
-    js_trs = 'return document.getElementsByTagName("domain-view")[0].shadowRoot.getElementById("relations").shadowRoot.querySelector(".subdomains").querySelector("vt-ui-generic-list").shadowRoot.querySelectorAll(".tr")'
+    js_trs = 'return document.getElementsByTagName("domain-view")[0].shadowRoot.getElementById("relations").shadowRoot.querySelector(".subdomains").querySelector("vt-ui-generic-list").shadowRoot.querySelector(".tbody").querySelectorAll(".tr")'
     trs = control_in_shadow(browser, js_trs)
-    # print(len(trs))
+    print(len(trs))
     return len(trs)
 
 
@@ -153,9 +153,9 @@ def get_subdomain(browser, session, domain):
         relation_btn = control_in_shadow(browser, js_relations)
         relation_btn.click()
 
-        load_more_subdomain()
+        load_more_subdomain(browser)
 
-        js_trs = 'return document.getElementsByTagName("domain-view")[0].shadowRoot.getElementById("relations").shadowRoot.querySelector(".subdomains").querySelector("vt-ui-generic-list").shadowRoot.querySelectorAll(".tr")'
+        js_trs = 'return document.getElementsByTagName("domain-view")[0].shadowRoot.getElementById("relations").shadowRoot.querySelector(".subdomains").querySelector("vt-ui-generic-list").shadowRoot.querySelector(".tbody").querySelectorAll(".tr")'
         trs = control_in_shadow(browser, js_trs)
         for tr in trs:
             virustotal_subdomain = Virustotal_Subdomain()
