@@ -23,58 +23,66 @@ import hashlib
 from timestamp import timestamp_datetime
 import base64
 
-
-def control_in_shadow(browser, js):
-    item = browser.execute_script(js)
-    # print(type(item))
-    return item  # 返回的对象在这里
+print('.'.join("baefidd.bustyaffar.com".split('.')[-2:]))
 
 
-def scroll(browser):
-    browser.execute_script('window.scrollBy(0,500)')
+#
+# def control_in_shadow(browser, js):
+#     item = browser.execute_script(js)
+#     # print(type(item))
+#     return item  # 返回的对象在这里
+#
+#
+# def scroll(browser):
+#     browser.execute_script('window.scrollBy(0,500)')
+#
+#
+# def find_subdomain(browser, js):
+#     item = browser.execute_script(js)
+#     if item:
+#         return True
+#     print("NO")
+#     return False
+#
+#
+# def load_more_subdomain(browser):
+#     try:
+#         # # 取消隐藏
+#         # js_remove_hidden = 'document.getElementsByTagName("domain-view")[0].shadowRoot.getElementById("relations").shadowRoot.querySelector("vt-ui-button").removeAttribute("hidden")'
+#         # browser.execute_script(js_remove_hidden)
+#         while True:
+#             print("loading...")
+#             js_load_btn = 'document.getElementsByTagName("domain-view")[0].shadowRoot.getElementById("relations").shadowRoot.querySelector(".subdomains").querySelector(".load-more").click()'
+#             browser.execute_script(js_load_btn)
+#             time.sleep(2)
+#
+#             js_trs = 'return document.getElementsByTagName("domain-view")[0].shadowRoot.getElementById("relations").shadowRoot.querySelector(".subdomains").querySelector("vt-ui-generic-list").shadowRoot.querySelectorAll(".tr")'
+#             trs = control_in_shadow(browser, js_trs)
+#             print(len(trs))
+#     except Exception as err:
+#         print(err)
+#         return
 
-
-def find_subdomain(browser, js):
-    item = browser.execute_script(js)
-    if item:
-        return True
-    print("NO")
-    return False
-
-
-def load_more_subdomain(browser):
-    try:
-        # # 取消隐藏
-        # js_remove_hidden = 'document.getElementsByTagName("domain-view")[0].shadowRoot.getElementById("relations").shadowRoot.querySelector("vt-ui-button").removeAttribute("hidden")'
-        # browser.execute_script(js_remove_hidden)
-        while True:
-            print("loading...")
-            js_load_btn = 'document.getElementsByTagName("domain-view")[0].shadowRoot.getElementById("relations").shadowRoot.querySelector(".subdomains").querySelector(".load-more").click()'
-            browser.execute_script(js_load_btn)
-            time.sleep(2)
-
-            js_trs = 'return document.getElementsByTagName("domain-view")[0].shadowRoot.getElementById("relations").shadowRoot.querySelector(".subdomains").querySelector("vt-ui-generic-list").shadowRoot.querySelectorAll(".tr")'
-            trs = control_in_shadow(browser, js_trs)
-            print(len(trs))
-    except Exception as err:
-        print(err)
-        return
-
-
-if __name__ == '__main__':
-    browser = webdriver.Chrome()
-    browser.maximize_window()
-    url = 'https://www.virustotal.com/gui/domain/womenscutest.life/relations'
-    browser.get(url)
-    # time.sleep(2)
-    # load_more_subdomain(browser)
-    # js_trs = 'return document.getElementsByTagName("domain-view")[0].shadowRoot.getElementById("relations").shadowRoot.querySelector("vt-ui-generic-list").shadowRoot.querySelectorAll(".tr")'
-    # trs = control_in_shadow(browser, js_trs)
-    # print(len(trs))
-    time.sleep(5)
-    js_find_subdomain = 'return document.getElementsByTagName("domain-view")[0].shadowRoot.getElementById("relations").shadowRoot.querySelector(".subdomains")'
-    find_subdomain(browser, js_find_subdomain)
-    browser.quit()
+#
+# if __name__ == '__main__':
+#     # browser = webdriver.Chrome()
+#     # browser.maximize_window()
+#     # url = 'https://www.virustotal.com/gui/domain/womenscutest.life/relations'
+#     # browser.get(url)
+#     # time.sleep(2)
+#     # load_more_subdomain(browser)
+#     # js_trs = 'return document.getElementsByTagName("domain-view")[0].shadowRoot.getElementById("relations").shadowRoot.querySelector("vt-ui-generic-list").shadowRoot.querySelectorAll(".tr")'
+#     # trs = control_in_shadow(browser, js_trs)
+#     # print(len(trs))
+#     # time.sleep(5)
+#     #
+#     sqlconn = 'mysql+pymysql://root:1101syw@localhost:3306/test?charset=utf8mb4'
+#     engine = create_engine(sqlconn, echo=True, max_overflow=8)
+#     DBSession = sessionmaker(bind=engine)
+#     session = DBSession()
+#     rows = session.query(model.Virustotal_Subdomain).filter().all()
+#     print(len(rows))
+#     # browser.quit()
 
 #
 # def control_in_shadow(browser, js):
