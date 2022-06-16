@@ -88,7 +88,8 @@ if __name__ == '__main__':
     DBSession = sessionmaker(bind=engine)
     session = DBSession()
 
-    f = open("../txt files/url_in_comments.txt", "r", encoding="UTF8")
+    f = open("../txt files/2-domain_in_comments.txt", "r", encoding="UTF8")
+    # f = open("../txt files/url_in_comments.txt", "r", encoding="UTF8")
     # f = open("../txt files/for_test.txt", "r", encoding="UTF8")
     url_list = f.readlines()
     f.close()

@@ -23,7 +23,14 @@ import hashlib
 from timestamp import timestamp_datetime
 import base64
 
-print('.'.join("baefidd.bustyaffar.com".split('.')[-2:]))
+a = {
+    0: 2,
+    3: 1,
+    4: 9
+}
+print(1+ (0 in a))
+
+# print('.'.join("baefidd.bustyaffar.com".split('.')[-2:]))
 
 
 #

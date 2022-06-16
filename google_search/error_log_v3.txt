@@ -1619,3 +1619,85 @@ Error: Query "Lovegirls.Quest"	ErrMsg: list index out of range
 Error: Query "loveme.Uno/diana"	ErrMsg: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.gs-title"}
   (Session info: chrome=99.0.4844.84)
 
+Error: Query "aerialmistaken.com"	ErrMsg: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.gs-title"}
+  (Session info: chrome=99.0.4844.84)
+
+Error: Query "af101.me"	ErrMsg: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.gs-title"}
+  (Session info: chrome=99.0.4844.84)
+
+Error: Query "amorousgalbr.com"	ErrMsg: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.gs-title"}
+  (Session info: chrome=99.0.4844.84)
+
+Error: Query "anadm.link"	ErrMsg: list index out of range
+Error: Query "astonishingdates.net"	ErrMsg: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.gs-title"}
+  (Session info: chrome=99.0.4844.84)
+
+Error: Query "belationship.com"	ErrMsg: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.gs-title"}
+  (Session info: chrome=99.0.4844.84)
+
+Error: Query "bestladieshere.life"	ErrMsg: list index out of range
+Error: Query "big-funhere.life"	ErrMsg: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.gs-title"}
+  (Session info: chrome=99.0.4844.84)
+
+Error: Query "bigtits.baby"	ErrMsg: list index out of range
+Error: Query "bustyaffar.com"	ErrMsg: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.gs-title"}
+  (Session info: chrome=99.0.4844.84)
+
+Error: Query "centre.baby"	ErrMsg: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.gsc-cursor"}
+  (Session info: chrome=99.0.4844.84)
+
+Error: Query "aerialmistaken.com"	ErrMsg: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.gs-title"}
+  (Session info: chrome=99.0.4844.84)
+
+Error: Query "datedats2.com"	ErrMsg: list index out of range
+Error: Query "dirtyflirt6.com"	ErrMsg: list index out of range
+Error: Query "dirtyvalentine4.com"	ErrMsg: list index out of range
+Error: Query "februaryinjectionproudly.com"	ErrMsg: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.gs-title"}
+  (Session info: chrome=99.0.4844.84)
+
+Error: Query "find-datings.life"	ErrMsg: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.gs-title"}
+  (Session info: chrome=99.0.4844.84)
+
+Error: Query "flirtyho0kup.com"	ErrMsg: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.gs-title"}
+  (Session info: chrome=99.0.4844.84)
+
+Error: Query "lovelygiri.com"	ErrMsg: list index out of range
+Error: Query "loveme.uno"	ErrMsg: list index out of range
+Error: Query "makeyourwish.net"	ErrMsg: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.gs-title"}
+  (Session info: chrome=99.0.4844.84)
+
+Error: Query "micuka0104.top"	ErrMsg: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.gs-title"}
+  (Session info: chrome=99.0.4844.84)
+
+Error: Query "milfshorny.com"	ErrMsg: list index out of range
+Error: Query "montichk.top"	ErrMsg: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.gs-title"}
+  (Session info: chrome=99.0.4844.84)
+
+Error: Query "montichk.top"	ErrMsg: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.gs-title"}
+  (Session info: chrome=99.0.4844.84)
+
+Error: Query "naughtycrackerldst.com"	ErrMsg: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.gs-title"}
+  (Session info: chrome=99.0.4844.84)
+
+Error: Query "niceloverskm.com"	ErrMsg: list index out of range
+Error: Query "prettybangh.com"	ErrMsg: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.gs-title"}
+  (Session info: chrome=99.0.4844.84)
+
+Error: Query "privategirlses.com"	ErrMsg: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.gs-title"}
+  (Session info: chrome=99.0.4844.84)
+
+Error: Query "racywomenm0.com"	ErrMsg: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.gs-title"}
+  (Session info: chrome=99.0.4844.84)
+
+Error: Query "randywoman43rh.com"	ErrMsg: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.gs-title"}
+  (Session info: chrome=99.0.4844.84)
+
+Error: Query "sensualmilfs4r32.com"	ErrMsg: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.gs-title"}
+  (Session info: chrome=99.0.4844.84)
+
+Error: Query "snapgirls9.com"	ErrMsg: list index out of range
+Error: Query "sweetmlif.net"	ErrMsg: list index out of range
+Error: Query "videoseen.xyz"	ErrMsg: list index out of range
+Error: Query "vulgarfinder6sw.com"	ErrMsg: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.gs-title"}
+  (Session info: chrome=99.0.4844.84)
+
