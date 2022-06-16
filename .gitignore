@@ -131,3 +131,4 @@ dmypy.json
 .pyre/
 /aff_data/data/
 /helper_gui/Helper/.vs/
+/cover_img/
