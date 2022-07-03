@@ -23,12 +23,37 @@ import hashlib
 from timestamp import timestamp_datetime
 import base64
 
-a = {
-    0: 2,
-    3: 1,
-    4: 9
-}
-print(1+ (0 in a))
+f=open("./txt files/domain_in_offers.txt","r",encoding="UTF8")
+domain_list=f.readlines()
+a=[]
+f.close()
+for domain in domain_list:
+    domain=domain.strip('\n')
+    if domain:
+        domain='.'.join(domain.split('.')[-2:])
+        a.append(domain)
+a=list(set(a))
+
+f=open("./txt files/domain_list.txt","w",encoding="UTF8")
+for item in a:
+    f.write(item+'\n')
+f.close()
+
+# a = ['A', 'a', 'b', 'C']
+# print(sorted(a, reverse=False))
+#
+# a = "1010000111"
+# print(a.replace("1", "", 1))
+#
+# prices = [[3, 2, 10], [1, 4, 2], [4, 1, 3]]
+# print(sorted(prices, key=lambda x: (x[2], x[0] * x[1]), reverse=True))
+
+# a = {
+#     0: 2,
+#     3: 1,
+#     4: 9
+# }
+# print(1+ (0 in a))
 
 # print('.'.join("baefidd.bustyaffar.com".split('.')[-2:]))
 
