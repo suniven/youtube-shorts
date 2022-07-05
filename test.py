@@ -23,21 +23,51 @@ import hashlib
 from timestamp import timestamp_datetime
 import base64
 
-f=open("./txt files/domain_in_offers.txt","r",encoding="UTF8")
-domain_list=f.readlines()
-a=[]
-f.close()
-for domain in domain_list:
-    domain=domain.strip('\n')
-    if domain:
-        domain='.'.join(domain.split('.')[-2:])
-        a.append(domain)
-a=list(set(a))
+# # 正常模式
+browser = webdriver.Chrome()
+browser.maximize_window()
+# headless模式
+# option = webdriver.ChromeOptions()
+# option.add_argument('--headless')
+# option.add_argument("--window-size=1920,1080")
+# option.add_argument("--mute-audio")  # 静音
+# browser = webdriver.Chrome(chrome_options=option)
 
-f=open("./txt files/domain_list.txt","w",encoding="UTF8")
-for item in a:
-    f.write(item+'\n')
-f.close()
+browser.get('http://teenxxx.uno/')
+browser.implicitly_wait(5)
+main_handle=browser.current_window_handle
+links=browser.find_elements_by_tag_name('a')
+for link in links:
+    print(link.get_attribute('href'))
+    link.click()
+    time.sleep(3)
+    browser.switch_to_window(main_handle)
+
+print('---')
+print(browser.current_url)
+
+btns=browser.find_elements_by_css_selector('.btnbox')
+for item in  btns:
+    print(item.find_element_by_tag_name('a').get_attribute('href'))
+time.sleep(4)
+browser.close()
+browser.quit()
+
+# f=open("./txt files/domain_in_offers.txt","r",encoding="UTF8")
+# domain_list=f.readlines()
+# a=[]
+# f.close()
+# for domain in domain_list:
+#     domain=domain.strip('\n')
+#     if domain:
+#         domain='.'.join(domain.split('.')[-2:])
+#         a.append(domain)
+# a=list(set(a))
+#
+# f=open("./txt files/domain_list.txt","w",encoding="UTF8")
+# for item in a:
+#     f.write(item+'\n')
+# f.close()
 
 # a = ['A', 'a', 'b', 'C']
 # print(sorted(a, reverse=False))

@@ -1,11 +1,3 @@
-# 统计评论中包含色情链接的数量
-# 将包含色情链接的评论打上tag
-# 保存落地页的相关信息 eg. title 截图
-# 将发布此类评论的用户打上tag并统计每名用户发了多少条此类评论
-# 访问色情链接，保存跳转后的落地页链接
-# 截图时判断是否已经存在
-# 修改域名判断 发现有些链接形式后面还有/xxxx/xxxx
-
 from timestamp import get_now_timestamp
 from sqlalchemy.sql import and_, asc, desc, or_
 from sqlalchemy import Column, String, create_engine, Integer, SmallInteger
