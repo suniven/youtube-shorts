@@ -261,8 +261,8 @@ class Round_1(Base):
     __tablename__ = 'round_1'
 
     id = Column(mysql.BIGINT, primary_key=True)
-    url = Column(String(1024))
-    landing_page = Column(String(2048))
+    url = Column(String(4000))
+    landing_page = Column(String(4000))
     status_code = Column(String(3))
     landing_page_md5 = Column(String(32))
     create_time = Column(mysql.BIGINT)

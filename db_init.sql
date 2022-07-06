@@ -283,8 +283,8 @@ CREATE TABLE IF NOT EXISTS `virustotal_subdomain`
 CREATE TABLE IF NOT EXISTS `round_1`
 (
     `id`               bigint(20) auto_increment NOT NULL COMMENT 'id',
-    `url`              varchar(1024)             NOT NULL DEFAULT '' COMMENT 'url in comments',
-    `landing_page`     varchar(2048)             NOT NULL DEFAULT '' COMMENT 'landing page url',
+    `url`              varchar(4000)            NOT NULL DEFAULT '' COMMENT 'url in comments',
+    `landing_page`     varchar(4000)            NOT NULL DEFAULT '' COMMENT 'landing page url',
     `landing_page_md5` varchar(32)               NOT NULL DEFAULT '' COMMENT 'md5 of landing page url',
     `status_code`      varchar(3)                NOT NULL DEFAULT '' COMMENT '响应状态码',
     `create_time`      bigint(20)                NOT NULL DEFAULT 0 COMMENT '数据创建时间',
