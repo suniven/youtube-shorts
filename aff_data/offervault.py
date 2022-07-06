@@ -137,7 +137,7 @@ def get_offer(browser, session, offer_link):
         offervault_offer.land_page_img = img_src.split('/')[-2] + '.jpg'
         if not os.path.exists(img_path):
             print("Getting Img {0}...".format(img_src))
-            r = requests.get(img_src, headers=headers, timeout=8, proxies=proxies)
+            r = requests.get(img_src, headers=headers, timeout=8)
             with open(img_path, "wb") as f:
                 f.write(r.content)
                 print("Img Successfully Gotten.")

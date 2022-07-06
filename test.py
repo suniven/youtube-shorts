@@ -23,35 +23,52 @@ import hashlib
 from timestamp import timestamp_datetime
 import base64
 
+if __name__=='__main__':
+    print(hashlib.md5("https://www.bcct.vip/#/register/7785131".encode('UTF-8')).hexdigest())
+
+    sqlconn = 'mysql+pymysql://root:1101syw@localhost:3306/test?charset=utf8mb4'
+    headers = {
+        'user-agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
+    }
+    proxy = '127.0.0.1:1080'
+    proxies = {
+        'http': 'http://' + proxy,
+        'https': 'http://' + proxy
+    }
+
+
+    res = requests.get('http://paypal.me/AquaGT', headers=headers, timeout=8, proxies=proxies)
+    print("Status Code: %s" % res.status_code)
+
 # # 正常模式
-browser = webdriver.Chrome()
-browser.maximize_window()
-# headless模式
-# option = webdriver.ChromeOptions()
-# option.add_argument('--headless')
-# option.add_argument("--window-size=1920,1080")
-# option.add_argument("--mute-audio")  # 静音
-# browser = webdriver.Chrome(chrome_options=option)
-
-browser.get('http://teenxxx.uno/')
-browser.implicitly_wait(5)
-main_handle=browser.current_window_handle
-links=browser.find_elements_by_tag_name('a')
-for link in links:
-    print(link.get_attribute('href'))
-    link.click()
-    time.sleep(3)
-    browser.switch_to_window(main_handle)
-
-print('---')
-print(browser.current_url)
-
-btns=browser.find_elements_by_css_selector('.btnbox')
-for item in  btns:
-    print(item.find_element_by_tag_name('a').get_attribute('href'))
-time.sleep(4)
-browser.close()
-browser.quit()
+# browser = webdriver.Chrome()
+# browser.maximize_window()
+# # headless模式
+# # option = webdriver.ChromeOptions()
+# # option.add_argument('--headless')
+# # option.add_argument("--window-size=1920,1080")
+# # option.add_argument("--mute-audio")  # 静音
+# # browser = webdriver.Chrome(chrome_options=option)
+#
+# browser.get('http://teenxxx.uno/')
+# browser.implicitly_wait(5)
+# main_handle=browser.current_window_handle
+# links=browser.find_elements_by_tag_name('a')
+# for link in links:
+#     print(link.get_attribute('href'))
+#     link.click()
+#     time.sleep(3)
+#     browser.switch_to_window(main_handle)
+#
+# print('---')
+# print(browser.current_url)
+#
+# btns=browser.find_elements_by_css_selector('.btnbox')
+# for item in  btns:
+#     print(item.find_element_by_tag_name('a').get_attribute('href'))
+# time.sleep(4)
+# browser.close()
+# browser.quit()
 
 # f=open("./txt files/domain_in_offers.txt","r",encoding="UTF8")
 # domain_list=f.readlines()

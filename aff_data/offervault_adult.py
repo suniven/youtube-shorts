@@ -213,14 +213,14 @@ def get_next_page(browser, retry):
 
 
 if __name__ == '__main__':
-    # 正常模式
-    browser = webdriver.Chrome()
-    browser.maximize_window()
+    # # 正常模式
+    # browser = webdriver.Chrome()
+    # browser.maximize_window()
     # headless模式
-    # option = webdriver.ChromeOptions()
-    # option.add_argument('--headless')
-    # option.add_argument("--window-size=1920,1080")
-    # browser = webdriver.Chrome(chrome_options=option)
+    option = webdriver.ChromeOptions()
+    option.add_argument('--headless')
+    option.add_argument("--window-size=1920,1080")
+    browser = webdriver.Chrome(chrome_options=option)
     engine = create_engine(sqlconn, echo=True, max_overflow=8)
     DBSession = sessionmaker(bind=engine)
     session = DBSession()
@@ -277,5 +277,6 @@ if __name__ == '__main__':
     except Exception as err:
         print(err)
 
-    browser.quit()
-    session.close()
+    finally:
+        browser.quit()
+        session.close()

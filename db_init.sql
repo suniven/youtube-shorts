@@ -230,7 +230,7 @@ CREATE TABLE IF NOT EXISTS `virustotal_url_details`
 CREATE TABLE IF NOT EXISTS `virustotal_domain`
 (
     `id`          bigint(20) auto_increment NOT NULL COMMENT 'id',
-    `domain`      varchar(512)             NOT NULL DEFAULT '' COMMENT 'domain',
+    `domain`      varchar(512)              NOT NULL DEFAULT '' COMMENT 'domain',
     `ratio`       varchar(16)               NOT NULL DEFAULT '' COMMENT '异常/总数',
     `create_time` bigint(20)                NOT NULL DEFAULT 0 COMMENT '数据创建时间',
 
@@ -279,6 +279,21 @@ CREATE TABLE IF NOT EXISTS `virustotal_subdomain`
     PRIMARY KEY (`id`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8 COMMENT ='subdomain';
+
+CREATE TABLE IF NOT EXISTS `round_1`
+(
+    `id`           bigint(20) auto_increment NOT NULL COMMENT 'id',
+    `url`          varchar(1024)             NOT NULL DEFAULT '' COMMENT 'url in comments',
+    `landing_page` varchar(2048)             NOT NULL DEFAULT '' COMMENT 'landing page url',
+    `url_md5`      varchar(32)               NOT NULL DEFAULT '' COMMENT 'md5 of url',
+    `status_code`  varchar(3)                NOT NULL DEFAULT '' COMMENT '响应状态码',
+    `create_time`  bigint(20)                NOT NULL DEFAULT 0 COMMENT '数据创建时间',
+    PRIMARY KEY (`id`)
+) ENGINE = InnoDB
+  DEFAULT CHARSET = utf8 COMMENT ='round_1';
+
+alter table round_1
+    convert to character set utf8mb4;
 
 alter table video
     convert to character set utf8mb4;
