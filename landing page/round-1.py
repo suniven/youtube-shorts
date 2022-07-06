@@ -40,13 +40,18 @@ def visit(url, browser, session):
         round_1.status_code = res.status_code
         if res.status_code != 200:
             print("响应失败")
+            rows = session.query(Round_1).filter(Round_1.status_code.like(res.status_code),
+                                                 and_(Round_1.url.like(url))).all()
+            if rows:
+                return
         else:
             browser.get(url)
             browser.implicitly_wait(10)
             round_1.landing_page = browser.current_url  # 可能有多个landing page
             round_1.landing_page_md5 = hashlib.md5(round_1.landing_page.encode('UTF-8')).hexdigest()
 
-            rows = session.query(Round_1).filter(Round_1.landing_page_md5.like(round_1.landing_page_md5)).all()
+            rows = session.query(Round_1).filter(Round_1.landing_page_md5.like(round_1.landing_page_md5),
+                                                 and_(Round_1.url.like(url))).all()
             if rows:
                 print("*** Already Visited. ***")
                 return
