@@ -32,7 +32,7 @@ def visit(url, browser, session):
         round_1.url = url
         round_1.status_code = ''
         round_1.landing_page = ''
-        round_1.url_md5 = hashlib.md5(url.encode('UTF-8')).hexdigest()
+        round_1.landing_page_md5 = ''
         res = requests.get(url, headers=headers, timeout=8, proxies=proxies)
         print("== Visiting ", url)
         print("Status Code: %s" % res.status_code)
@@ -43,9 +43,16 @@ def visit(url, browser, session):
         else:
             browser.get(url)
             browser.implicitly_wait(10)
-            round_1.landing_page = browser.current_url
+            round_1.landing_page = browser.current_url  # 可能有多个landing page
+            round_1.landing_page_md5 = hashlib.md5(round_1.landing_page.encode('UTF-8')).hexdigest()
+
+            rows = session.query(Round_1).filter(Round_1.landing_page_md5.like(round_1.landing_page_md5)).all()
+            if rows:
+                print("*** Already Visited. ***")
+                return
+
             try:
-                save_name = screenshots_save_path + round_1.url_md5 + '.png'
+                save_name = screenshots_save_path + round_1.landing_page_md5 + '.png'
                 if not os.path.exists(save_name):
                     browser.save_screenshot(save_name)
                     print("截图成功")
@@ -81,10 +88,6 @@ if __name__ == '__main__':
             print('----------')
             if 'http' not in url:
                 url = 'http://' + url
-            rows = session.query(Round_1).filter(Round_1.url.like(url)).all()
-            if rows:
-                print("*** {0} Has Already Been Visited. ***".format(url))
-                continue
             visit(url, browser, session)
     except Exception as e:
         print("Error: ", e)

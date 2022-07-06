@@ -264,5 +264,5 @@ class Round_1(Base):
     url = Column(String(1024))
     landing_page = Column(String(2048))
     status_code = Column(String(3))
-    url_md5 = Column(String(32))
+    landing_page_md5 = Column(String(32))
     create_time = Column(mysql.BIGINT)
