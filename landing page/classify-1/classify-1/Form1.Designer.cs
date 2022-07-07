@@ -38,6 +38,9 @@
             this.label_result = new System.Windows.Forms.Label();
             this.button_pre = new System.Windows.Forms.Button();
             this.label_sql = new System.Windows.Forms.Label();
+            this.button_revisit = new System.Windows.Forms.Button();
+            this.button_load_classified = new System.Windows.Forms.Button();
+            this.button_next = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.screenshot)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,11 +67,11 @@
             // 
             // button_load
             // 
-            this.button_load.Location = new System.Drawing.Point(577, 512);
+            this.button_load.Location = new System.Drawing.Point(540, 512);
             this.button_load.Name = "button_load";
-            this.button_load.Size = new System.Drawing.Size(98, 32);
+            this.button_load.Size = new System.Drawing.Size(135, 32);
             this.button_load.TabIndex = 2;
-            this.button_load.Text = "载入数据";
+            this.button_load.Text = "载入未分类数据";
             this.button_load.UseVisualStyleBackColor = true;
             this.button_load.Click += new System.EventHandler(this.button_load_Click);
             // 
@@ -114,7 +117,7 @@
             // label_result
             // 
             this.label_result.AutoSize = true;
-            this.label_result.Location = new System.Drawing.Point(10, 622);
+            this.label_result.Location = new System.Drawing.Point(10, 665);
             this.label_result.Name = "label_result";
             this.label_result.Size = new System.Drawing.Size(82, 15);
             this.label_result.TabIndex = 7;
@@ -132,17 +135,50 @@
             // 
             // label_sql
             // 
-            this.label_sql.Location = new System.Drawing.Point(10, 597);
+            this.label_sql.Location = new System.Drawing.Point(10, 642);
             this.label_sql.Name = "label_sql";
             this.label_sql.Size = new System.Drawing.Size(600, 23);
             this.label_sql.TabIndex = 9;
             this.label_sql.Text = "sql: ";
             // 
+            // button_revisit
+            // 
+            this.button_revisit.Location = new System.Drawing.Point(812, 649);
+            this.button_revisit.Name = "button_revisit";
+            this.button_revisit.Size = new System.Drawing.Size(98, 31);
+            this.button_revisit.TabIndex = 10;
+            this.button_revisit.Text = "revisit";
+            this.button_revisit.UseVisualStyleBackColor = true;
+            this.button_revisit.Click += new System.EventHandler(this.button_revisit_Click);
+            // 
+            // button_load_classified
+            // 
+            this.button_load_classified.Location = new System.Drawing.Point(540, 558);
+            this.button_load_classified.Name = "button_load_classified";
+            this.button_load_classified.Size = new System.Drawing.Size(135, 31);
+            this.button_load_classified.TabIndex = 11;
+            this.button_load_classified.Text = "载入已分类数据";
+            this.button_load_classified.UseVisualStyleBackColor = true;
+            this.button_load_classified.Click += new System.EventHandler(this.button_load_classified_Click);
+            // 
+            // button_next
+            // 
+            this.button_next.Location = new System.Drawing.Point(694, 558);
+            this.button_next.Name = "button_next";
+            this.button_next.Size = new System.Drawing.Size(98, 31);
+            this.button_next.TabIndex = 12;
+            this.button_next.Text = "下一个";
+            this.button_next.UseVisualStyleBackColor = true;
+            this.button_next.Click += new System.EventHandler(this.button_next_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(922, 651);
+            this.ClientSize = new System.Drawing.Size(922, 692);
+            this.Controls.Add(this.button_next);
+            this.Controls.Add(this.button_load_classified);
+            this.Controls.Add(this.button_revisit);
             this.Controls.Add(this.label_sql);
             this.Controls.Add(this.button_pre);
             this.Controls.Add(this.label_result);
@@ -174,6 +210,9 @@
         private System.Windows.Forms.Label label_result;
         private System.Windows.Forms.Button button_pre;
         private System.Windows.Forms.Label label_sql;
+        private System.Windows.Forms.Button button_revisit;
+        private System.Windows.Forms.Button button_load_classified;
+        private System.Windows.Forms.Button button_next;
     }
 }
 

@@ -246,5 +246,89 @@ namespace classify_1
             else
                 MessageBox.Show("已经是第一个");
         }
+
+        private void button_revisit_Click(object sender, EventArgs e)
+        {
+            update_mysql_data(img_list[current_list_index].ToString(), "revisit");
+            this.current_list_index++;
+            show_img();
+        }
+
+        private void button_load_classified_Click(object sender, EventArgs e)
+        {
+            var connectionString = new MySqlConnectionStringBuilder
+            {
+                Server = "localhost",
+                Port = 3306,
+                UserID = "root",
+                Password = "1101syw",
+                Database = "test"  // 数据库
+            }.ToString();
+            var connection = new MySqlConnection(connectionString);
+            try
+            {
+                connection.Open();
+                var sql = "SELECT DISTINCT landing_page, landing_page_md5 FROM round_1 WHERE checked not like '' and status_code like '200';";
+                var command = new MySqlCommand(sql, connection);
+                using (MySqlDataReader dataReader = command.ExecuteReader())
+                {
+                    while (dataReader.Read())
+                    {
+                        String img_name = dataReader.GetString("landing_page_md5");
+                        String landing_page = dataReader.GetString("landing_page");
+                        img_dic.Add(img_name, landing_page);
+                        img_list.Add(img_name);
+                    }
+                    if (img_list.Count == 0)
+                    {
+                        MessageBox.Show("没有已完成分类的数据。");
+                    }
+                }
+            }
+            catch (MySqlException err)
+            {
+                Console.WriteLine(err.Message);
+                MessageBox.Show(err.Message);
+            }
+            finally
+            {
+                connection.Close();
+                connection.Dispose();
+            }
+
+            if (img_list.Count >= 1)
+            {
+                String img_path = "D:\\Python\\youtube-tiktok\\landing page\\data\\round-1\\" + img_list[0].ToString() + ".png";
+                if (File.Exists(img_path))
+                {
+                    FileStream fs_img = new FileStream(img_path, FileMode.Open, FileAccess.Read);
+                    this.screenshot.Image = Image.FromStream(fs_img);
+                    fs_img.Close();
+                    fs_img.Dispose();
+                    if (img_dic[img_list[0].ToString()].Length > 60)
+                        this.linkLabel.Text = img_dic[img_list[0].ToString()].Substring(0, 60) + "...";
+                    else
+                        this.linkLabel.Text = img_dic[img_list[0].ToString()];
+                    this.label_img_name.Text = img_list[0].ToString();
+                    this.current_link = img_dic[img_list[0].ToString()];
+                }
+                else
+                {
+                    this.screenshot.Image = null;
+                    label_img_name.Text = "截图文件不存在";
+                }
+            }
+        }
+
+        private void button_next_Click(object sender, EventArgs e)
+        {
+            if (this.current_list_index < this.img_list.Count-1)
+            {
+                this.current_list_index++;
+                show_img();
+            }
+            else
+                MessageBox.Show("已经是最后一个");
+        }
     }
 }
