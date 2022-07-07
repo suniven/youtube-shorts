@@ -14,7 +14,7 @@ from sqlalchemy.sql import and_, asc, desc, or_
 from sqlalchemy import Column, String, create_engine, Integer, SmallInteger
 from sqlalchemy.orm import sessionmaker
 
-screenshots_save_path = './data/round-1/'
+screenshots_save_path = './data/round-2/'
 sqlconn = 'mysql+pymysql://root:1101syw@localhost:3306/test?charset=utf8mb4'
 headers = {
     'user-agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
@@ -33,7 +33,7 @@ def visit(url, browser, session):
         round_1.status_code = ''
         round_1.landing_page = ''
         round_1.landing_page_md5 = ''
-        round_1.checked = 0
+        round_1.checked = ''
         res = requests.get(url, headers=headers, timeout=8, proxies=proxies)
         print("== Visiting ", url)
         print("Status Code: %s" % res.status_code)
