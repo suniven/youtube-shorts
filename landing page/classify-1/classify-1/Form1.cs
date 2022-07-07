@@ -105,11 +105,16 @@ namespace classify_1
                         img_dic.Add(img_name, landing_page);
                         img_list.Add(img_name);
                     }
+                    if (img_list.Count==0)
+                    {
+                        MessageBox.Show("没有需要分类的数据。");
+                    }
                 }
             }
             catch (MySqlException err)
             {
                 Console.WriteLine(err.Message);
+                MessageBox.Show(err.Message);
             }
             finally
             {
