@@ -265,4 +265,5 @@ class Round_1(Base):
     landing_page = Column(String(4000))
     status_code = Column(String(3))
     landing_page_md5 = Column(String(32))
+    checked = Column(String(50))
     create_time = Column(mysql.BIGINT)

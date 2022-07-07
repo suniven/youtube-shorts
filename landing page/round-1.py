@@ -33,6 +33,7 @@ def visit(url, browser, session):
         round_1.status_code = ''
         round_1.landing_page = ''
         round_1.landing_page_md5 = ''
+        round_1.checked = 0
         res = requests.get(url, headers=headers, timeout=8, proxies=proxies)
         print("== Visiting ", url)
         print("Status Code: %s" % res.status_code)
@@ -43,6 +44,7 @@ def visit(url, browser, session):
             rows = session.query(Round_1).filter(Round_1.status_code.like(res.status_code),
                                                  and_(Round_1.url.like(url))).all()
             if rows:
+                print("*** Already Visited. ***")
                 return
         else:
             browser.get(url)
