@@ -90,7 +90,7 @@ if __name__ == '__main__':
     option.add_argument("--window-size=1920,1080")
     option.add_argument("--mute-audio")  # 静音
     browser = webdriver.Chrome(chrome_options=option)
-    browser.implicitly_wait(10)
+    browser.implicitly_wait(15)
     engine = create_engine(sqlconn, echo=True, max_overflow=8)
     DBSession = sessionmaker(bind=engine)
     session = DBSession()

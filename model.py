@@ -280,3 +280,14 @@ class Round_2(Base):
     checked = Column(String(50))
     create_time = Column(mysql.BIGINT)
 
+class Final_Page(Base):
+    # 表名
+    __tablename__ = 'final_page'
+
+    id = Column(mysql.BIGINT, primary_key=True)
+    url = Column(String(4000))
+    landing_page = Column(String(4000))
+    landing_page_md5 = Column(String(32))
+    type = Column(String(100))
+    create_time = Column(mysql.BIGINT)
+

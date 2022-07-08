@@ -293,18 +293,6 @@ CREATE TABLE IF NOT EXISTS `round_1`
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8 COMMENT ='round_1';
 
-CREATE TABLE IF NOT EXISTS `final_page`
-(
-    `id`               bigint(20) auto_increment NOT NULL COMMENT 'id',
-    `url`              varchar(4000)             NOT NULL DEFAULT '' COMMENT 'url in comments',
-    `landing_page`     varchar(4000)             NOT NULL DEFAULT '' COMMENT 'landing page url',
-    `landing_page_md5` varchar(32)               NOT NULL DEFAULT '' COMMENT 'md5 of landing page url',
-    `type`             varchar(100)              NOT NULL DEFAULT '' COMMENT '网站类型',
-    `create_time`      bigint(20)                NOT NULL DEFAULT 0 COMMENT '数据创建时间',
-    PRIMARY KEY (`id`)
-) ENGINE = InnoDB
-  DEFAULT CHARSET = utf8 COMMENT ='final page';
-
 CREATE TABLE IF NOT EXISTS `round_2`
 (
     `id`               bigint(20) auto_increment NOT NULL COMMENT 'id',
@@ -317,6 +305,18 @@ CREATE TABLE IF NOT EXISTS `round_2`
     PRIMARY KEY (`id`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8 COMMENT ='round_2';
+
+CREATE TABLE IF NOT EXISTS `final_page`
+(
+    `id`               bigint(20) auto_increment NOT NULL COMMENT 'id',
+    `url`              varchar(4000)             NOT NULL DEFAULT '' COMMENT 'url in comments',
+    `landing_page`     varchar(4000)             NOT NULL DEFAULT '' COMMENT 'landing page url',
+    `landing_page_md5` varchar(32)               NOT NULL DEFAULT '' COMMENT 'md5 of landing page url',
+    `type`             varchar(100)              NOT NULL DEFAULT '' COMMENT '网站类型',
+    `create_time`      bigint(20)                NOT NULL DEFAULT 0 COMMENT '数据创建时间',
+    PRIMARY KEY (`id`)
+) ENGINE = InnoDB
+  DEFAULT CHARSET = utf8 COMMENT ='final page';
 
 alter table round_2
     convert to character set utf8mb4;

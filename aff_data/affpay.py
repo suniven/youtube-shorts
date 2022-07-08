@@ -19,9 +19,10 @@ from bs4 import BeautifulSoup
 
 sqlconn = 'mysql+pymysql://root:1101syw@localhost:3306/test?charset=utf8mb4'
 # url_prefix = 'https://www.affplus.com/search?verticals=Adult&sort=time_desc&page='  # 后面加页数
-url_prefix = 'https://www.affplus.com/search?verticals=Dating&sort=time_desc&page='  # 后面加页数
-START_PAGE = 43   # 101-150结束  # 43  # 98    # 151-200结束
-END_PAGE = 50
+# url_prefix = 'https://www.affplus.com/search?verticals=Dating&sort=time_desc&page='  # 后面加页数
+url_prefix='https://www.affplus.com/search?page='
+START_PAGE = 1   # 101-150结束  # 43  # 98    # 151-200结束
+END_PAGE = 200
 PAGE_COUNT = 200
 headers = {
     'user-agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
@@ -214,14 +215,14 @@ def get_offer(offer_link, browser, session):
 
 
 if __name__ == '__main__':
-    # 正常模式
-    browser = webdriver.Chrome()
-    browser.maximize_window()
+    # # 正常模式
+    # browser = webdriver.Chrome()
+    # browser.maximize_window()
     # headless模式
-    # option = webdriver.ChromeOptions()
-    # option.add_argument('--headless')
-    # option.add_argument("--window-size=1920,1080")
-    # browser = webdriver.Chrome(chrome_options=option)
+    option = webdriver.ChromeOptions()
+    option.add_argument('--headless')
+    option.add_argument("--window-size=1920,1080")
+    browser = webdriver.Chrome(chrome_options=option)
     engine = create_engine(sqlconn, echo=True, max_overflow=8)
     DBSession = sessionmaker(bind=engine)
     session = DBSession()

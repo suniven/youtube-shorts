@@ -48,7 +48,7 @@ def visit(url, browser, session):
                 return
         else:
             browser.get(url)
-            browser.implicitly_wait(10)
+
             round_1.landing_page = browser.current_url  # 可能有多个landing page
             round_1.landing_page_md5 = hashlib.md5(round_1.landing_page.encode('UTF-8')).hexdigest()
 
@@ -84,6 +84,7 @@ if __name__ == '__main__':
     option.add_argument("--window-size=1920,1080")
     option.add_argument("--mute-audio")  # 静音
     browser = webdriver.Chrome(chrome_options=option)
+    browser.implicitly_wait(15)
     engine = create_engine(sqlconn, echo=True, max_overflow=8)
     DBSession = sessionmaker(bind=engine)
     session = DBSession()

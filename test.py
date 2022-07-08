@@ -24,55 +24,67 @@ from timestamp import timestamp_datetime
 import base64
 
 if __name__ == '__main__':
-    url="https://milffinder.com/landing/cm4020?clickId=29d3454d-d4f2-45a1-ac16-f8c53b594786&tracker=SGM_Pro&publisher=1419&subPublisher=1830809&zz=true&hit_id=29d3454d-d4f2-45a1-ac16-f8c53b594786&tp_redirect_id=29d3454d-d4f2-45a1-ac16-f8c53b594786"
-    print(url.split('/')[2])
-    # 正常模式
-    browser = webdriver.Chrome()
-    browser.maximize_window()
-    # # headless模式
-    # option = webdriver.ChromeOptions()
-    # option.add_argument('--headless')
-    # option.add_argument("--window-size=1920,1080")
-    # option.add_argument("--mute-audio")  # 静音
-    # browser = webdriver.Chrome(chrome_options=option)
-    browser.implicitly_wait(30)
-    try:
-        links = []
-        url = "https://cdsecurecloud-dt.com/smartlink/?a=117597&sm=9563&co=163104&mt=7&s1=JIMAT"
-        browser.get(url)
-        iframes = browser.find_elements_by_tag_name('iframe')
-        print("iframe: ",len(iframes))
-        # 提取所有a标签
-        a_tags = browser.find_elements_by_tag_name('a')
-        for a_tag in a_tags:
-            link = a_tag.get_attribute('href')
-            links.append(link)
-        links = list(set(links))
-        for link in links:
-            print(link)
-    except Exception as err:
-        print(err)
-    finally:
-        browser.close()
-        browser.quit()
-
-    # print(hashlib.md5("https://www.bcct.vip/#/register/7785131".encode('UTF-8')).hexdigest())
+    # links=[]
+    # with open('test.txt','r') as f:
+    #     links=f.readlines()
+    # domains={}
+    # for link in links:
+    #     domain=link.split('/')[2]
+    #     if domain not in domains.keys():
+    #         domains[domain]=1
+    #     else:
+    #         domains[domain]+=1
+    # for k,v in domains.items():
+    #     print("{0}\t{1}".format(k,v))
+    # url="https://milffinder.com/landing/cm4020?clickId=29d3454d-d4f2-45a1-ac16-f8c53b594786&tracker=SGM_Pro&publisher=1419&subPublisher=1830809&zz=true&hit_id=29d3454d-d4f2-45a1-ac16-f8c53b594786&tp_redirect_id=29d3454d-d4f2-45a1-ac16-f8c53b594786"
+    # print(url.split('/')[2])
+    # # 正常模式
+    # browser = webdriver.Chrome()
+    # browser.maximize_window()
+    # # # headless模式
+    # # option = webdriver.ChromeOptions()
+    # # option.add_argument('--headless')
+    # # option.add_argument("--window-size=1920,1080")
+    # # option.add_argument("--mute-audio")  # 静音
+    # # browser = webdriver.Chrome(chrome_options=option)
+    # browser.implicitly_wait(30)
+    # try:
+    #     links = []
+    #     url = "https://cdsecurecloud-dt.com/smartlink/?a=117597&sm=9563&co=163104&mt=7&s1=JIMAT"
+    #     browser.get(url)
+    #     iframes = browser.find_elements_by_tag_name('iframe')
+    #     print("iframe: ",len(iframes))
+    #     # 提取所有a标签
+    #     a_tags = browser.find_elements_by_tag_name('a')
+    #     for a_tag in a_tags:
+    #         link = a_tag.get_attribute('href')
+    #         links.append(link)
+    #     links = list(set(links))
+    #     for link in links:
+    #         print(link)
+    # except Exception as err:
+    #     print(err)
+    # finally:
+    #     browser.close()
+    #     browser.quit()
     #
-    # sqlconn = 'mysql+pymysql://root:1101syw@localhost:3306/test?charset=utf8mb4'
-    headers = {
-        'user-agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
-    }
-    proxy = '127.0.0.1:1080'
-    proxies = {
-        'http': 'http://' + proxy,
-        'https': 'http://' + proxy
-    }
-
-    # url="https://privategirlses.com/go/?a=1830809&cr=30816&lid=19608&mh=RWtVcHNSZUJFc3JOV0ZRYndDeHFteGdXWHpsTWpPVUtBeGNLLTMwMjA1&mmid=1822&p=0&rf=ua&rn=zc4YnJmUys4WmdeVzw4&t=YUDI"
-    url = "http://trk.cloudtraff.com/89b0e391-63e1-49c3-bd7e-9cd0cedb2097?subPublisher=1830809&clicktag=EkUpsReBEsrNWFQbwCxqmxgWXzlMjOUKAxcK"
-    res = requests.get(url, headers=headers, timeout=8, proxies=proxies, verify=False)
-    print("Status Code: %s" % res.status_code)
-    print("URL: %s" % res.url)
+    # # print(hashlib.md5("https://www.bcct.vip/#/register/7785131".encode('UTF-8')).hexdigest())
+    # #
+    # # sqlconn = 'mysql+pymysql://root:1101syw@localhost:3306/test?charset=utf8mb4'
+    # headers = {
+    #     'user-agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
+    # }
+    # proxy = '127.0.0.1:1080'
+    # proxies = {
+    #     'http': 'http://' + proxy,
+    #     'https': 'http://' + proxy
+    # }
+    #
+    # # url="https://privategirlses.com/go/?a=1830809&cr=30816&lid=19608&mh=RWtVcHNSZUJFc3JOV0ZRYndDeHFteGdXWHpsTWpPVUtBeGNLLTMwMjA1&mmid=1822&p=0&rf=ua&rn=zc4YnJmUys4WmdeVzw4&t=YUDI"
+    # url = "http://trk.cloudtraff.com/89b0e391-63e1-49c3-bd7e-9cd0cedb2097?subPublisher=1830809&clicktag=EkUpsReBEsrNWFQbwCxqmxgWXzlMjOUKAxcK"
+    # res = requests.get(url, headers=headers, timeout=8, proxies=proxies, verify=False)
+    # print("Status Code: %s" % res.status_code)
+    # print("URL: %s" % res.url)
 
 # # 正常模式
 # browser = webdriver.Chrome()
