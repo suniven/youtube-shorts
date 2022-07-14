@@ -291,3 +291,12 @@ class Final_Page(Base):
     type = Column(String(100))
     create_time = Column(mysql.BIGINT)
 
+class Round_2_New(Base):
+    # 表名
+    __tablename__ = 'round_2_new'
+
+    id = Column(mysql.BIGINT, primary_key=True)
+    url = Column(String(1200))
+    landing_page = Column(String(8000))
+    checked = Column(String(50))
+    create_time = Column(mysql.BIGINT)

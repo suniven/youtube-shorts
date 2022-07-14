@@ -318,6 +318,20 @@ CREATE TABLE IF NOT EXISTS `final_page`
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8 COMMENT ='final page';
 
+CREATE TABLE IF NOT EXISTS `round_2_new`
+(
+    `id`               bigint(20) auto_increment NOT NULL COMMENT 'id',
+    `url`              varchar(1200)             NOT NULL DEFAULT '' COMMENT 'url in round_1',
+    `landing_page`     varchar(8000)             NOT NULL DEFAULT '' COMMENT 'landing page, split with tab',
+    `checked`          varchar(50)               NOT NULL DEFAULT '' COMMENT '人工分类结果',
+    `create_time`      bigint(20)                NOT NULL DEFAULT 0 COMMENT '数据创建时间',
+    PRIMARY KEY (`id`)
+) ENGINE = InnoDB
+  DEFAULT CHARSET = utf8 COMMENT ='round_2_new';
+
+alter table round_2_new
+    convert to character set utf8mb4;
+
 alter table round_2
     convert to character set utf8mb4;
 

@@ -57,6 +57,11 @@ def visit(url, browser, session):
             print("* ", browser.current_url)
             domain = browser.current_url.split('/')[2]
             if domain != cur_domain:
+                rows = session.query(Round_2).filter(Round_2.landing_page.like(browser.current_url),
+                                                     and_(Round_2.url.like(url))).all()
+                if rows:
+                    print("*** Already Visited. ***")
+                    continue
                 round_2 = Round_2()
                 round_2.url = url
                 round_2.status_code = '200'
@@ -95,15 +100,12 @@ if __name__ == '__main__':
     DBSession = sessionmaker(bind=engine)
     session = DBSession()
     try:
-        with open("url_round_1_todo.txt", "r", encoding="UTF8") as f:
+        with open("url_round_2_todo.txt", "r", encoding="UTF8") as f:
             urls = f.readlines()
         for url in urls:
             url = url.strip()
             print('----------')
-            rows = session.query(Round_2).filter(Round_2.url.like(url)).all()
-            if rows:
-                print("*** Already Visited. ***")
-                continue
+
             visit(url, browser, session)
             # break  # for test
     except Exception as e:
