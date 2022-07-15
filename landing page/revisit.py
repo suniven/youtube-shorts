@@ -25,7 +25,6 @@ proxies = {
     'https': 'http://' + proxy
 }
 
-
 def visit(url, browser, session):
     try:
         round_1 = Round_1()
@@ -41,22 +40,12 @@ def visit(url, browser, session):
         round_1.status_code = res.status_code
         if res.status_code != 200:
             print("响应失败")
-            rows = session.query(Round_1).filter(Round_1.status_code.like(res.status_code),
-                                                 and_(Round_1.url.like(url))).all()
-            if rows:
-                print("*** Already Visited. ***")
-                return
         else:
             browser.get(url)
+            time.sleep(15)  # 确保
 
             round_1.landing_page = browser.current_url  # 可能有多个landing page
             round_1.landing_page_md5 = hashlib.md5(round_1.landing_page.encode('UTF-8')).hexdigest()
-
-            rows = session.query(Round_1).filter(Round_1.landing_page_md5.like(round_1.landing_page_md5),
-                                                 and_(Round_1.url.like(url))).all()
-            if rows:
-                print("*** Already Visited. ***")
-                return
 
             try:
                 save_name = screenshots_save_path + round_1.landing_page_md5 + '.png'
@@ -84,12 +73,12 @@ if __name__ == '__main__':
     option.add_argument("--window-size=1920,1080")
     option.add_argument("--mute-audio")  # 静音
     browser = webdriver.Chrome(chrome_options=option)
-    browser.implicitly_wait(15)
+    # browser.implicitly_wait(15)
     engine = create_engine(sqlconn, echo=True, max_overflow=8)
     DBSession = sessionmaker(bind=engine)
     session = DBSession()
     try:
-        with open("./url_in_comments.txt", "r", encoding="UTF8") as f:
+        with open("./revisit.txt", "r", encoding="UTF8") as f:
             urls = f.readlines()
         for url in urls:
             url = url.strip()

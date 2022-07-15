@@ -312,6 +312,7 @@ CREATE TABLE IF NOT EXISTS `final_page`
     `url`              varchar(4000)             NOT NULL DEFAULT '' COMMENT 'url in comments',
     `landing_page`     varchar(4000)             NOT NULL DEFAULT '' COMMENT 'landing page url',
     `landing_page_md5` varchar(32)               NOT NULL DEFAULT '' COMMENT 'md5 of landing page url',
+    `domain`           varchar(50)               NOT NULL DEFAULT '' COMMENT 'domain',
     `type`             varchar(100)              NOT NULL DEFAULT '' COMMENT '网站类型',
     `create_time`      bigint(20)                NOT NULL DEFAULT 0 COMMENT '数据创建时间',
     PRIMARY KEY (`id`)
@@ -321,13 +322,32 @@ CREATE TABLE IF NOT EXISTS `final_page`
 CREATE TABLE IF NOT EXISTS `round_2_new`
 (
     `id`               bigint(20) auto_increment NOT NULL COMMENT 'id',
-    `url`              varchar(1200)             NOT NULL DEFAULT '' COMMENT 'url in round_1',
-    `landing_page`     varchar(8000)             NOT NULL DEFAULT '' COMMENT 'landing page, split with tab',
+    `url`              varchar(1200)             NOT NULL DEFAULT '' COMMENT 'url in comments',
+    `landing_page_1`   varchar(1200)             NOT NULL DEFAULT '' COMMENT 'landing page in round_1',
+    `landing_page_2`   varchar(1200)             NOT NULL DEFAULT '' COMMENT 'landing page in round_2',
+    `landing_page_md5` varchar(32)               NOT NULL DEFAULT '' COMMENT 'md5 of landing page 2 url',
     `checked`          varchar(50)               NOT NULL DEFAULT '' COMMENT '人工分类结果',
     `create_time`      bigint(20)                NOT NULL DEFAULT 0 COMMENT '数据创建时间',
     PRIMARY KEY (`id`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8 COMMENT ='round_2_new';
+
+CREATE TABLE IF NOT EXISTS `round_3_new`
+(
+    `id`               bigint(20) auto_increment NOT NULL COMMENT 'id',
+    `url`              varchar(1200)             NOT NULL DEFAULT '' COMMENT 'url in comments',
+    `landing_page_1`   varchar(1200)             NOT NULL DEFAULT '' COMMENT 'landing page in round_1',
+    `landing_page_2`   varchar(1200)             NOT NULL DEFAULT '' COMMENT 'landing page in round_2',
+    `landing_page_3`   varchar(1200)             NOT NULL DEFAULT '' COMMENT 'landing page in round_3',
+    `landing_page_md5` varchar(32)               NOT NULL DEFAULT '' COMMENT 'md5 of landing page 2 url',
+    `checked`          varchar(50)               NOT NULL DEFAULT '' COMMENT '人工分类结果',
+    `create_time`      bigint(20)                NOT NULL DEFAULT 0 COMMENT '数据创建时间',
+    PRIMARY KEY (`id`)
+) ENGINE = InnoDB
+  DEFAULT CHARSET = utf8 COMMENT ='round_2_new';
+
+alter table round_3_new
+    convert to character set utf8mb4;
 
 alter table round_2_new
     convert to character set utf8mb4;

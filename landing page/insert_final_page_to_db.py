@@ -26,25 +26,26 @@ proxies = {
 }
 
 
-def visit(url, landing_page, landing_page_md5, browser, session):
+def visit(url, landing_page, landing_page_md5, session):
     try:
         final_page = Final_Page()
         final_page.url = url
         final_page.landing_page = landing_page
         final_page.landing_page_md5 = landing_page_md5
         final_page.type = ''
+        final_page.domain = landing_page.split('/')[2]
 
-        browser.get(landing_page)
-
-        try:
-            save_name = screenshots_save_path + final_page.landing_page_md5 + '.png'
-            if not os.path.exists(save_name):
-                browser.save_screenshot(save_name)
-                print("截图成功")
-            else:
-                print("截图已存在")
-        except BaseException as err_msg:
-            print("截图失败：%s" % err_msg)
+        # browser.get(landing_page)
+        #
+        # try:
+        #     save_name = screenshots_save_path + final_page.landing_page_md5 + '.png'
+        #     if not os.path.exists(save_name):
+        #         browser.save_screenshot(save_name)
+        #         print("截图成功")
+        #     else:
+        #         print("截图已存在")
+        # except BaseException as err_msg:
+        #     print("截图失败：%s" % err_msg)
         final_page.create_time = get_now_timestamp()
         session.add(final_page)
         session.commit()
@@ -53,16 +54,16 @@ def visit(url, landing_page, landing_page_md5, browser, session):
 
 
 if __name__ == '__main__':
-    # 正常模式
-    browser = webdriver.Chrome()
-    browser.maximize_window()
+    # # 正常模式
+    # browser = webdriver.Chrome()
+    # browser.maximize_window()
     # headless模式
     # option = webdriver.ChromeOptions()
     # option.add_argument('--headless')
     # option.add_argument("--window-size=1920,1080")
     # option.add_argument("--mute-audio")  # 静音
     # browser = webdriver.Chrome(chrome_options=option)
-    browser.implicitly_wait(15)
+    # browser.implicitly_wait(15)
     engine = create_engine(sqlconn, echo=True, max_overflow=8)
     DBSession = sessionmaker(bind=engine)
     session = DBSession()
@@ -81,10 +82,10 @@ if __name__ == '__main__':
             if rows:
                 print("*** Already Visited. ***")
                 continue
-            visit(url, landing_page, landing_page_md5, browser, session)
+            visit(url, landing_page, landing_page_md5, session)
     except Exception as e:
         print("Error: ", e)
     finally:
-        browser.close()
-        browser.quit()
+        # browser.close()
+        # browser.quit()
         session.close()

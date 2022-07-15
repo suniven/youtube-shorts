@@ -26,7 +26,7 @@ proxies = {
     'http': 'http://' + proxy,
     'https': 'http://' + proxy
 }
-MAX_DEEPTH = 5
+MAX_DEEPTH = 3
 filter_keyword = ["google.com", "youtube.com"]
 
 
@@ -55,7 +55,7 @@ def visit(browser, url, deepth, results):
             # print(len(links))
             for link in links:
                 # print("link: ", link)
-                if "google.com" in link or "youtube.com" in link:
+                if "google.com" in link or "youtube.com" in link or "facebook.com" in link:
                     continue
                 visit(browser, link, deepth + 1, results)
         else:

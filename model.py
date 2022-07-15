@@ -268,6 +268,7 @@ class Round_1(Base):
     checked = Column(String(50))
     create_time = Column(mysql.BIGINT)
 
+
 class Round_2(Base):
     # 表名
     __tablename__ = 'round_2'
@@ -280,6 +281,7 @@ class Round_2(Base):
     checked = Column(String(50))
     create_time = Column(mysql.BIGINT)
 
+
 class Final_Page(Base):
     # 表名
     __tablename__ = 'final_page'
@@ -288,8 +290,10 @@ class Final_Page(Base):
     url = Column(String(4000))
     landing_page = Column(String(4000))
     landing_page_md5 = Column(String(32))
+    domain = Column(String(50))
     type = Column(String(100))
     create_time = Column(mysql.BIGINT)
+
 
 class Round_2_New(Base):
     # 表名
@@ -297,6 +301,22 @@ class Round_2_New(Base):
 
     id = Column(mysql.BIGINT, primary_key=True)
     url = Column(String(1200))
-    landing_page = Column(String(8000))
+    landing_page_1 = Column(String(1200))
+    landing_page_2 = Column(String(1200))
+    landing_page_md5 = Column(String(32))
+    checked = Column(String(50))
+    create_time = Column(mysql.BIGINT)
+
+
+class Round_3_New(Base):
+    # 表名
+    __tablename__ = 'round_3_new'
+
+    id = Column(mysql.BIGINT, primary_key=True)
+    url = Column(String(1200))
+    landing_page_1 = Column(String(1200))
+    landing_page_2 = Column(String(1200))
+    landing_page_3 = Column(String(1200))
+    landing_page_md5 = Column(String(32))
     checked = Column(String(50))
     create_time = Column(mysql.BIGINT)

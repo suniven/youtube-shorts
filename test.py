@@ -24,67 +24,81 @@ from timestamp import timestamp_datetime
 import base64
 from bs4 import BeautifulSoup
 
-MAX_DEEPTH = 5
-
-
-def visit(browser, url, deepth, results):
-    print("visit: ", url)
-    browser.get(url)
-    url_domain = url.split('/')[2]
-    current_domain = browser.current_url.split('/')[2]
-    if deepth >= MAX_DEEPTH or url_domain == current_domain:
-        return
-    else:
-        print("deepth: {0}, 留下: {1}".format(deepth, browser.current_url))
-        results.append(browser.current_url)
-        atags = browser.find_elements_by_tag_name('a')
-        links = []
-        for atag in atags:
-            if 'http' in atag.get_attribute('href'):
-                links.append(atag.get_attribute('href'))
-        links = list(set(links))
-        print(len(links))
-        for link in links:
-            print("link: ", link)
-            visit(browser, link, deepth + 1, results)
+#
+# MAX_DEEPTH = 5
+#
+#
+# def visit(browser, url, deepth, results):
+#     print("visit: ", url)
+#     browser.get(url)
+#     url_domain = url.split('/')[2]
+#     current_domain = browser.current_url.split('/')[2]
+#     if deepth >= MAX_DEEPTH or url_domain == current_domain:
+#         return
+#     else:
+#         print("deepth: {0}, 留下: {1}".format(deepth, browser.current_url))
+#         results.append(browser.current_url)
+#         atags = browser.find_elements_by_tag_name('a')
+#         links = []
+#         for atag in atags:
+#             if 'http' in atag.get_attribute('href'):
+#                 links.append(atag.get_attribute('href'))
+#         links = list(set(links))
+#         print(len(links))
+#         for link in links:
+#             print("link: ", link)
+#             visit(browser, link, deepth + 1, results)
 
 
 if __name__ == '__main__':
+    dict = {}
+    with open("test.txt", "r") as f:
+        urls = f.readlines()
+    for url in urls:
+        url = url.strip()
+        # domain = '.'.join(url.split('/')[2].split('.')[-2:])
+        domain = url.split('/')[2]
+        if domain not in dict.keys():
+            dict[domain] = 1
+        else:
+            dict[domain] += 1
+    for k, v in dict.items():
+        print("{0}\t{1}".format(k, v))
     # # 正常模式
     # browser = webdriver.Chrome()
     # browser.maximize_window()
     # browser.implicitly_wait(30)
-    option = webdriver.ChromeOptions()
-    option.add_argument('--headless')
-    option.add_argument("--window-size=1920,1080")
-    option.add_argument("--mute-audio")  # 静音
-    browser = webdriver.Chrome(chrome_options=option)
-    browser.implicitly_wait(20)
-    try:
-        url = "http://sexlove.uno/"
-        results = []
-        visit(browser, url, 1, results)
-        print(results[:])
-        # res = requests.get(url)
-        # soup = BeautifulSoup(res.text, 'html.parser')
-        # links = soup.select('a')
-        # # print(res.url)
-        # for link in links:
-        #     print(link['href'])
-        # browser.get(url)
-        # 提取所有a标签
-        # a_tags = browser.find_elements_by_tag_name('a')
-        # for a_tag in a_tags:
-        #     link = a_tag.get_attribute('href')
-        #     links.append(link)
-        # links = list(set(links))
-        # for link in links:
-        #     print(link)
-    except Exception as err:
-        print(err)
-    finally:
-        browser.close()
-        browser.quit()
+    # option = webdriver.ChromeOptions()
+    # option.add_argument('--headless')
+    # option.add_argument("--window-size=1920,1080")
+    # option.add_argument("--mute-audio")  # 静音
+    # browser = webdriver.Chrome(chrome_options=option)
+    # browser.implicitly_wait(20)
+    # try:
+    #     url = "http://sexlove.uno/"
+    #     results = []
+    #     visit(browser, url, 1, results)
+    #     print(results[:])
+    #     # res = requests.get(url)
+    #     # soup = BeautifulSoup(res.text, 'html.parser')
+    #     # links = soup.select('a')
+    #     # # print(res.url)
+    #     # for link in links:
+    #     #     print(link['href'])
+    #     # browser.get(url)
+    #     # 提取所有a标签
+    #     # a_tags = browser.find_elements_by_tag_name('a')
+    #     # for a_tag in a_tags:
+    #     #     link = a_tag.get_attribute('href')
+    #     #     links.append(link)
+    #     # links = list(set(links))
+    #     # for link in links:
+    #     #     print(link)
+    # except Exception as err:
+    #     print(err)
+    # finally:
+    #     browser.close()
+    #     browser.quit()
 
     # links=[]
     # with open('test_cr.html','r') as f:
