@@ -148,38 +148,39 @@ def get_offer(browser, session, offer_link):
         print("Getting Preview Img Error")
         print(err)
 
-    # Landing Page
+    # # Landing Page
     if preview_url:
-        try:
-            js = 'window.open(\"' + preview_url + '\");'
-            browser.execute_script(js)
-            time.sleep(2.5)
-            handles = browser.window_handles
-            browser.switch_to.window(handles[2])  # 切换标签页
-
-            # offervault_offer.land_page = browser.current_url
-            offervault_offer.land_page = preview_url
-            if browser.title:
-                # 截图
-                try:
-                    screenshot = '.\\data\\offervault\\screenshots\\' + offervault_offer.land_page_img.replace(".jpg",
-                                                                                                               "") + '.png'
-                    if not os.path.exists(screenshot):
-                        browser.save_screenshot(screenshot)
-                        print("Take Screenshot successfully.")
-                    else:
-                        print("Screenshot Already Exists.")
-
-                except Exception as err:
-                    print("Failed To Take Screenshots.")
-                    print(err)
-
-            browser.close()
-            browser.switch_to.window(handles[1])
-            time.sleep(1)
-        except Exception as err:
-            print("Get Landing Page Error.")
-            print(err)
+        offervault_offer.land_page = preview_url
+    #     try:
+    #         js = 'window.open(\"' + preview_url + '\");'
+    #         browser.execute_script(js)
+    #         time.sleep(2.5)
+    #         handles = browser.window_handles
+    #         browser.switch_to.window(handles[2])  # 切换标签页
+    #
+    #         # offervault_offer.land_page = browser.current_url
+    #         offervault_offer.land_page = preview_url
+    #         if browser.title:
+    #             # 截图
+    #             try:
+    #                 screenshot = '.\\data\\offervault\\screenshots\\' + offervault_offer.land_page_img.replace(".jpg",
+    #                                                                                                            "") + '.png'
+    #                 if not os.path.exists(screenshot):
+    #                     browser.save_screenshot(screenshot)
+    #                     print("Take Screenshot successfully.")
+    #                 else:
+    #                     print("Screenshot Already Exists.")
+    #
+    #             except Exception as err:
+    #                 print("Failed To Take Screenshots.")
+    #                 print(err)
+    #
+    #         browser.close()
+    #         browser.switch_to.window(handles[1])
+    #         time.sleep(1)
+    #     except Exception as err:
+    #         print("Get Landing Page Error.")
+    #         print(err)
 
     offervault_offer.create_time = get_now_timestamp()
 

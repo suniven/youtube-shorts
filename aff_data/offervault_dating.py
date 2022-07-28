@@ -1,7 +1,6 @@
 import os
 import re
 import time
-import lxml
 import requests
 from selenium import webdriver
 from selenium.webdriver import ActionChains
