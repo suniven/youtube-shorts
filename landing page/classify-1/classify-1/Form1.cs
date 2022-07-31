@@ -20,6 +20,7 @@ namespace classify_1
         private ArrayList img_list = new ArrayList();
         private String current_link;
         private int current_list_index = 0;
+        private String img_root_path = "D:\\Python\\get-final-page\\data\\";
 
         #region 控件大小随窗体大小等比例缩放
         private float x;//定义当前窗体的宽度
@@ -88,20 +89,20 @@ namespace classify_1
                 Port = 3306,
                 UserID = "root",
                 Password = "1101syw",
-                Database = "test"  // 数据库
+                Database = "landing_page"  // 数据库
             }.ToString();
             var connection = new MySqlConnection(connectionString);
             try
             {
                 connection.Open();
-                var sql = "SELECT DISTINCT landing_page, landing_page_md5 FROM round_1 WHERE checked like '' and status_code like '200';";
+                var sql = "SELECT DISTINCT landing_page_3, landing_page_md5 FROM round_3 WHERE checked like '';";
                 var command = new MySqlCommand(sql, connection);
                 using (MySqlDataReader dataReader = command.ExecuteReader())
                 {
                     while (dataReader.Read())
                     {
                         String img_name = dataReader.GetString("landing_page_md5");
-                        String landing_page = dataReader.GetString("landing_page");
+                        String landing_page = dataReader.GetString("landing_page_3");
                         img_dic.Add(img_name, landing_page);
                         img_list.Add(img_name);
                     }
@@ -124,7 +125,7 @@ namespace classify_1
 
             if (img_list.Count>=1)
             {
-                String img_path = "D:\\Python\\youtube-tiktok\\landing page\\data\\round-1\\" + img_list[0].ToString() + ".png";
+                String img_path = img_root_path + img_list[0].ToString() + ".png";
                 if (File.Exists(img_path))
                 {
                     FileStream fs_img = new FileStream(img_path, FileMode.Open, FileAccess.Read);
@@ -155,13 +156,13 @@ namespace classify_1
                 Port = 3306,
                 UserID = "root",
                 Password = "1101syw",
-                Database = "test"  // 数据库
+                Database = "landing_page"  // 数据库
             }.ToString();
             var connection = new MySqlConnection(connectionString);
             try
             {
                 connection.Open();
-                var sql = "update round_1 set checked = '" + type + "' where landing_page_md5 like '" + landing_page_md5 + "';";
+                var sql = "update round_3 set checked = '" + type + "' where landing_page_md5 like '" + landing_page_md5 + "';";
                 // MessageBox.Show(sql);
                 var command = new MySqlCommand(sql, connection);
                 rows = command.ExecuteNonQuery();//执行SQL语句，并返回受影响的行数
@@ -184,7 +185,7 @@ namespace classify_1
         {
             if (this.current_list_index < img_list.Count)
             {
-                String img_path = "D:\\Python\\youtube-tiktok\\landing page\\data\\round-1\\" + img_list[current_list_index].ToString() + ".png";
+                String img_path = img_root_path + img_list[current_list_index].ToString() + ".png";
                 if (File.Exists(img_path))
                 {
                     FileStream fs_img = new FileStream(img_path, FileMode.Open, FileAccess.Read);
@@ -262,20 +263,20 @@ namespace classify_1
                 Port = 3306,
                 UserID = "root",
                 Password = "1101syw",
-                Database = "test"  // 数据库
+                Database = "landing_page"  // 数据库
             }.ToString();
             var connection = new MySqlConnection(connectionString);
             try
             {
                 connection.Open();
-                var sql = "SELECT DISTINCT landing_page, landing_page_md5 FROM round_1 WHERE checked not like '' and status_code like '200';";
+                var sql = "SELECT DISTINCT landing_page_3, landing_page_md5 FROM round_3 WHERE checked not like '';";
                 var command = new MySqlCommand(sql, connection);
                 using (MySqlDataReader dataReader = command.ExecuteReader())
                 {
                     while (dataReader.Read())
                     {
                         String img_name = dataReader.GetString("landing_page_md5");
-                        String landing_page = dataReader.GetString("landing_page");
+                        String landing_page = dataReader.GetString("landing_page_3");
                         img_dic.Add(img_name, landing_page);
                         img_list.Add(img_name);
                     }
@@ -298,7 +299,7 @@ namespace classify_1
 
             if (img_list.Count >= 1)
             {
-                String img_path = "D:\\Python\\youtube-tiktok\\landing page\\data\\round-1\\" + img_list[0].ToString() + ".png";
+                String img_path = img_root_path + img_list[0].ToString() + ".png";
                 if (File.Exists(img_path))
                 {
                     FileStream fs_img = new FileStream(img_path, FileMode.Open, FileAccess.Read);
